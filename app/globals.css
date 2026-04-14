@@ -80,10 +80,10 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-title: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-subtext: var(--font-fraunces), ui-serif, Georgia, 'Times New Roman', serif;
+  --font-subtext: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --color-brand-blue: var(--brand-blue);
   --color-brand-orange: var(--brand-orange);
   --color-brand-piel: var(--brand-piel);
