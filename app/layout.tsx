@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     "Próximamente - Dermatología funcional y tratamientos láser de última generación",
   generator: "v0.app",
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/favicon.ico"],
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
 }
