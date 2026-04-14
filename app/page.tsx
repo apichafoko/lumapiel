@@ -11,18 +11,18 @@ export default function ComingSoonPage() {
       {/* Coming Soon Badge */}
       <div className="flex items-center gap-2 bg-secondary/50 px-6 py-3 rounded-full border border-primary/30">
         <Sparkles className="w-5 h-5 text-primary" />
-        <span className="text-foreground font-medium tracking-widest uppercase text-sm">
+        <span className="font-title text-foreground text-sm font-medium uppercase tracking-widest">
           Próximamente
         </span>
       </div>
 
       {/* Description */}
-      <p className="mt-12 text-muted-foreground max-w-lg leading-relaxed">
+      <p className="font-subtext mt-12 max-w-lg leading-relaxed text-muted-foreground">
         Estamos preparando algo especial para vos. Tratamientos dermatológicos de vanguardia con tecnología láser de última generación.
       </p>
 
       {/* Footer */}
-      <footer className="absolute bottom-8 text-muted-foreground text-sm">
+      <footer className="font-subtext absolute bottom-8 text-sm text-muted-foreground">
         © 2026 Luma Piel. Todos los derechos reservados.
       </footer>
     </main>
