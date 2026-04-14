@@ -14,7 +14,7 @@
  * - NEXT_PUBLIC_LINKS_LABEL_WHATSAPP  (opcional, texto del botón)
  * - NEXT_PUBLIC_LINKS_LABEL_WEB
  * - NEXT_PUBLIC_LINKS_LABEL_MAPS
- * - NEXT_PUBLIC_LINKS_SHARE_PREVIEW_HANDLE (opcional, ej. lumapiel → línea tipo “* /lumapiel” en el modal)
+ * - NEXT_PUBLIC_LINKS_SHARE_PREVIEW_HANDLE (opcional; subtítulo estilo Linktree: asterisco + barra + handle, ej. lumapiel)
  * - NEXT_PUBLIC_LINKS_FOOTER_ADDRESS (opcional; default Arenales 3819 2° "A", Palermo, CABA.)
  *
  * Subdominio (solo servidor):

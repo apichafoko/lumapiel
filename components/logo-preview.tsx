@@ -18,7 +18,7 @@ export function LogoPreview({
   const isRemote = /^https?:\/\//i.test(src)
 
   return (
-    <div className={cn("relative w-full max-w-lg px-2", className)}>
+    <div className={cn("relative min-w-0 w-full max-w-lg px-2", className)}>
       {isRemote ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img

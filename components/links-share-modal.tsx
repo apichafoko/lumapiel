@@ -88,7 +88,7 @@ function ShareChip({ href, onClick, label, className, children }: ShareChipProps
       >
         {children}
       </span>
-      <span className="font-title max-w-[4.5rem] text-center text-[11px] font-medium leading-tight text-brand-blue/80">
+      <span className="font-title max-w-[5.5rem] text-balance text-center text-[11px] font-medium leading-snug text-brand-blue/80 sm:max-w-[6.5rem]">
         {label}
       </span>
     </>
@@ -176,7 +176,7 @@ export function LinksShareModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         showCloseButton={false}
-        className="max-h-[min(90vh,640px)] w-[min(100vw-1.5rem,420px)] gap-0 overflow-hidden rounded-2xl border border-brand-blue/10 bg-brand-white p-0 text-brand-blue shadow-2xl sm:max-w-[420px]"
+        className="flex max-h-[min(90dvh,85svh)] w-full max-w-[min(420px,calc(100vw-1.5rem))] min-w-0 flex-col gap-0 overflow-hidden rounded-2xl border border-brand-blue/10 bg-brand-white p-0 text-brand-blue shadow-2xl"
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogDescription className="sr-only">
@@ -198,32 +198,26 @@ export function LinksShareModal({
           </DialogClose>
         </div>
 
-        <div className="px-4 pb-4">
-          <div className="rounded-2xl bg-brand-blue px-4 py-8 text-center shadow-inner ring-1 ring-black/10">
-            <div className="mb-4 flex w-full justify-center">
+        <div className="min-h-0 min-w-0 shrink overflow-y-auto px-3 pb-3 sm:px-4 sm:pb-4">
+          <div className="min-w-0 rounded-2xl bg-brand-blue px-3 py-6 text-center shadow-inner ring-1 ring-black/10 sm:px-4 sm:py-8">
+            <div className="mb-4 flex w-full min-w-0 justify-center overflow-hidden">
               <LogoPreview
                 src={logoSrc}
                 alt={brandName}
-                className="max-w-full px-0"
+                className="max-w-full min-w-0 px-0"
               />
             </div>
-            <p className="font-subtext text-sm text-brand-white/90">
+            <p className="font-subtext break-words px-1 text-sm leading-snug text-brand-white/90">
               {previewSubtitle}
             </p>
           </div>
         </div>
 
-        <div className="border-t border-brand-blue/10 bg-brand-white/95 px-2 py-5">
-          <p className="font-title mb-4 text-center text-xs font-semibold uppercase tracking-wider text-brand-blue/50">
+        <div className="min-w-0 shrink-0 border-t border-brand-blue/10 bg-brand-white/95 px-2 py-4 sm:px-3 sm:py-5">
+          <p className="font-title mb-3 text-center text-xs font-semibold uppercase tracking-wider text-brand-blue/50 sm:mb-4">
             Compartir en
           </p>
-          <div
-            className={cn(
-              "flex gap-4 overflow-x-auto px-2 pb-1 [-ms-overflow-style:none] [scrollbar-width:none]",
-              "[&::-webkit-scrollbar]:hidden",
-            )}
-            style={{ WebkitOverflowScrolling: "touch" }}
-          >
+          <div className="flex min-w-0 flex-wrap justify-center gap-x-3 gap-y-4 px-1 sm:gap-x-4">
             <ShareChip
               onClick={onCopy}
               label="Copiar enlace"
