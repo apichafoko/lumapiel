@@ -216,7 +216,7 @@ export function SiteHeader({ site, bookingUrl }: Props) {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="flex h-full w-full max-w-none flex-col gap-5 px-5 pt-10 pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:w-[min(100vw-2rem,22rem)] sm:max-w-none"
+              className="flex h-full w-full max-w-none flex-col gap-5 px-5 pt-10 pb-[calc(env(safe-area-inset-bottom)+1rem)] data-[side=right]:w-full sm:data-[side=right]:w-[min(100vw-2rem,22rem)] sm:max-w-none"
             >
               <nav className="flex flex-1 flex-col overflow-y-auto border-t border-border/70 pt-3">
                 {mobileNav}
