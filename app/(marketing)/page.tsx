@@ -73,7 +73,6 @@ export default async function HomePage() {
               </Button>
               <CatalogVerMasLink
                 href="/tratamientos"
-                size="lg"
                 wrapClassName="w-full sm:w-auto sm:min-w-[200px]"
               >
                 {hero.secondaryCta}

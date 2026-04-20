@@ -8,8 +8,6 @@ type Props = {
   children?: ReactNode;
   /** Clases en el contenedor (p. ej. `min-w-[200px]` en el hero). */
   wrapClassName?: string;
-  /** `lg`: hero — texto más grande; `default`: cards y listados (alto alineado con «Consultas» `size="lg"`). */
-  size?: "default" | "lg";
 };
 
 /**
@@ -20,7 +18,6 @@ export function CatalogVerMasLink({
   href,
   children = "Ver más",
   wrapClassName,
-  size = "default",
 }: Props) {
   return (
     <div
@@ -34,8 +31,6 @@ export function CatalogVerMasLink({
         className={cn(
           buttonVariants({ variant: "catalog", size: "lg" }),
           "w-full sm:w-auto",
-          size === "lg" &&
-            "min-h-10 h-auto px-5 py-2 text-base leading-normal",
         )}
       >
         {children}

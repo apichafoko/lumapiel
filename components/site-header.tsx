@@ -15,6 +15,7 @@ import { LogoPreview } from "@/components/logo-preview";
 import { TeamInstagramLink } from "@/components/team-instagram-link";
 import { TratamientosNavMenu } from "@/components/tratamientos-nav-menu";
 import type { SiteConfig, SiteNavItem } from "@/lib/site-config";
+import { cn } from "@/lib/utils";
 
 type Props = {
   site: SiteConfig;
@@ -36,8 +37,10 @@ export function SiteHeader({ site, bookingUrl }: Props) {
     site.nav,
   );
 
-  const linkClass =
+  const desktopLinkClass =
     "text-sm font-medium text-foreground/90 hover:text-primary";
+  const mobileLinkClass =
+    "flex min-h-11 items-center py-1 text-[1.02rem] font-medium text-foreground/90 hover:text-primary";
 
   const equipoDropdownDesktop = (
     <DropdownMenu key="equipo">
@@ -78,7 +81,7 @@ export function SiteHeader({ site, bookingUrl }: Props) {
       <DropdownMenuTrigger asChild>
         <button
           type="button"
-          className="flex w-full items-center justify-between text-left text-sm font-medium text-foreground/90 hover:text-primary"
+          className="flex min-h-11 w-full items-center justify-between py-1 text-left text-[1.02rem] font-medium text-foreground/90 hover:text-primary"
         >
           Equipo
           <ChevronDown className="size-4 opacity-70" aria-hidden />
@@ -113,14 +116,18 @@ export function SiteHeader({ site, bookingUrl }: Props) {
         item.href === "/tratamientos" ? (
           <TratamientosNavMenu key={item.href} label={item.label} />
         ) : (
-          <Link key={item.href} href={item.href} className={linkClass}>
+          <Link key={item.href} href={item.href} className={desktopLinkClass}>
             {item.label}
           </Link>
         ),
       )}
       {equipoDropdownDesktop}
       {navContact ? (
-        <Link key={navContact.href} href={navContact.href} className={linkClass}>
+        <Link
+          key={navContact.href}
+          href={navContact.href}
+          className={desktopLinkClass}
+        >
           {navContact.label}
         </Link>
       ) : null}
@@ -140,7 +147,7 @@ export function SiteHeader({ site, bookingUrl }: Props) {
           <Link
             key={item.href}
             href={item.href}
-            className={linkClass}
+            className={cn(mobileLinkClass, "border-b border-border/70")}
             onClick={() => setOpen(false)}
           >
             {item.label}
@@ -152,7 +159,7 @@ export function SiteHeader({ site, bookingUrl }: Props) {
         <Link
           key={navContact.href}
           href={navContact.href}
-          className={linkClass}
+          className={mobileLinkClass}
           onClick={() => setOpen(false)}
         >
           {navContact.label}
@@ -209,10 +216,12 @@ export function SiteHeader({ site, bookingUrl }: Props) {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="flex w-[min(100vw-2rem,22rem)] flex-col gap-6 pt-10"
+              className="flex h-full w-full max-w-none flex-col gap-5 px-5 pt-10 pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:w-[min(100vw-2rem,22rem)] sm:max-w-none"
             >
-              <nav className="flex flex-col gap-4">{mobileNav}</nav>
-              <Button asChild className="w-full">
+              <nav className="flex flex-1 flex-col overflow-y-auto border-t border-border/70 pt-3">
+                {mobileNav}
+              </nav>
+              <Button asChild className="mt-auto w-full">
                 <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
                   Reservar turno
                 </a>
