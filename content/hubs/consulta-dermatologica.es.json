@@ -1,0 +1,17 @@
+{
+  "id": "consulta-dermatologica",
+  "title": "Consulta Dermatológica",
+  "description": "Todo buen tratamiento comienza con un diagnóstico médico preciso. En Luma Piel evaluamos la salud de tu piel, pelo y uñas desde una perspectiva médica, funcional e integral.",
+  "sections": [
+    {
+      "anchor": "primera-consulta-vs-seguimiento",
+      "title": "Diagnóstico y Seguimiento",
+      "body": "La piel es el órgano más grande del cuerpo y puede reflejar problemas internos. En Luma Piel no 'recetamos por recetar': primero diagnosticamos.\n\n### ¿Cómo funciona?\n1. **Consulta de Primera Vez:** Durante 30 minutos, la Dra. Gandolfo revisa tus antecedentes, tu rutina actual y examina tu piel de cerca (con dermatoscopio si es necesario). Te vas con un plan de acción claro.\n2. **Seguimiento:** Una visita más corta programada para monitorear el éxito del tratamiento, ajustar dosis o cambiar cremas. Es clave para el éxito en problemas como el acné, la caída de pelo o el control de lunares."
+    },
+    {
+      "anchor": "consulta-online",
+      "title": "Teledermatología (Online)",
+      "body": "Para problemas muy visuales o para el diseño de rutinas de cuidado (skincare), podés atenderte con nuestro equipo sin moverte de tu casa.\n\n### ¿Cuándo es ideal la consulta online?\n- Para diseñar una rutina de limpieza y anti-age personalizada.\n- Para controles de acné en tratamiento.\n- Para evaluar una irritación repentina, dermatitis o alergia leve.\n\n*Nota: La consulta online NO sirve para realizar un chequeo de lunares, ya que eso requiere visualización microscópica presencial.*"
+    }
+  ]
+}

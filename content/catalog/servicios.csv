@@ -1,0 +1,38 @@
+Código,Nombre,Descripción,Categoría,Categoría turnera,Modalidad,Precio USD,Precio ARS,Mostrar precio en turnera,Duración (min),Activo,Cantidad equipamientos
+TRATAMIENTO - 001,Botox,Tratamiento inyectable para suavizar líneas de expresión y arrugas dinámicas.,Tratamiento Estético,Tratamiento,Presencial,247.75,350318.50,,45,Sí,0
+CONSULTA - 002,Consulta - Dermatología de seguimiento,Atención especializada para el diagnóstico y tratamiento de afecciones de la piel.,Consulta,Consulta,Presencial,53.07,75040.98,Sí,30,Sí,0
+CONSULTA - 003,Consulta - Dermatología online,Consulta virtual para diagnósticos dermatológicos desde la comodidad de tu hogar.,Consulta,Consulta,Virtual,53.07,75040.98,Sí,40,Sí,0
+CONSULTA - 001,Consulta - dermatologia 1° vez,Primera evaluación integral de la salud cutánea para un diagnóstico y plan personalizado.,Consulta,Consulta,Presencial,63.16,89308.24,Sí,60,Sí,0
+TRATAMIENTO - 002,Dermapen médico,"Microneedling que estimula el colágeno para mejorar textura, cicatrices y poros.",Tratamiento Estético,Tratamiento,Presencial,193.04,272958.56,,60,Sí,0
+TRATAMIENTO - 003,Electrocoagulacion,"Procedimiento para eliminar pequeñas lesiones cutáneas mediante calor eléctrico como fibromas, verrugas.",Tratamiento Estético,Tratamiento,Presencial,35.09,49617.26,,30,Sí,0
+TRATAMIENTO - 004,Infiltración Cicatriz / Alopecia,Aplicación directa de medicación en la zona para tratar cicatrices o pérdida capilar.,Tratamiento Estético,Tratamiento,Presencial,49.12,69455.68,,30,Sí,1
+PEELING - 002,Limpieza + Peeling TCA - Espalda,"Peeling químico profundo en la espalda para tratar acné, manchas o textura irregular.",Tratamiento Cosmiatría,Tratamiento,Presencial,88.91,125718.74,Sí,60,Sí,0
+PEELING - 003,Limpieza + Peeling TCA - Facial,Renovación celular profunda mediante peeling de ácido tricloroacético en el rostro.,Tratamiento Cosmiatría,Tratamiento,Presencial,66.67,94271.38,Sí,60,Sí,0
+COSMETOLOGÍA - 001,Limpieza corporal,Exfoliación e hidratación profunda para una piel del cuerpo suave y renovada.,Tratamiento Cosmiatría,Tratamiento,Presencial,76.40,108029.60,Sí,60,Sí,0
+COSMETOLOGÍA - 002,Limpieza de cutis,"Procedimiento esencial para remover impurezas, puntos negros y células muertas.",Tratamiento Cosmiatría,Tratamiento,Presencial,36.56,51695.84,Sí,60,Sí,0
+PEELING - 001,Limpieza de cutis + peeling mandélico,Limpieza profunda combinada con un peeling suave para iluminar y renovar el rostro.,Tratamiento Cosmiatría,Tratamiento,Presencial,63.02,89110.28,Sí,60,Sí,0
+COSMETOLOGÍA - 003,Luma Hydrojelly Mask,Tratamiento con mascarilla Hidrojelly que se adapta a la necesidad específica de tu piel. ej: descongestiva; antioxidante; booster hidratante; anti rojeces,Tratamiento Cosmiatría,Tratamiento,Presencial,63.16,89308.24,Sí,60,Sí,1
+LASER - 008,Luz pulsada - Completa,Sesión extendida de luz pulsada para tratar múltiples áreas o necesidades intensas.,Tratamiento Láser,Tratamiento,Presencial,270.00,381780.00,,60,Sí,1
+LASER - 007,Luz pulsada - Facial,"Tratamiento para mejorar manchas, rojeces y la luminosidad general de la cara.",Tratamiento Láser,Tratamiento,Presencial,230.00,325220.00,,60,Sí,1
+LASER - 009,Luz pulsada - Manos,Tratamiento específico para rejuvenecer el dorso de las manos y eliminar manchas.,Tratamiento Láser,Tratamiento,Presencial,150.00,212100.00,,30,Sí,1
+LASER - 005,Láser Erbium Alopecia Areata,Tratamiento láser coadyuvante para estimular zonas afectadas por pérdida de pelo.,Tratamiento Láser,Tratamiento,Presencial,120.00,169680.00,,30,Sí,1
+LASER - 002,Láser Erbium Glass,,Tratamiento Láser,Tratamiento,Presencial,200.00,282800.00,,45,Sí,1
+LASER - 003,Láser Erbium Melasma,Protocolo láser diseñado específicamente para tratar manchas de melasma rebeldes.,Tratamiento Láser,Tratamiento,Presencial,120.00,169680.00,,40,Sí,1
+LASER - 001,Láser Erbium capilar,Láser especializado para estimular el crecimiento y salud del folículo piloso sin dolor.,Tratamiento Láser,Tratamiento,Presencial,149.42,211279.88,,30,Sí,1
+LASER - 006,Láser Luma Skin Reset,Protocolo completo que combina tecnologías para un rejuvenecimiento integral de la piel.,Tratamiento Láser,Tratamiento,Presencial,701.75,992274.50,,80,Sí,1
+LASER - 011,Láser Q-switch Completo,"Sesión integral de láser Q-switch para tratar áreas extensas. ej: cara, cuello y escote.",Tratamiento Láser,Tratamiento,Presencial,279.82,395665.48,,46,Sí,1
+LASER - 015,Láser Q-switch Estrias,Uso de tecnología láser para mejorar la apariencia y textura de las estrías.,Tratamiento Láser,Tratamiento,Presencial,200.00,282800.00,,45,Sí,1
+LASER - 010,Láser Q-switch Facial,Láser de alta precisión ideal para estimular colágeno y eliminar manchas pigmentarias.,Tratamiento Láser,Tratamiento,Presencial,219.89,310924.46,,60,Sí,1
+LASER - 012,Láser Q-switch Melasma,Tratamiento enfocado en manchas de melasma.,Tratamiento Láser,Tratamiento,Presencial,168.84,238739.76,,40,Sí,1
+LASER - 013,Láser Q-switch Ojeras,Tratamiento delicado con láser para mejorar la pigmentación de la zona de ojeras.,Tratamiento Láser,Tratamiento,Presencial,167.05,236208.70,,30,Sí,1
+LASER - 016,Láser Q-switch Onicomicosis,Tratamiento láser efectivo para eliminar los hongos de las uñas de pies o manos.,Tratamiento Láser,Tratamiento,Presencial,80.00,113120.00,,30,Sí,1
+LASER - 014,Láser Q-switch Puntual,Aplicación del láser Q-switch en manchas específicas y localizadas.,Tratamiento Láser,Tratamiento,Presencial,105.00,148470.00,,30,Sí,1
+LASER - 018,Láser Vascupen,Tecnología especializada en el tratamiento de pequeñas lesiones vasculares y arañitas.,Tratamiento Láser,Tratamiento,Presencial,105.00,148470.00,,30,Sí,1
+LASER - 017,Láser Velo de Novia,Tratamiento intensivo de preparación de la piel para un brillo y suavidad máximos.,Tratamiento Láser,Tratamiento,Presencial,400.00,565600.00,,60,Sí,1
+TRATAMIENTO - 005,Mesoterapia capilar,Microinyecciones para estimular el crecimiento y salud del folículo piloso.,Tratamiento Estético,Tratamiento,Presencial,66.56,94115.84,,30,Sí,0
+PEELING - 006,Peeling Retinoico,"Peeling con ácido retinoico. Renovador celular, afina la piel y ayuda a reducir imperfecciones mejorando la textura de la piel. Ideal para meses de frío.",Tratamiento Cosmiatría,Tratamiento,Presencial,75.00,106050.00,Sí,45,Sí,0
+PEELING - 004,Peeling TCA - Gluteos,Tratamiento exfoliante y renovador para mejorar la piel de la zona de los glúteos.,Tratamiento Cosmiatría,Tratamiento,Presencial,55.82,78929.48,Sí,60,Sí,0
+PEELING - 005,Peeling TCA - Manos,Peeling químico diseñado para rejuvenecer y aclarar la piel de las manos.,Tratamiento Cosmiatría,Tratamiento,Presencial,55.00,77770.00,Sí,40,Sí,0
+TRATAMIENTO - 006,Plasma Rico en Plaquetas - Capilar,Plasma Rico en Plaquetas para estimular de forma natural la regeneración capilar.,Tratamiento Estético,Tratamiento,Presencial,116.04,164080.56,,60,Sí,0
+TRATAMIENTO - 007,Plasma Rico en Plaquetas - Cara,Bioestimulación con plasma propio para mejorar la firmeza y calidad de la piel facial.,Tratamiento Estético,Tratamiento,Presencial,116.04,164080.56,,60,Sí,0
+TRATAMIENTO - 008,Plasma Rico en Plaquetas - Completo,Tratamiento integral con Plasma Rico en Plaquetas en múltiples zonas del cuerpo.,Tratamiento Estético,Tratamiento,Presencial,133.63,188952.82,,60,Sí,0

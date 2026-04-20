@@ -1,0 +1,7 @@
+/**
+ * Etiquetas de sección — color marca; !important ante text-card-foreground del Card.
+ */
+.sectionHeadingOrange {
+  color: #d86448 !important;
+  -webkit-text-fill-color: #d86448;
+}

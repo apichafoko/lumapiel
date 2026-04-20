@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run validate:content && next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "validate:content": "node scripts/validate-content.mjs",
+    "export:catalog": "node scripts/export-catalog-csv.mjs",
+    "apply:servicios": "node scripts/apply-servicios-csv.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -37,6 +40,7 @@
     "@radix-ui/react-toggle": "1.1.10",
     "@radix-ui/react-toggle-group": "1.1.11",
     "@radix-ui/react-tooltip": "1.2.8",
+    "@tailwindcss/typography": "^0.5.19",
     "@vercel/analytics": "1.6.1",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
@@ -53,8 +57,10 @@
     "react-day-picker": "^9.14.0",
     "react-dom": "^19",
     "react-hook-form": "^7.54.1",
+    "react-markdown": "^10.1.0",
     "react-resizable-panels": "^2.1.9",
     "recharts": "^3.8.0",
+    "remark-gfm": "^4.0.1",
     "shadcn": "^4.3.0",
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.5.0",

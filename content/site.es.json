@@ -1,0 +1,51 @@
+{
+  "brandName": "Luma Piel",
+  "tagline": "Dermatología integral y tratamientos con tecnología láser",
+  "phoneDisplay": "+54 9 11 2527-6361",
+  "phoneE164": "+5491125276361",
+  "email": "contacto@lumapiel.com.ar",
+  "whatsappE164": "5491125276361",
+  "whatsappPresetEs": "Hola Luma Piel, quiero coordinar una consulta.",
+  "webBookingUrl": "https://links.lumapiel.com.ar",
+  "lumaSoftwareUrl": "https://lumasoftware.app",
+  "address": "Arenales 3819 2° \"A\", Palermo, CABA",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Especialidades", "href": "/especialidades" },
+    { "label": "Tratamientos", "href": "/tratamientos" },
+    { "label": "Consultas", "href": "/consultas" },
+    { "label": "Contacto", "href": "/contacto" }
+  ],
+  "hubs": [
+    {
+      "label": "Estética médica",
+      "href": "/especialidades/estetica-medica",
+      "description": "Rejuvenecimiento, cosmiatría y acompañamiento profesional."
+    },
+    {
+      "label": "Tratamientos láser",
+      "href": "/especialidades/tratamientos-laser",
+      "description": "Tecnología láser para manchas, lesiones vasculares y rejuvenecimiento fraccionado."
+    },
+    {
+      "label": "Consulta dermatológica",
+      "href": "/especialidades/consulta-dermatologica",
+      "description": "Diagnóstico, tratamiento de patologías y consultas online."
+    }
+  ],
+  "team": [
+    {
+      "label": "Dra. Agustina Gandolfo",
+      "href": "/doctora/agustina-gandolfo",
+      "role": "Médica dermatóloga",
+      "instagramUrl": "https://www.instagram.com/dra.agustinagandolfo/"
+    },
+    {
+      "label": "Yanina Benavidez",
+      "href": "/cosmetologa/yanina-benavidez",
+      "role": "Cosmetóloga",
+      "instagramUrl": "https://www.instagram.com/cosmiatriaconyani/"
+    }
+  ],
+  "footerDisclaimer": "Los contenidos informativos no sustituyen una consulta médica. Consulte siempre con un profesional."
+}

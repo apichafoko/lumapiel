@@ -1,0 +1,32 @@
+{
+  "id": "tratamientos-laser",
+  "title": "Tecnología Láser",
+  "description": "Contamos con una plataforma láser de última generación (Láser Q-Switch, Erbium Glass, Luz Pulsada) para resolver problemas de la piel de forma no invasiva, segura y muy precisa.",
+  "sections": [
+    {
+      "anchor": "manchas-y-melasma",
+      "title": "Manchas y Melasma",
+      "body": "El sol, las hormonas y la edad dejan marcas. Nuestros láseres actúan como un borrador inteligente que 'estalla' o barre el pigmento sin dañar la piel sana que lo rodea.\n\n### ¿Qué tratamos?\n- Léntigos (pecas solares) en rostro, escote y manos.\n- Melasma (manchas del embarazo o por pastillas anticonceptivas).\n- Hiperpigmentación post-inflamatoria (marcas oscuras que deja el acné).\n\n### ¿Cómo lo logramos?\nDependiendo de la profundidad de la mancha, utilizamos **Láser Q-Switch** o **Luz Pulsada (IPL)**. Las sesiones son rápidas y en muchos casos las manchas desaparecen tras unas pocas sesiones."
+    },
+    {
+      "anchor": "rejuvenecimiento-y-textura",
+      "title": "Textura y Renovación Profunda",
+      "body": "Para combatir cicatrices, estrías o arrugas más marcadas, necesitamos reestructurar la piel desde adentro. El láser penetra creando micro-zonas térmicas que obligan a tu cuerpo a formar colágeno joven.\n\n### ¿Qué tratamos?\n- Cicatrices o secuelas de acné (pozos).\n- Poros muy dilatados.\n- Estrías recientes o antiguas.\n- Envejecimiento severo.\n\n### ¿Cómo lo logramos?\nCon tecnologías como el **Láser Erbium Glass** o nuestro programa intensivo **Luma Skin Reset**. Si buscás un shock de luz sin tiempo de inactividad, el **Velo de Novia (Hollywood Peel)** es ideal."
+    },
+    {
+      "anchor": "rojeces-y-vascular",
+      "title": "Lesiones Vasculares y Rojeces",
+      "body": "Cuando las venitas se dilatan y no vuelven a su tamaño normal, generan un enrojecimiento constante o 'arañitas' visibles.\n\n### ¿Qué tratamos?\n- Rosácea.\n- Telangiectasias (arañitas) en la nariz o las mejillas.\n- Puntos Rubí (pequeños puntos rojos elevados).\n\n### ¿Cómo lo logramos?\nUtilizamos **Láser Vascupen** o **Luz Pulsada** para sellar los vasitos mediante calor. El cuerpo luego los reabsorbe de manera natural, mejorando drásticamente el enrojecimiento facial."
+    },
+    {
+      "anchor": "onicomicosis-y-unas",
+      "title": "Hongos en las Uñas (Onicomicosis)",
+      "body": "Las infecciones por hongos en las uñas son muy rebeldes a cremas y pastillas. El láser ofrece una solución física.\n\n### ¿Cómo funciona?\nEl láser emite una luz que atraviesa la uña y calienta el lecho ungueal, destruyendo el hongo por efecto térmico, sin necesidad de tomar medicación por meses y sin dañar la uña sana."
+    },
+    {
+      "anchor": "capilar-laser",
+      "title": "Bioestimulación Capilar Láser",
+      "body": "El láser no solo sirve para la piel; en el cuero cabelludo, su energía puede reactivar los folículos pilosos debilitados.\n\n### ¿Para qué sirve?\nSe utiliza para tratar tipos específicos de alopecia (caída de cabello) al inducir la formación de nuevos vasos sanguíneos alrededor de la raíz del pelo y potenciar la acción de medicamentos tópicos o mesoterapia."
+    }
+  ]
+}

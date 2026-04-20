@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "headline": "Dermatología integral, estética clínica y tecnología láser",
+    "subhead": "Un equipo que piensa tu piel con criterio médico, acompañamiento y resultados sostenibles. Palermo, CABA.",
+    "primaryCta": "Reservá turno",
+    "secondaryCta": "Ver tratamientos"
+  },
+  "pillars": [
+    {
+      "title": "Dermatología funcional",
+      "body": "Diagnóstico y plan adaptado a tu historia, fototipo y objetivos reales.",
+      "href": "/especialidades/consulta-dermatologica",
+      "linkLabel": "Cómo es la consulta"
+    },
+    {
+      "title": "Estética médica",
+      "body": "Rejuvenecimiento y cosmiatría con foco en seguridad y naturalidad.",
+      "href": "/especialidades/estetica-medica",
+      "linkLabel": "Ver especialidad"
+    },
+    {
+      "title": "Tratamientos láser",
+      "body": "Tecnología láser para manchas, textura, lesiones vasculares y rejuvenecimiento.",
+      "supportLine": {
+        "prefix": "Impulsado por ",
+        "linkText": "Alma Laser",
+        "href": "https://es.almalasers.com/"
+      },
+      "href": "/especialidades/tratamientos-laser",
+      "linkLabel": "Explorar láser"
+    }
+  ],
+  "featuredIntro": "Algunos de los motivos de consulta y procedimientos que más trabajamos.",
+  "faqTitle": "Dudas frecuentes",
+  "faq": [
+    {
+      "question": "¿Atienden obras sociales o prepagas?",
+      "answer": "Por el momento solo atendemos de manera particular. Igualmente, ante cualquier inquietud, nuestro WhatsApp está disponible para evacuar tus dudas.\n\nPodés consultarnos por WhatsApp o al reservar turno los convenios vigentes y el tipo de consulta que necesitás."
+    },
+    {
+      "question": "¿Necesito visita previa para láser?",
+      "answer": "Sí — en prácticamente todos los protocolos láser la primera consulta forma parte del criterio médico.\n\nAhí definimos tu candidatura real (si el tratamiento corresponde y cuándo), cómo caracteriza tu fototipo la respuesta de tu piel, y un cronograma de sesiones con los márgenes de seguridad que cada caso necesita."
+    },
+    {
+      "question": "¿Ofrecen consulta online?",
+      "answer": "Sí, cuando el caso es compatible con teleconsulta; otros requieren evaluación presencial."
+    }
+  ]
+}

@@ -127,7 +127,7 @@ export function LinksShareModal({
   previewSubtitle,
 }: LinksShareModalProps) {
   const [canNativeShare, setCanNativeShare] = useState(false)
-  const logoSrc = logoUrl ?? "/logo-piel.svg"
+  const logoSrc = logoUrl ?? "/logos/logo-completo-azul.svg"
 
   useEffect(() => {
     if (!open) return

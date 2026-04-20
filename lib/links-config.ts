@@ -3,7 +3,7 @@
  *
  * - NEXT_PUBLIC_LINKS_BRAND_NAME
  * - NEXT_PUBLIC_LINKS_TAGLINE (opcional; si falta, no se muestra bajo el logo)
- * - NEXT_PUBLIC_LINKS_LOGO_URL        (URL absoluta o ruta, ej. /logo-piel.svg)
+ * - NEXT_PUBLIC_LINKS_LOGO_URL        (URL absoluta o ruta, ej. /logos/logo-completo-azul.svg)
  * - NEXT_PUBLIC_LINKS_WHATSAPP_NUMBER (solo dígitos o formato libre; se normaliza)
  * - NEXT_PUBLIC_LINKS_WHATSAPP_MESSAGE (texto opcional precargado en WhatsApp)
  * - NEXT_PUBLIC_LINKS_WEB_BOOKING_URL
@@ -18,36 +18,35 @@
  * - NEXT_PUBLIC_LINKS_FOOTER_ADDRESS (opcional; default Arenales 3819 2° "A", Palermo, CABA.)
  *
  * Subdominio (solo servidor):
- * - LINKS_HOSTNAME  (ej. links.tudominio.com) — en middleware se reescribe / → /links
+ * - LINKS_HOSTNAME  (ej. links.tudominio.com) — en proxy se reescribe / → /links
  */
 
-import { headers } from "next/headers"
+import { headers } from "next/headers";
 
-const DEFAULT_LINKS_FOOTER_ADDRESS =
-  'Arenales 3819 2° "A", Palermo, CABA.'
+const DEFAULT_LINKS_FOOTER_ADDRESS = 'Arenales 3819 2° "A", Palermo, CABA.';
 
 export type LinksConfig = {
-  brandName: string
-  tagline: string | null
-  logoUrl: string | null
-  whatsappNumber: string | null
-  whatsappPresetMessage: string | null
-  webBookingUrl: string | null
-  mapsUrl: string | null
-  instagramUrl: string | null
-  shareUrl: string | null
-  moreUrl: string | null
-  labelWhatsapp: string | null
-  labelWeb: string | null
-  labelMaps: string | null
-  sharePreviewHandle: string | null
-  footerAddress: string
-}
+  brandName: string;
+  tagline: string | null;
+  logoUrl: string | null;
+  whatsappNumber: string | null;
+  whatsappPresetMessage: string | null;
+  webBookingUrl: string | null;
+  mapsUrl: string | null;
+  instagramUrl: string | null;
+  shareUrl: string | null;
+  moreUrl: string | null;
+  labelWhatsapp: string | null;
+  labelWeb: string | null;
+  labelMaps: string | null;
+  sharePreviewHandle: string | null;
+  footerAddress: string;
+};
 
 function readEnv(key: string): string | null {
-  const v = process.env[key]
-  if (!v?.trim()) return null
-  return v.trim()
+  const v = process.env[key];
+  if (!v?.trim()) return null;
+  return v.trim();
 }
 
 export function getLinksConfig(): LinksConfig {
@@ -67,8 +66,9 @@ export function getLinksConfig(): LinksConfig {
     labelMaps: readEnv("NEXT_PUBLIC_LINKS_LABEL_MAPS"),
     sharePreviewHandle: readEnv("NEXT_PUBLIC_LINKS_SHARE_PREVIEW_HANDLE"),
     footerAddress:
-      readEnv("NEXT_PUBLIC_LINKS_FOOTER_ADDRESS") ?? DEFAULT_LINKS_FOOTER_ADDRESS,
-  }
+      readEnv("NEXT_PUBLIC_LINKS_FOOTER_ADDRESS") ??
+      DEFAULT_LINKS_FOOTER_ADDRESS,
+  };
 }
 
 /** Subtítulo bajo el nombre en el modal de compartir (estilo Linktree). */
@@ -77,16 +77,18 @@ export function buildSharePreviewSubtitle(
   handle: string | null,
 ): string {
   if (handle?.trim()) {
-    const h = handle.trim().replace(/^\/+/, "").replace(/^\*+\/*/, "")
-    return `*/${h}`
+    const h = handle
+      .trim()
+      .replace(/^\/+/, "")
+      .replace(/^\*+\/*/, "");
+    return `*/${h}`;
   }
   try {
-    const u = new URL(shareUrl)
-    const path =
-      u.pathname === "/" || u.pathname === "" ? "" : u.pathname
-    return `${u.host}${path}`
+    const u = new URL(shareUrl);
+    const path = u.pathname === "/" || u.pathname === "" ? "" : u.pathname;
+    return `${u.host}${path}`;
   } catch {
-    return shareUrl
+    return shareUrl;
   }
 }
 
@@ -94,19 +96,19 @@ export function buildWhatsAppHref(
   number: string,
   preset?: string | null,
 ): string {
-  const digits = number.replace(/\D/g, "")
-  if (!digits) return "#"
-  const base = `https://wa.me/${digits}`
-  if (!preset) return base
-  return `${base}?text=${encodeURIComponent(preset)}`
+  const digits = number.replace(/\D/g, "");
+  if (!digits) return "#";
+  const base = `https://wa.me/${digits}`;
+  if (!preset) return base;
+  return `${base}?text=${encodeURIComponent(preset)}`;
 }
 
 export async function resolveShareUrl(): Promise<string | null> {
-  const cfg = getLinksConfig()
-  if (cfg.shareUrl) return cfg.shareUrl
-  const h = await headers()
-  const host = h.get("x-forwarded-host") ?? h.get("host")
-  if (!host) return null
-  const proto = h.get("x-forwarded-proto") ?? "http"
-  return `${proto}://${host}`.replace(/\/$/, "")
+  const cfg = getLinksConfig();
+  if (cfg.shareUrl) return cfg.shareUrl;
+  const h = await headers();
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  if (!host) return null;
+  const proto = h.get("x-forwarded-proto") ?? "http";
+  return `${proto}://${host}`.replace(/\/$/, "");
 }

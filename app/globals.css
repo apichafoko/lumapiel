@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
@@ -7,26 +7,29 @@
 
 :root {
   --brand-blue: #193f5f;
+  /** Azul más profundo que el brand principal: mejor contraste y lectura sobre fondo piel (#e2cdc3). */
+  --logo-blue-on-piel: #0f3754;
   --brand-orange: #d86448;
   --brand-piel: #e2cdc3;
   --brand-white: #f4f4f4;
+  --foreground-body: #1e293b;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --primary: var(--brand-blue);
+  --primary-foreground: var(--brand-white);
+  --secondary: color-mix(in srgb, var(--brand-piel) 55%, white);
+  --secondary-foreground: var(--brand-blue);
+  --muted: color-mix(in srgb, var(--brand-piel) 35%, var(--brand-white));
+  --muted-foreground: #475569;
+  --accent: var(--brand-orange);
+  --accent-foreground: var(--brand-white);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: color-mix(in srgb, var(--brand-orange) 65%, transparent);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -41,8 +44,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: var(--brand-white);
+  --foreground: var(--foreground-body);
 }
 
 .dark {
@@ -81,11 +84,12 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-title: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-subtext: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --color-brand-blue: var(--brand-blue);
+  --color-logo-blue: var(--logo-blue-on-piel);
   --color-brand-orange: var(--brand-orange);
   --color-brand-piel: var(--brand-piel);
   --color-brand-white: var(--brand-white);
@@ -125,7 +129,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
@@ -140,5 +144,16 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /** Logotipo / wordmark sobre fondos piel o claros (usa el mismo hex que public/logo-piel.svg). */
+  .text-logo-blue {
+    color: var(--logo-blue-on-piel);
   }
 }

@@ -10,6 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        /** CTA naranja (#d86448): misma silueta que primary (`rounded-lg`), color de marca sin depender del tema accent. */
+        catalog:
+          "border border-brand-orange bg-brand-orange text-white shadow-sm hover:bg-white hover:text-brand-orange hover:border-brand-orange focus-visible:border-brand-orange focus-visible:ring-brand-orange/35",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -58,7 +61,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, size }), className)}
       {...props}
     />
   )

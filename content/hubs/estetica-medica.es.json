@@ -1,0 +1,22 @@
+{
+  "id": "estetica-medica",
+  "title": "Estética Médica",
+  "description": "Tratamientos orientados a realzar tu belleza natural, prevenir el envejecimiento prematuro y mejorar la calidad global de la piel, siempre bajo estricto criterio médico.",
+  "sections": [
+    {
+      "anchor": "rejuvenecimiento-facial",
+      "title": "Rejuvenecimiento Facial",
+      "body": "Nuestro enfoque en rejuvenecimiento no busca transformar tus facciones, sino **refrescar tu expresión** y devolverle a la piel su vitalidad y firmeza natural.\n\n### ¿Qué tratamos?\n- Arrugas de expresión (frente, entrecejo, patas de gallo).\n- Pérdida de volumen y flacidez (surcos, ojeras).\n- Falta de luminosidad y piel opaca.\n\n### Nuestros procedimientos estrella\n- **Botox:** Para relajar y prevenir líneas dinámicas.\n- **Bioestimulación:** Inyectables que le 'enseñan' a tu piel a fabricar su propio colágeno nuevo.\n- **Plasma Rico en Plaquetas (PRP):** Aprovecha los factores de crecimiento de tu propia sangre para regenerar la dermis de adentro hacia afuera."
+    },
+    {
+      "anchor": "cosmiatria-y-acompanamiento",
+      "title": "Cosmiatría Clínica",
+      "body": "La base de cualquier piel sana comienza aquí. La cosmiatría clínica va más allá de un mimo: utiliza insumos y técnicas de grado médico para mantener los poros limpios y la piel receptiva.\n\n### ¿Qué tratamos?\n- Puntos negros, comedones y milium.\n- Piel asfixiada, seca o muy grasa.\n- Daño solar superficial.\n\n### Nuestros procedimientos estrella\n- **Limpieza de Cutis Profunda:** El paso número uno para cualquier piel. Extrae impurezas y purifica.\n- **Peelings Químicos (Retinoico, TCA, Mandélico):** Renovación celular forzada que elimina manchas, mejora el acné y da un brillo instantáneo.\n- **Luma Hydrojelly Mask:** Shock de hidratación sellado al vacío, ideal para pieles muy deshidratadas o post-láser."
+    },
+    {
+      "anchor": "tratamientos-capilares-no-quirurgicos",
+      "title": "Salud Capilar",
+      "body": "La pérdida de cabello o la pérdida de volumen requiere un abordaje médico para encontrar la causa subyacente y detener el proceso.\n\n### ¿Qué tratamos?\n- Alopecias (androgénica, areata, por estrés).\n- Debilitamiento y caída excesiva del cabello.\n- Pelo fino y frágil.\n\n### Nuestros procedimientos estrella\n- **Mesoterapia Capilar:** Microinyecciones de vitaminas, péptidos y medicación directo en la raíz del folículo.\n- **PRP Capilar:** Regeneración pura con tus propias células.\n- **Infiltración para Alopecia:** Para detener brotes específicos de caída."
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
-import { Toaster } from "sonner"
+import type { Metadata } from "next";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   robots: { index: true, follow: true },
-}
+};
 
 export default function LinksLayout({
   children,
@@ -13,5 +13,5 @@ export default function LinksLayout({
       {children}
       <Toaster richColors position="top-center" />
     </>
-  )
+  );
 }
