@@ -53,10 +53,8 @@ export default async function TratamientosPage({ searchParams }: Props) {
           Tratamientos
         </h1>
         <p className="mt-4 text-muted-foreground">
-          Primero elegí el{" "}
-          <strong className="font-medium text-foreground">área clínica</strong>{" "}
-          (las mismas líneas que venías usando: láser, cosmiatría, peelings…).
-          Después refiná por etiqueta o buscá por nombre.
+          Elegí el área que te interesa (láser, cosmiatría, peelings, capilar o
+          dermatológicos) y después filtrá por etiqueta o buscá por nombre.
         </p>
       </header>
 

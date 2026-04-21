@@ -25,8 +25,8 @@ const linkClass =
 export function TratamientosNavMenu({ label, closeMobile }: Props) {
   if (closeMobile !== undefined) {
     return (
-      <details className="group border-b border-border pb-4 last:border-0">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-sm font-medium text-foreground/90 [&::-webkit-details-marker]:hidden">
+      <details className="group border-b border-border/70 last:border-0">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 py-1 text-[1.02rem] font-medium text-foreground/90 [&::-webkit-details-marker]:hidden">
           <span>{label}</span>
           <ChevronDown
             className="size-4 shrink-0 opacity-70 transition-transform duration-200 group-open:rotate-180"
@@ -35,7 +35,7 @@ export function TratamientosNavMenu({ label, closeMobile }: Props) {
         </summary>
         <nav
           aria-label={`${label}: áreas`}
-          className="mt-3 flex flex-col gap-2 border-l border-border pl-4"
+          className="mt-2 mb-3 flex flex-col gap-2 border-l border-border pl-4"
         >
           <Link
             href="/tratamientos"

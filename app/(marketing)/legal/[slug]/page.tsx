@@ -52,10 +52,6 @@ export default async function LegalPage({ params }: Props) {
         <span className="text-foreground">Legal</span>
       </nav>
       <MarkdownBody content={raw} className="mt-10" />
-      <aside className="mt-12 rounded-lg border border-amber-500/40 bg-amber-500/10 p-4 text-sm text-foreground">
-        Borrador: revisión legal pendiente antes de indexar o considerar este
-        texto como definitivo.
-      </aside>
     </article>
   );
 }

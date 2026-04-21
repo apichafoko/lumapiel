@@ -81,11 +81,6 @@ export function HubIndexCard({
                     className="text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     {s.titulo}
-                    {!s.published ? (
-                      <span className="ml-1 text-xs text-muted-foreground">
-                        (borrador)
-                      </span>
-                    ) : null}
                   </Link>
                 </li>
               ))}
@@ -116,11 +111,6 @@ export function HubIndexCard({
                     className="text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     {s.titulo}
-                    {!s.published ? (
-                      <span className="ml-1 text-xs text-muted-foreground">
-                        (borrador)
-                      </span>
-                    ) : null}
                   </Link>
                 </li>
               ))}

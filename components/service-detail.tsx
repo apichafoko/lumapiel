@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { ServiceRecord } from "@/lib/content/schema";
 import { getBookingUrl } from "@/lib/site-config";
@@ -65,16 +64,9 @@ export function ServiceDetail({
         </nav>
 
         <header className="mt-8">
-          <div className="flex flex-wrap items-start gap-3">
-            <h1 className="font-heading text-4xl font-semibold text-primary">
-              {service.titulo}
-            </h1>
-            {!service.published ? (
-              <Badge variant="outline" className="mt-1 uppercase">
-                Borrador médico
-              </Badge>
-            ) : null}
-          </div>
+          <h1 className="font-heading text-4xl font-semibold text-primary">
+            {service.titulo}
+          </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             {description}
           </p>
@@ -85,13 +77,6 @@ export function ServiceDetail({
             </p>
           ) : null}
         </header>
-
-        {!service.published ? (
-          <aside className="mt-10 rounded-xl border border-amber-500/40 bg-amber-500/10 p-6 text-sm leading-relaxed text-foreground">
-            Esta ficha está pendiente de revisión médica final. El contenido
-            puede cambiar antes de publicación definitiva.
-          </aside>
-        ) : null}
 
         {content ? (
           <div className="mt-12 prose prose-stone dark:prose-invert max-w-none prose-headings:font-heading prose-headings:text-primary prose-a:text-primary hover:prose-a:underline">

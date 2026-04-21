@@ -5,7 +5,6 @@ import Link from "next/link"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
 import type { ServiceRecord } from "@/lib/content/schema"
 import { matchesQuery } from "@/lib/search-normalize"
 import { getPrimaryHubHref } from "@/lib/hub-links"
@@ -111,11 +110,6 @@ function ResultList({
               <Link href={href} className="font-heading font-semibold text-primary hover:underline">
                 {s.titulo}
               </Link>
-              {!s.published ? (
-                <Badge variant="outline" className="ml-2 align-middle text-[10px] uppercase">
-                  Borrador
-                </Badge>
-              ) : null}
               <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
                 {(s.aliases.split("|")[0] ?? "").trim()}
               </p>

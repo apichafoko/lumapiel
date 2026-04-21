@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { CatalogVerMasLink } from "@/components/catalog-ver-mas-link";
 import type { ServiceRecordWithQueEs } from "@/lib/content/enrich-service-cards";
 
@@ -23,11 +22,6 @@ export function ServiceCatalogCard({ service: s, basePath }: Props) {
             {s.titulo}
           </Link>
         </h3>
-        {!s.published ? (
-          <Badge variant="outline" className="text-[10px] uppercase">
-            Borrador
-          </Badge>
-        ) : null}
       </div>
 
       <div className="mt-4 flex min-h-0 flex-1 flex-col gap-2">

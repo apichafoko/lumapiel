@@ -38,11 +38,6 @@ export function HubLinkedServices({ hubId }: Props) {
                     className="text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     {s.titulo}
-                    {!s.published ? (
-                      <span className="ml-1.5 text-xs text-muted-foreground">
-                        (borrador)
-                      </span>
-                    ) : null}
                   </Link>
                 </li>
               ))}
@@ -63,11 +58,6 @@ export function HubLinkedServices({ hubId }: Props) {
                     className="text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     {s.titulo}
-                    {!s.published ? (
-                      <span className="ml-1.5 text-xs text-muted-foreground">
-                        (borrador)
-                      </span>
-                    ) : null}
                   </Link>
                 </li>
               ))}

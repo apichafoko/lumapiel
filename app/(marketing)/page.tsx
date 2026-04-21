@@ -166,14 +166,6 @@ export default async function HomePage() {
                             {s.titulo}
                           </Link>
                         </CardTitle>
-                        {!s.published ? (
-                          <Badge
-                            variant="outline"
-                            className="text-[10px] uppercase"
-                          >
-                            Borrador
-                          </Badge>
-                        ) : null}
                       </div>
                       <div className="mt-4 flex min-h-0 flex-1 flex-col gap-2">
                         <h4 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
