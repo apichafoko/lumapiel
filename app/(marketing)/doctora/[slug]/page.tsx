@@ -13,7 +13,7 @@ import { TeamInstagramLink } from "@/components/team-instagram-link";
 const ALLOWED = new Set(["agustina-gandolfo"]);
 
 const PAGE_DESCRIPTION =
-  "Dermatóloga en Luma Piel (Palermo, CABA): mirada integral de la piel, enfoque PNI y tecnología Alma Lasers; resultados naturales y sostenibles.";
+  "Dra. Agustina Gandolfo, dermatóloga en Luma Piel (Palermo, CABA): medicina de precisión, psiconeuroinmunología clínica y tecnología Alma Lasers con criterio médico.";
 
 type Props = { params: Promise<{ slug: string }> };
 

@@ -2,18 +2,24 @@ import type { Metadata } from "next";
 import { HubIndexCard } from "@/components/hub-index-card";
 import { getAllHubs } from "@/lib/content/load-hubs";
 import { getSiteConfig } from "@/lib/site-config";
-import { TREATMENT_AREA_DESCRIPTIONS } from "@/lib/treatment-areas";
 
 export const metadata: Metadata = {
   title: "Especialidades",
   description:
-    "Especialidades clínicas y áreas de tratamiento en Luma Piel: estética médica, tecnología láser y consultas.",
+    "Especialidades clínicas y áreas de tratamiento en Luma Piel: consulta dermatológica, láser, estética médica y cosmiatría.",
   alternates: { canonical: "/especialidades" },
 };
 
 export default function EspecialidadesIndexPage() {
   const hubs = getAllHubs();
   const site = getSiteConfig();
+  const hubsById = new Map(hubs.map((hub) => [hub.id, hub] as const));
+  const orderedHubs = site.hubs
+    .map((item) => ({
+      item,
+      hub: hubsById.get(item.href.replace("/especialidades/", "")),
+    }))
+    .filter((entry): entry is { item: (typeof site.hubs)[number]; hub: (typeof hubs)[number] } => Boolean(entry.hub));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
@@ -29,28 +35,17 @@ export default function EspecialidadesIndexPage() {
       </header>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-        {hubs.map((hub) => {
-          const m = site.hubs.find(
-            (x) => x.href === `/especialidades/${hub.id}`,
-          );
+        {orderedHubs.map(({ item, hub }) => {
           return (
             <HubIndexCard
               key={hub.id}
               hubId={hub.id}
               detailHref={`/especialidades/${hub.id}`}
-              marketingTitle={m?.label ?? hub.title}
-              marketingDescription={m?.description ?? hub.description}
+              marketingTitle={item.label ?? hub.title}
+              marketingDescription={item.description ?? hub.description}
             />
           );
         })}
-        <HubIndexCard
-          key="cosmiatria"
-          hubId="estetica-medica"
-          sectionAnchor="cosmiatria-y-acompanamiento"
-          detailHref="/especialidades/estetica-medica#cosmiatria-y-acompanamiento"
-          marketingTitle="Cosmiatría"
-          marketingDescription={TREATMENT_AREA_DESCRIPTIONS.cosmiatria}
-        />
       </div>
     </div>
   );

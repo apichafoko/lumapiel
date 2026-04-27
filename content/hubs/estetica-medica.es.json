@@ -1,22 +1,22 @@
 {
   "id": "estetica-medica",
-  "title": "Estética Médica",
-  "description": "Tratamientos orientados a realzar tu belleza natural, prevenir el envejecimiento prematuro y mejorar la calidad global de la piel, siempre bajo estricto criterio médico.",
+  "title": "Estética médica",
+  "description": "Trabajamos la estética desde la **medicina**: rejuvenecimiento, volumen y procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento cosmiátrico** (limpiezas, peelings, hidratación clínica) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
   "sections": [
     {
       "anchor": "rejuvenecimiento-facial",
-      "title": "Rejuvenecimiento Facial",
-      "body": "Nuestro enfoque en rejuvenecimiento no busca transformar tus facciones, sino **refrescar tu expresión** y devolverle a la piel su vitalidad y firmeza natural.\n\n### ¿Qué tratamos?\n- Arrugas de expresión (frente, entrecejo, patas de gallo).\n- Pérdida de volumen y flacidez (surcos, ojeras).\n- Falta de luminosidad y piel opaca.\n\n### Nuestros procedimientos estrella\n- **Botox:** Para relajar y prevenir líneas dinámicas.\n- **Bioestimulación:** Inyectables que le 'enseñan' a tu piel a fabricar su propio colágeno nuevo.\n- **Plasma Rico en Plaquetas (PRP):** Aprovecha los factores de crecimiento de tu propia sangre para regenerar la dermis de adentro hacia afuera."
-    },
-    {
-      "anchor": "cosmiatria-y-acompanamiento",
-      "title": "Cosmiatría Clínica",
-      "body": "La base de cualquier piel sana comienza aquí. La cosmiatría clínica va más allá de un mimo: utiliza insumos y técnicas de grado médico para mantener los poros limpios y la piel receptiva.\n\n### ¿Qué tratamos?\n- Puntos negros, comedones y milium.\n- Piel asfixiada, seca o muy grasa.\n- Daño solar superficial.\n\n### Nuestros procedimientos estrella\n- **Limpieza de Cutis Profunda:** El paso número uno para cualquier piel. Extrae impurezas y purifica.\n- **Peelings Químicos (Retinoico, TCA, Mandélico):** Renovación celular forzada que elimina manchas, mejora el acné y da un brillo instantáneo.\n- **Luma Hydrojelly Mask:** Shock de hidratación sellado al vacío, ideal para pieles muy deshidratadas o post-láser."
+      "title": "Expresión, volumen y bioestimulación",
+      "body": "El rejuvenecimiento médico no busca **cambiar quién sos**, sino devolver armonía a la expresión y a la calidad de la piel. Trabajamos con herramientas que actúan de forma selectiva —relajación de líneas dinámicas, apoyo al colágeno, regeneración con recursos propios del cuerpo— siempre según lo que indique la evaluación y tus expectativas realistas.\n\nCada decisión se toma con **seguridad, dosis y timing** pensados para vos. Los protocolos concretos, marcas comerciales y tiempos de sesión están desarrollados en el área de **Tratamientos**."
     },
     {
       "anchor": "tratamientos-capilares-no-quirurgicos",
-      "title": "Salud Capilar",
-      "body": "La pérdida de cabello o la pérdida de volumen requiere un abordaje médico para encontrar la causa subyacente y detener el proceso.\n\n### ¿Qué tratamos?\n- Alopecias (androgénica, areata, por estrés).\n- Debilitamiento y caída excesiva del cabello.\n- Pelo fino y frágil.\n\n### Nuestros procedimientos estrella\n- **Mesoterapia Capilar:** Microinyecciones de vitaminas, péptidos y medicación directo en la raíz del folículo.\n- **PRP Capilar:** Regeneración pura con tus propias células.\n- **Infiltración para Alopecia:** Para detener brotes específicos de caída."
+      "title": "Medicina capilar sin cirugía",
+      "body": "Cuando el foco es el **cuero cabelludo y el folículo**, el abordaje sigue siendo médico: entender el contexto, descartar causas que no correspondan y definir si suman infiltraciones, nutrición local, factores de crecimiento u otras herramientas no quirúrgicas.\n\nEl objetivo es **ordenar el proceso** y acompañarte con seguimiento, no prometer milagros aislados."
+    },
+    {
+      "anchor": "protocolos-en-detalle",
+      "title": "Dónde profundizar",
+      "body": "Esta página resume el **marco** de estética médica en Luma Piel. Para fichas por procedimiento, entrá a **[Tratamientos](/tratamientos)**. Para cosmiatría clínica (limpiezas, peelings, mascarillas), **[Cosmiatría](/especialidades/cosmiatria)**. Si necesitás ordenar por dónde empezar, **[Consultas](/consultas)**."
     }
   ]
 }

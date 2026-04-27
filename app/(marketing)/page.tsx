@@ -15,14 +15,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { getAllServices } from "@/lib/content/load-services";
-import { withQueEsPreviews } from "@/lib/content/enrich-service-cards";
 import { getBookingUrl, getSiteConfig } from "@/lib/site-config";
 import { whatsappHrefForLocale } from "@/lib/contact-links";
 import { headshotSrcForTeamHref } from "@/lib/team-photos";
 import { TeamInstagramLink } from "@/components/team-instagram-link";
 import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { CatalogVerMasLink } from "@/components/catalog-ver-mas-link";
+import { HomeHowWeWork } from "@/components/home-how-we-work";
 
 type HomePillar = (typeof homeContent.pillars)[number] & {
   supportLine?: {
@@ -39,17 +38,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export default async function HomePage() {
+export default function HomePage() {
   const site = getSiteConfig();
   const bookingUrl = getBookingUrl();
   const wa = whatsappHrefForLocale("es");
   const hero = homeContent.hero;
   const pillars = homeContent.pillars as HomePillar[];
-
-  const ranked = [...getAllServices()].sort(
-    (a, b) => b.hub_pin_rank - a.hub_pin_rank,
-  );
-  const featured = await withQueEsPreviews(ranked.slice(0, 6));
+  const frequentConsults = homeContent.frequentConsults;
 
   return (
     <>
@@ -132,59 +127,38 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {"howWeWork" in homeContent && homeContent.howWeWork ? (
+        <HomeHowWeWork content={homeContent.howWeWork} />
+      ) : null}
+
       <section className="border-y border-border bg-muted/25 py-16 lg:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-heading text-3xl font-semibold text-primary">
-              Motivos frecuentes
+              {frequentConsults.title}
             </h2>
-            <p className="mt-3 text-muted-foreground">
-              {homeContent.featuredIntro}
+            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+              {frequentConsults.intro}
             </p>
           </div>
           <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((s) => {
-              const href =
-                s.lista === "tratamientos"
-                  ? `/tratamientos/${s.slug_es}`
-                  : `/consultas/${s.slug_es}`;
-              const ctaLabel =
-                s.lista === "tratamientos"
-                  ? "Ver tratamiento"
-                  : "Ver consulta";
-              const fallback =
-                (s.aliases.split("|")[0] ?? "").trim() ||
-                "Información detallada en la ficha del servicio.";
-              const preview = s.queEsPreview ?? fallback;
-              return (
-                <li key={s.id}>
-                  <Card className="flex h-full flex-col border-border/80">
-                    <CardHeader className="flex flex-1 flex-col gap-0 pb-6">
-                      <div className="flex flex-wrap items-start justify-between gap-2">
-                        <CardTitle className="font-heading text-lg leading-snug">
-                          <Link href={href} className="hover:underline">
-                            {s.titulo}
-                          </Link>
-                        </CardTitle>
-                      </div>
-                      <div className="mt-4 flex min-h-0 flex-1 flex-col gap-2">
-                        <h4 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                          ¿Qué es?
-                        </h4>
-                        <p className="text-sm leading-relaxed text-muted-foreground line-clamp-4">
-                          {preview}
-                        </p>
-                      </div>
-                      <div className="mt-5">
-                        <CatalogVerMasLink href={href}>
-                          {ctaLabel}
-                        </CatalogVerMasLink>
-                      </div>
-                    </CardHeader>
-                  </Card>
-                </li>
-              );
-            })}
+            {frequentConsults.cards.map((c) => (
+              <li key={c.id}>
+                <Card className="flex h-full flex-col border-border/80">
+                  <CardHeader className="flex flex-1 flex-col gap-0 pb-6">
+                    <CardTitle className="font-heading text-lg leading-snug text-primary">
+                      {c.title}
+                    </CardTitle>
+                    <CardDescription className="mt-4 text-base leading-relaxed">
+                      {c.body}
+                    </CardDescription>
+                    <div className="mt-5">
+                      <CatalogVerMasLink href={c.href}>{c.linkLabel}</CatalogVerMasLink>
+                    </div>
+                  </CardHeader>
+                </Card>
+              </li>
+            ))}
           </ul>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto sm:min-w-[200px]">

@@ -1,9 +1,12 @@
 import estetica from "@/content/hubs/estetica-medica.es.json";
+import cosmiatria from "@/content/hubs/cosmiatria.es.json";
 import laser from "@/content/hubs/tratamientos-laser.es.json";
 import consulta from "@/content/hubs/consulta-dermatologica.es.json";
 import { hubSchema, type HubRecord } from "@/lib/content/schema";
 
-const hubs = [estetica, laser, consulta].map((h) => hubSchema.parse(h));
+const hubs = [estetica, cosmiatria, laser, consulta].map((h) =>
+  hubSchema.parse(h),
+);
 
 export function getAllHubs(): HubRecord[] {
   return hubs;

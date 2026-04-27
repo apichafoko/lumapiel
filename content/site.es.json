@@ -18,9 +18,9 @@
   ],
   "hubs": [
     {
-      "label": "Estética médica",
-      "href": "/especialidades/estetica-medica",
-      "description": "Rejuvenecimiento, cosmiatría y acompañamiento profesional."
+      "label": "Consulta dermatológica integral",
+      "href": "/especialidades/consulta-dermatologica",
+      "description": "Diagnóstico, tratamiento de patologías y consultas online."
     },
     {
       "label": "Tratamientos láser",
@@ -28,9 +28,14 @@
       "description": "Tecnología láser para manchas, lesiones vasculares y rejuvenecimiento fraccionado."
     },
     {
-      "label": "Consulta dermatológica",
-      "href": "/especialidades/consulta-dermatologica",
-      "description": "Diagnóstico, tratamiento de patologías y consultas online."
+      "label": "Tratamientos de estética",
+      "href": "/especialidades/estetica-medica",
+      "description": "Rejuvenecimiento y procedimientos médicos con criterio dermatológico."
+    },
+    {
+      "label": "Cosmiatría",
+      "href": "/especialidades/cosmiatria",
+      "description": "Higiene profunda, renovación e hidratación clínica, alineada a tu plan."
     }
   ],
   "team": [

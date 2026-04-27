@@ -7,12 +7,14 @@ import { getHubBySlug } from "@/lib/content/load-hubs";
 import { HubLinkedServices } from "@/components/hub-linked-services";
 import { Button } from "@/components/ui/button";
 import { getBookingUrl } from "@/lib/site-config";
+import { markdownToMetaDescription } from "@/lib/markdown-to-meta-description";
 
 type Props = { params: Promise<{ hubSlug: string }> };
 
 export async function generateStaticParams() {
   return [
     { hubSlug: "estetica-medica" },
+    { hubSlug: "cosmiatria" },
     { hubSlug: "tratamientos-laser" },
     { hubSlug: "consulta-dermatologica" },
   ];
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!hub) return { title: "Especialidad" };
   return {
     title: hub.title,
-    description: hub.description,
+    description: markdownToMetaDescription(hub.description),
     alternates: { canonical: `/especialidades/${hubSlug}` },
   };
 }
@@ -49,7 +51,11 @@ export default async function HubPage({ params }: Props) {
         <h1 className="font-heading mt-4 text-4xl font-semibold text-primary">
           {hub.title}
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground">{hub.description}</p>
+        <div className="prose prose-stone dark:prose-invert mt-4 max-w-none text-lg text-muted-foreground prose-p:mb-0 prose-p:leading-relaxed prose-a:text-primary prose-a:underline-offset-4 hover:prose-a:underline">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {hub.description}
+          </ReactMarkdown>
+        </div>
       </header>
 
       <HubLinkedServices hubId={hub.id} />

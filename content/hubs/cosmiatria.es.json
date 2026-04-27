@@ -1,0 +1,17 @@
+{
+  "id": "cosmiatria",
+  "title": "Cosmiatría",
+  "description": "La cosmiatría clínica es el **cuidado médico de la superficie**: higiene profunda, renovación controlada e hidratación con protocolos y productos alineados a lo que tu piel necesita y a lo que acordamos en consulta.",
+  "sections": [
+    {
+      "anchor": "marco",
+      "title": "Enfoque en Luma Piel",
+      "body": "El foco está en **preparar la piel**, mantener resultados y acompañar procesos más amplios (incluida la recuperación después de otros procedimientos). No es un spa genérico: es trabajo técnico con **mirada dermatológica**, coordinado con el plan global que definimos para vos.\n\nLos protocolos concretos, tiempos y combinaciones posibles están desarrollados en el área de **Tratamientos**."
+    },
+    {
+      "anchor": "protocolos-en-detalle",
+      "title": "Dónde profundizar",
+      "body": "Para fichas por servicio (limpiezas, peelings, mascarillas clínicas y más), entrá a **[Tratamientos](/tratamientos)**. Para ordenar prioridades, **[Consultas](/consultas)**. Si tu camino incluye también rejuvenecimiento médico o bioestimulación, revisá **[Estética médica](/especialidades/estetica-medica)**."
+    }
+  ]
+}
