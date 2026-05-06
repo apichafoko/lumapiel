@@ -1,8 +1,15 @@
 ### 1. ¿Qué es la Luz Pulsada (IPL) para Manos?
-Es una tecnología lumínica de amplio espectro enfocada específicamente en la piel del dorso de las manos. Esta zona revela nuestra edad y daño solar tanto o más que el rostro, y el IPL es el tratamiento de elección para renovarla.
+
+La **IPL en dorso de manos** utiliza **luz de amplio espectro** sobre una zona **crónicamente fotoexpuesta** y de **epidermis fina**, donde predominan **léntigos** y **alteraciones pigmentarias** (y, si corresponde, **microvasos superficiales**).
+
+La IPL consiste en **pulsos de luz de amplio espectro** (no equivale a un láser monocromático); los **filtros** permiten dirigir la energía según el tipo de lesión. El equipo es **Alma Harmony** (Alma Lasers) con tecnología **AFT (Advanced Fluorescence Technology)**, para una entrega de energía **controlada** sobre tejido delgado.
+
+La absorción preferente por **melanina** y **hemoglobina** permite actuar sobre **pigmento** y, cuando corresponde, sobre **microvasos superficiales**. El mecanismo es la **fototermólisis selectiva**; la **respuesta clínica** suele valorarse en **semanas**, según la eliminación natural del pigmento tratado.
+
+En **manos** se **individualizan potencia y filtros** (habitualmente más conservadores que en zonas corporales gruesas), **siempre según evaluación médica**, sin extrapolar parámetros utilizados en rostro u otras regiones.
 
 ### 2. ¿Para qué sirve?
-Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las manos, unificando su color y mejorando la calidad y densidad de la piel al promover la regeneración del colágeno.
+Está pensada sobre todo para **manchas y pecas solares** del dorso y para **unificar el tono**. Cualquier **mejora en la calidad** de la piel suele ser **acompañante** del trabajo sobre el pigmento. Para **firmeza** o **rejuvenecimiento global** como objetivo prioritario existen **tratamientos específicos** que se definen en consulta.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 - **Léntigos seniles y solares:** Las típicas manchas marrones redondas en el dorso.
@@ -12,7 +19,7 @@ Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las ma
 ### 4. ¿Cómo es una sesión de IPL en Manos?
 1. **Limpieza:** Se higieniza el dorso de ambas manos y se colocan lentes de seguridad.
 2. **Gel frío:** Se distribuye el gel conductor para maximizar la eficacia del disparo.
-3. **El tratamiento:** Se aplican los pulsos de luz sobre cada mancha y zona afectada; la molestia es muy breve y perfectamente tolerable.
+3. **El tratamiento:** Se aplican los pulsos de luz sobre cada mancha y zona afectada. Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**; la molestia es muy breve y perfectamente tolerable.
 4. **Cierre:** Retiro del gel y aplicación de crema hidratante regeneradora y bloqueador solar.
 
 ### 5. Consideraciones Clave
@@ -22,4 +29,4 @@ Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las ma
 | **Duración** | **30 minutos**. |
 | **Recuperación** | Las manchas se vuelven más oscuras (como borra de café) y caen a los 7-10 días. |
 | **Restricción Solar** | Evitar la exposición solar y usar protector solar diario en las manos. |
-| **Resultados** | Generalmente en 2 a 3 sesiones se logra la limpieza total de las manchas. |
+| **Resultados** | Generalmente en 2 a 3 sesiones se logra reducir las manchas. |

@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getHubBySlug } from "@/lib/content/load-hubs";
 import { HubLinkedServices } from "@/components/hub-linked-services";
+import { HubProcedureBlocks } from "@/components/hub-procedure-blocks";
 import { Button } from "@/components/ui/button";
 import { getBookingUrl } from "@/lib/site-config";
 import { markdownToMetaDescription } from "@/lib/markdown-to-meta-description";
@@ -58,7 +59,11 @@ export default async function HubPage({ params }: Props) {
         </div>
       </header>
 
-      <HubLinkedServices hubId={hub.id} />
+      {hub.procedureBlocks?.length ? (
+        <HubProcedureBlocks blocks={hub.procedureBlocks} />
+      ) : (
+        <HubLinkedServices hubId={hub.id} />
+      )}
 
       <div className="mt-12 space-y-12">
         {hub.sections.map((section) => (

@@ -1,5 +1,5 @@
 Código,Nombre,Descripción,Categoría,Categoría turnera,Modalidad,Precio USD,Precio ARS,Mostrar precio en turnera,Duración (min),Activo,Cantidad equipamientos
-TRATAMIENTO - 001,Botox,Tratamiento inyectable para suavizar líneas de expresión y arrugas dinámicas.,Tratamiento Estético,Tratamiento,Presencial,247.75,350318.50,,45,Sí,0
+TRATAMIENTO - 001,Botox®,Tratamiento inyectable para suavizar líneas de expresión y arrugas dinámicas.,Tratamiento Estético,Tratamiento,Presencial,247.75,350318.50,,45,Sí,0
 CONSULTA - 002,Consulta - Dermatología de seguimiento,Atención especializada para el diagnóstico y tratamiento de afecciones de la piel.,Consulta,Consulta,Presencial,53.07,75040.98,Sí,30,Sí,0
 CONSULTA - 003,Consulta - Dermatología online,Consulta virtual para diagnósticos dermatológicos desde la comodidad de tu hogar.,Consulta,Consulta,Virtual,53.07,75040.98,Sí,40,Sí,0
 CONSULTA - 001,Consulta - dermatologia 1° vez,Primera evaluación integral de la salud cutánea para un diagnóstico y plan personalizado.,Consulta,Consulta,Presencial,63.16,89308.24,Sí,60,Sí,0

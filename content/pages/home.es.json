@@ -50,7 +50,7 @@
         "id": "laser",
         "stepLabel": "3",
         "title": "¿Por qué la tecnología láser?",
-        "body": "La piel no es una superficie plana: tiene capas, y en cada profundidad hay estructuras distintas. De superficial a profundo encontramos células de barrera, melanocitos, pigmento, plexos capilares, células formadoras de colágeno y elastina y, más en profundidad, folículos pilosos.\n\nCon el equipo de Alma Lasers podemos llegar con precisión al nivel donde está el problema y actuar con el mecanismo adecuado. De esta manera tratamos manchas, rojeces, estimulamos la producción de nuevo colágeno y elastina tensando la piel y también podemos estimular el crecimiento capilar.",
+        "body": "Contamos con tecnología Alma Lasers de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias, textura, cicatrices o rejuvenecimiento cutáneo, según el equipo y el parámetro elegidos.\n\nEl tratamiento indicado para vos y la preparación se definen en la consulta.",
         "linkAlmaInBody": true
       },
       {
@@ -96,14 +96,14 @@
       {
         "id": "caida-pelo",
         "title": "Caída de pelo",
-        "body": "La caída puede ser temporal o persistente, localizada o difusa, y tiene causas muy distintas (estrés, deficiencias, hormonas, genética, enfermedades del cuero cabelludo, etc). El primer paso es un diagnóstico ordenado: historia clínica, examen del pelo y del cuero cabelludo, y estudios complementarios. Contamos con láser capilar, mesoterapia capilar, plasma rico en plaquetas capilar y medicación vía oral de ser necesaria. ",
+        "body": "La caída puede ser temporal o persistente, localizada o difusa, y tiene causas muy distintas (estrés, deficiencias, hormonas, genética, enfermedades del cuero cabelludo, etc). El primer paso es un diagnóstico ordenado: historia clínica, examen del pelo y del cuero cabelludo, y estudios complementarios. Contamos con planes terapéuticos individualizados para cada paciente: tratamiento láser Erbium capilar, mesoterapia capilar, plasma rico en plaquetas capilar y medicación vía oral de ser necesaria. ",
         "href": "/consultas/consulta-dermatologia-1-vez",
         "linkLabel": "Consultar por caída de pelo"
       },
       {
         "id": "lunares",
         "title": "Control de lunares",
-        "body": "El control de lunares y lesiones pigmentadas sirve para conocer tu “mapa” cutáneo, registrar lesiones y detectar a tiempo cambios de forma, color o síntomas. En la consulta explicamos qué vigilar, cuándo intervenir y cómo combinar observación con tecnología o biopsia si el caso lo requiere.",
+        "body": "El control de lunares y lesiones pigmentadas sirve para conocer tu “mapa” cutáneo, se realiza un exámen dermatoscópico con el fin de registrar lesiones y detectar a tiempo cambios de forma, tamaño o color. En la consulta explicamos qué vigilar, con qué frecuencia, cuándo intervenir y cómo combinar observación con tecnología o biopsia si el caso lo requiere.",
         "href": "/consultas/consulta-dermatologia-1-vez",
         "linkLabel": "Consultar por lunares"
       },
@@ -117,7 +117,7 @@
       {
         "id": "laser",
         "title": "Tecnología láser",
-        "body": "El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias textura, cicatrices o rejuvenecimiento cutáneo, según el equipo y el parámetro elegidos. El tratamiento indicado para vos a preparación se definen en la consulta.",
+        "body": "Contamos con tecnología Alma Lasers ® de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias textura de la piel, trabajar sobre cicatrices, tratar y prevenir el fotoenvejecimiento cutáneo. El tratamiento indicado para vos y la preparación previa requerida se abordan en la consulta dermatológica.",
         "href": "/especialidades/tratamientos-laser",
         "linkLabel": "Conocer tratamientos láser"
       }

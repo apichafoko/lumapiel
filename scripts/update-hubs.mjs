@@ -7,7 +7,7 @@ const esteticaMedica = {
   id: "estetica-medica",
   title: "Estética médica",
   description:
-    "Trabajamos la estética desde la **medicina**: rejuvenecimiento, volumen y procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento cosmiátrico** (limpiezas, peelings, hidratación clínica) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
+    "Trabajamos la estética desde la **dermatología** con procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento de cosmiatría** (limpiezas, peelings, hidratación, mascarillas) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
   sections: [
     {
       anchor: "rejuvenecimiento-facial",
@@ -17,11 +17,11 @@ const esteticaMedica = {
     {
       anchor: "tratamientos-capilares-no-quirurgicos",
       title: "Medicina capilar sin cirugía",
-      body: "Cuando el foco es el **cuero cabelludo y el folículo**, el abordaje sigue siendo médico: entender el contexto, descartar causas que no correspondan y definir si suman infiltraciones, nutrición local, factores de crecimiento u otras herramientas no quirúrgicas.\n\nEl objetivo es **ordenar el proceso** y acompañarte con seguimiento, no prometer milagros aislados."
+      body: "Cuando el foco es el **cuero cabelludo y el folículo**, el abordaje sigue siendo médico: entender el contexto, descartar causas que no correspondan y definir si suman infiltraciones, nutrición local, factores de crecimiento u otras herramientas no quirúrgicas.\n\nEl objetivo es **ordenar el proceso** y acompañarte con seguimiento."
     },
     {
       anchor: "protocolos-en-detalle",
-      title: "Dónde profundizar",
+      title: "Resumiendo",
       body: "Esta página resume el **marco** de estética médica en Luma Piel. Para fichas por procedimiento, entrá a **[Tratamientos](/tratamientos)**. Para cosmiatría clínica (limpiezas, peelings, mascarillas), **[Cosmiatría](/especialidades/cosmiatria)**. Si necesitás ordenar por dónde empezar, **[Consultas](/consultas)**."
     }
   ]
@@ -40,7 +40,7 @@ const cosmiatria = {
     },
     {
       anchor: "protocolos-en-detalle",
-      title: "Dónde profundizar",
+      title: "Resumiendo",
       body: "Para fichas por servicio (limpiezas, peelings, mascarillas clínicas y más), entrá a **[Tratamientos](/tratamientos)**. Para ordenar prioridades, **[Consultas](/consultas)**. Si tu camino incluye también rejuvenecimiento médico o bioestimulación, revisá **[Estética médica](/especialidades/estetica-medica)**."
     }
   ]
@@ -51,6 +51,34 @@ const tratamientosLaser = {
   title: "Tecnología Láser",
   description:
     "Contamos con la multiplataforma [**Alma Harmony®**](https://www.almalasersmedica.es/productos/alma-harmony/). Incluye distintas opciones de tratamiento: láser Q-Switch, Erbium Glass, Erbium YAG, luz pulsada, Dye VL y VascuPen. Estas herramientas permiten abordar problemas de la piel de forma no invasiva, segura y muy precisa.",
+  procedureBlocks: [
+    {
+      style: "nested",
+      title: "LUZ PULSADA",
+      items: [
+        { label: "FACIAL", slug_es: "luz-pulsada-facial" },
+        { label: "COMPLETA (FACIAL, CUELLO Y ESCOTE)", slug_es: "luz-pulsada-completa" },
+        { label: "MANOS", slug_es: "luz-pulsada-manos" },
+      ],
+    },
+    { style: "single", title: "IRIS DYE VL", slug_es: "laser-vascupen" },
+    { style: "single", title: "LÁSER ERBIUM CAPILAR", slug_es: "laser-erbium-capilar" },
+    {
+      style: "nested",
+      title: "LÁSER Q SWITCH",
+      items: [
+        { label: "FACIAL", slug_es: "laser-q-switch-facial" },
+        { label: "OJERAS", slug_es: "laser-q-switch-ojeras" },
+        { label: "ESTRÍAS", slug_es: "laser-q-switch-estrias" },
+        { label: "COMPLETO (CARA, CUELLO, ESCOTE)", slug_es: "laser-q-switch-completo" },
+      ],
+    },
+    { style: "single", title: "LÁSER Q SWITCH MELASMA", slug_es: "laser-q-switch-melasma" },
+    { style: "single", title: "LÁSER ONICOMICOSIS", slug_es: "laser-q-switch-onicomicosis" },
+    { style: "single", title: "LÁSER ERBIUM GLASS", slug_es: "laser-erbium-glass" },
+    { style: "single", title: "VELO DE NOVIA", slug_es: "laser-velo-de-novia" },
+    { style: "single", title: "LÁSER LUMA SKIN RESET", slug_es: "laser-luma-skin-reset" },
+  ],
   sections: [
     {
       anchor: "manchas-y-melasma",
@@ -65,21 +93,16 @@ const tratamientosLaser = {
     {
       anchor: "rojeces-y-vascular",
       title: "Rojeces y componente vascular",
-      body: "Cuando predomina el **mapa vascular** o la piel se ve permanentemente alterada en el tono, hace falta precisión y control térmico. La plataforma integra aplicadores pensados para trabajar sobre vasos y rojeces con foco en **seguridad y naturalidad**, sin cirugía.\n\nLa decisión de **si**, **cómo** y **en qué intensidad** corresponde siempre a la evaluación médica en persona."
-    },
-    {
-      anchor: "onicomicosis-y-unas",
-      title: "Uñas y estructuras densas",
-      body: "Algunas situaciones involucran **tejidos duros** o zonas en las que otras modalidades no alcanzan con la misma eficacia. Ahí el láser puede formar parte de un esquema integral, con indicación formal y seguimiento, cuando encaja en el plan global que armamos para vos.\n\nSin apuros ni promesas genéricas: primero **claridad**, después herramienta."
+      body: "Cuando predomina el **mapa vascular** o la piel se ve permanentemente alterada en el tono, hace falta precisión y control térmico. La plataforma integra aplicadores pensados para trabajar sobre vasos y rojeces."
     },
     {
       anchor: "capilar-laser",
       title: "Cuero cabelludo y folículo",
-      body: "El láser también puede **dialogar con el cuero cabelludo** como apoyo dentro de planes médicos de bioestimulación capilar, coordinado con hábitos, medicación u otros procedimientos que tu caso requiera.\n\nNo reemplaza el diagnóstico ni el seguimiento: **suma** cuando el médico lo considera pertinente."
+      body: "Se utiliza el láser Erbium como parte del tratamiento para estimular el crecimiento del folículo piloso sin dolor. como apoyo dentro de planes médicos de bioestimulación capilar, coordinado con hábitos, medicación u otros procedimientos que tu caso requiera."
     },
     {
       anchor: "protocolos-en-detalle",
-      title: "Dónde profundizar",
+      title: "Resumiendo",
       body: "Esta especialidad resume **cómo pensamos el láser** en Luma Piel: con criterio dermatológico, tecnología de referencia y lenguaje claro para quien se atiende con nosotros.\n\nPara nombres de protocolo, duraciones, combinaciones y qué esperar en cada sesión, el contenido detallado está en **[Tratamientos](/tratamientos)**. Si todavía no sabés por dónde empezar, podés entrar desde **[Consultas](/consultas)** y armamos el camino en conjunto."
     }
   ]
@@ -93,7 +116,7 @@ const consultaDermatologica = {
     {
       anchor: "primera-consulta-vs-seguimiento",
       title: "Primera consulta y seguimiento",
-      body: "En Luma Piel no trabajamos a ciegas: el diagnóstico y el plan nacen de escucharte, conocerte y evaluarte en detalle.\n\n### Primera consulta (aprox. 60 minutos)\nEs el **primer acercamiento**: nos conocemos, me contás tus antecedentes personales y familiares, qué te pasa con la piel y en qué contexto vivís el problema. Te examino, armamos juntos una **rutina de skincare** adecuada, definimos un **plan de tratamiento** y, si hace falta, **indicación de estudios complementarios**.\nDura más porque es la primera vez que nos vemos: hace falta tiempo para recoger tu historia, entender el cuadro y dejarte con un camino claro y ordenado.\n\n### Consultas de seguimiento\nSon **más breves** porque el objetivo es otro: ver **cómo te fue** con lo que acordamos, evaluar la respuesta y decidir **ajustes** o sumar lo que haga falta. Sirven para afinar el tratamiento en el tiempo, sin perder de vista el objetivo."
+      body: "En Luma Piel no trabajamos a ciegas: el diagnóstico y el plan nacen de escucharte, conocerte y evaluarte en detalle.\n\n### Primera consulta\nEs el **primer acercamiento**: nos conocemos, me contás tus antecedentes personales y familiares, qué te pasa con la piel y en qué contexto vivís el problema. Te examino, armamos juntos una **rutina de skincare** adecuada, definimos un **plan de tratamiento** y, si hace falta, **indicación de estudios complementarios**.\nDura más porque es la primera vez que nos vemos: hace falta tiempo para recoger tu historia, entender el cuadro y dejarte con un camino claro y ordenado.\n\n### Consultas de seguimiento\nSon **más breves** porque el objetivo es otro: ver **cómo te fue** con lo que acordamos, evaluar la respuesta y decidir **ajustes** o sumar lo que haga falta. Sirven para afinar el tratamiento en el tiempo, sin perder de vista el objetivo."
     },
     {
       anchor: "consulta-online",

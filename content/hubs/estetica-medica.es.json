@@ -1,7 +1,7 @@
 {
   "id": "estetica-medica",
   "title": "Estética médica",
-  "description": "Trabajamos la estética desde la **medicina**: rejuvenecimiento, volumen y procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento cosmiátrico** (limpiezas, peelings, hidratación clínica) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
+  "description": "Trabajamos la estética desde la **dermatología** con procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento de cosmiatría** (limpiezas, peelings, hidratación, mascarillas) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
   "sections": [
     {
       "anchor": "rejuvenecimiento-facial",
@@ -11,11 +11,11 @@
     {
       "anchor": "tratamientos-capilares-no-quirurgicos",
       "title": "Medicina capilar sin cirugía",
-      "body": "Cuando el foco es el **cuero cabelludo y el folículo**, el abordaje sigue siendo médico: entender el contexto, descartar causas que no correspondan y definir si suman infiltraciones, nutrición local, factores de crecimiento u otras herramientas no quirúrgicas.\n\nEl objetivo es **ordenar el proceso** y acompañarte con seguimiento, no prometer milagros aislados."
+      "body": "Cuando el foco es el **cuero cabelludo y el folículo**, el abordaje sigue siendo médico: entender el contexto, descartar causas que no correspondan y definir si suman infiltraciones, nutrición local, factores de crecimiento u otras herramientas no quirúrgicas.\n\nEl objetivo es **ordenar el proceso** y acompañarte con seguimiento."
     },
     {
       "anchor": "protocolos-en-detalle",
-      "title": "Dónde profundizar",
+      "title": "Resumiendo",
       "body": "Esta página resume el **marco** de estética médica en Luma Piel. Para fichas por procedimiento, entrá a **[Tratamientos](/tratamientos)**. Para cosmiatría clínica (limpiezas, peelings, mascarillas), **[Cosmiatría](/especialidades/cosmiatria)**. Si necesitás ordenar por dónde empezar, **[Consultas](/consultas)**."
     }
   ]

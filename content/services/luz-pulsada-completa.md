@@ -1,8 +1,20 @@
 ### 1. ¿Qué es la Luz Pulsada (IPL) Corporal?
-A diferencia del láser convencional (que es una luz de un solo color y dirección), el IPL es una fuente lumínica de alta intensidad de "banda ancha". Imagínalo como una ráfaga de luz policromática que actúa sobre diferentes capas de la piel simultáneamente.
+
+La **luz pulsada intensa (IPL)** es un **tratamiento no invasivo** basado en **pulsos de luz de alta energía**. Su **indicación más frecuente** es la **pigmentación** (manchas, léntigos, fotodaño) y las **alteraciones vasculares superficiales** (rubor, telangiectasias); también **homogeneiza el tono** asociado al **fotoenvejecimiento** por sol.
+
+A diferencia del **láser** (luz monocromática y coherente, típicamente una sola longitud de onda), la IPL utiliza **luz policromática de amplio espectro**; el equipo permite **filtrar longitudes de onda** según el objetivo clínico. En Luma Piel el tratamiento se realiza con la plataforma **Alma Harmony** (Alma Lasers), que incorpora tecnología **AFT (Advanced Fluorescence Technology)** para un reparto de energía **más homogéneo y controlado** sobre el tejido.
+
+La luz es absorbida de forma preferente por **cromóforos** de la piel:
+
+- **Melanina:** manchas, léntigos y fotodaño.
+- **Hemoglobina** en **microvasos superficiales:** rubor, telangiectasias y componente eritematoso.
+
+El mecanismo es la **fototermólisis selectiva** (calor muy localizado sobre esos blancos): se **fragmenta el pigmento**, se interviene sobre **vasos muy superficiales** y el **organismo elimina** gradualmente los residuos. La **mejora es progresiva** y los resultados suelen verse **sesión a sesión**, de forma gradual.
+
+En el protocolo **completa** se incluyen **rostro, cuello, escote y otras áreas corporales** según indicación médica; **filtros, energía y técnica de aplicación se ajustan** a cada región anatómica.
 
 ### 2. ¿Para qué sirve?
-Su función principal es el fotorejuvenecimiento. Busca mejorar la calidad global de la piel mediante la estimulación de colágeno y la eliminación de pigmentos irregulares. Es el "borrador" ideal para el daño solar acumulado en el cuerpo.
+Su **prioridad** son las **manchas y la pigmentación**, y el **componente vascular superficial** cuando corresponde. El objetivo es un **tono más uniforme** y menos “manchado” o enrojecido en las zonas tratadas.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 El IPL corporal es sumamente versátil. Es eficaz para:
@@ -15,7 +27,7 @@ El IPL corporal es sumamente versátil. Es eficaz para:
 Para que sepas exactamente qué esperar, aquí el paso a paso:
 1. **Preparación:** Se limpia la zona a tratar. Es indispensable el uso de gafas protectoras especiales tanto para vos como para el profesional.
 2. **Gel conductor:** Se aplica un gel frío sobre la piel que ayuda a que la luz penetre mejor y protege la capa superficial del calor.
-3. **El disparo:** Sentirás un ligero "latigazo" o sensación de calor súbito. Es molesto pero tolerable y muy rápido.
+3. **El disparo:** Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**.
 4. **Post-sesión:** Se retira el gel y se aplica una crema calmante y, por supuesto, protector solar.
 
 ### 5. Consideraciones Clave

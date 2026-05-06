@@ -1,5 +1,5 @@
 id,tipo,lista,titulo,slug_es,categorias,aliases,hub_refs,related_service_ids,hub_pin_rank,published,duracion_minutos
-svc:botox,tratamiento,tratamientos,Botox,botox,estetica|rejuvenecimiento,toxina botulinica|atenuar arrugas|suavizar lineas de expresion,hub:estetica-medica:rejuvenecimiento-facial,,90,false,45
+svc:botox,tratamiento,tratamientos,Botox®,botox,estetica|rejuvenecimiento,toxina botulinica|atenuar arrugas|suavizar lineas de expresion,hub:estetica-medica:rejuvenecimiento-facial,,90,false,45
 svc:consulta-seguimiento,consulta,consultas,Consulta - Dermatología de seguimiento,consulta-dermatologia-seguimiento,,control dermatologico|seguimiento de tratamiento|monitoreo cutaneo,hub:consulta-dermatologica:primera-consulta-vs-seguimiento,,10,false,30
 svc:consulta-online,consulta,consultas,Consulta - Dermatología online,consulta-dermatologia-online,,teledermatologia|consulta virtual piel|video-consulta dermatologica,hub:consulta-dermatologica:consulta-online,,10,false,40
 svc:consulta-1-vez,consulta,consultas,Consulta - dermatologia 1° vez,consulta-dermatologia-1-vez,,diagnostico inicial piel|primera vez dermatologo|revision dermatologica,hub:consulta-dermatologica:primera-consulta-vs-seguimiento,,90,false,60

@@ -5,10 +5,22 @@ const contentDir = path.join(process.cwd(), "content", "services")
 
 const treatments = {
   "luz-pulsada-completa": `### 1. ¿Qué es la Luz Pulsada (IPL) Corporal?
-A diferencia del láser convencional (que es una luz de un solo color y dirección), el IPL es una fuente lumínica de alta intensidad de "banda ancha". Imagínalo como una ráfaga de luz policromática que actúa sobre diferentes capas de la piel simultáneamente.
+
+La **luz pulsada intensa (IPL)** es un **tratamiento no invasivo** basado en **pulsos de luz de alta energía**. Su **indicación más frecuente** es la **pigmentación** (manchas, léntigos, fotodaño) y las **alteraciones vasculares superficiales** (rubor, telangiectasias); también **homogeneiza el tono** asociado al **fotoenvejecimiento** por sol.
+
+A diferencia del **láser** (luz monocromática y coherente, típicamente una sola longitud de onda), la IPL utiliza **luz policromática de amplio espectro**; el equipo permite **filtrar longitudes de onda** según el objetivo clínico. En Luma Piel el tratamiento se realiza con la plataforma **Alma Harmony** (Alma Lasers), que incorpora tecnología **AFT (Advanced Fluorescence Technology)** para un reparto de energía **más homogéneo y controlado** sobre el tejido.
+
+La luz es absorbida de forma preferente por **cromóforos** de la piel:
+
+- **Melanina:** manchas, léntigos y fotodaño.
+- **Hemoglobina** en **microvasos superficiales:** rubor, telangiectasias y componente eritematoso.
+
+El mecanismo es la **fototermólisis selectiva** (calor muy localizado sobre esos blancos): se **fragmenta el pigmento**, se interviene sobre **vasos muy superficiales** y el **organismo elimina** gradualmente los residuos. La **mejora es progresiva** y los resultados suelen verse **sesión a sesión**, de forma gradual.
+
+En el protocolo **completa** se incluyen **rostro, cuello, escote y otras áreas corporales** según indicación médica; **filtros, energía y técnica de aplicación se ajustan** a cada región anatómica.
 
 ### 2. ¿Para qué sirve?
-Su función principal es el fotorejuvenecimiento. Busca mejorar la calidad global de la piel mediante la estimulación de colágeno y la eliminación de pigmentos irregulares. Es el "borrador" ideal para el daño solar acumulado en el cuerpo.
+Su **prioridad** son las **manchas y la pigmentación**, y el **componente vascular superficial** cuando corresponde. El objetivo es un **tono más uniforme** y menos “manchado” o enrojecido en las zonas tratadas.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 El IPL corporal es sumamente versátil. Es eficaz para:
@@ -21,7 +33,7 @@ El IPL corporal es sumamente versátil. Es eficaz para:
 Para que sepas exactamente qué esperar, aquí el paso a paso:
 1. **Preparación:** Se limpia la zona a tratar. Es indispensable el uso de gafas protectoras especiales tanto para vos como para el profesional.
 2. **Gel conductor:** Se aplica un gel frío sobre la piel que ayuda a que la luz penetre mejor y protege la capa superficial del calor.
-3. **El disparo:** Sentirás un ligero "latigazo" o sensación de calor súbito. Es molesto pero tolerable y muy rápido.
+3. **El disparo:** Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**.
 4. **Post-sesión:** Se retira el gel y se aplica una crema calmante y, por supuesto, protector solar.
 
 ### 5. Consideraciones Clave
@@ -35,10 +47,17 @@ Para que sepas exactamente qué esperar, aquí el paso a paso:
 `,
 
   "luz-pulsada-facial": `### 1. ¿Qué es la Luz Pulsada (IPL) Facial?
-Es un tratamiento de fotorejuvenecimiento no invasivo que emplea luz policromática de alta intensidad. Actúa como un barrido inteligente sobre la piel del rostro para tratar múltiples imperfecciones al mismo tiempo, sin dañar la superficie cutánea.
+
+La **IPL facial** es un **tratamiento no invasivo con luz intensa** sobre el rostro, orientado **prioritariamente** a **manchas y pigmentación** y a **manifestaciones vasculares superficiales** (rubor, telangiectasias); también contribuye a **uniformar el tono** y la luminosidad del cutis.
+
+A diferencia del **láser** de una sola longitud de onda, la IPL utiliza **luz de amplio espectro** con **filtros** según el cuadro clínico. El equipo es la plataforma **Alma Harmony** (Alma Lasers) con tecnología **AFT (Advanced Fluorescence Technology)**, orientada a una aplicación **uniforme y dosificada** de la energía sobre la piel.
+
+En el rostro predomina la captación por **melanina** (pigmentación, fotoenvejecimiento) y por **hemoglobina** en **microvasos superficiales**. El proceso corresponde a **fototermólisis selectiva**: **calor focalizado** sobre esos elementos; la **evolución clínica es gradual**, conforme el tejido depura el pigmento y responde el componente vascular tratado.
+
+La sesión **facial** abarca **rostro y zonas contiguas** definidas en consulta (por ejemplo nariz, mejillas, contorno mandibular), con **parámetros adaptados** al grosor y la sensibilidad de la **piel fina** de la cara.
 
 ### 2. ¿Para qué sirve?
-Sirve para unificar el tono de la piel, devolverle la luminosidad perdida y atenuar tanto manchas como rojeces faciales. Al calentar las capas profundas, estimula también la producción de nuevo colágeno, logrando un efecto "borrador" de las huellas del sol y del paso del tiempo.
+Su **indicación principal** es **atenuar manchas y pigmentación** y **modificar rojeces y vasitos superficiales** en la cara. Mejora la **apariencia** del fotoenvejecimiento **pigmentario y vascular**. Para **rejuvenecimiento** centrado en **firmeza**, **relieve** o **colágeno** como eje del plan, se evalúan en consulta **otras opciones**, solas o combinadas.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 - **Manchas solares y léntigos:** Elimina la pigmentación superficial acumulada.
@@ -49,7 +68,7 @@ Sirve para unificar el tono de la piel, devolverle la luminosidad perdida y aten
 ### 4. ¿Cómo es una sesión de IPL Facial?
 1. **Preparación:** Limpieza profunda del rostro y colocación de gafas protectoras.
 2. **Protección térmica:** Aplicación de un gel frío para el confort y la transmisión de la luz.
-3. **Aplicación:** El equipo emite pulsos de luz rápidos; sentirás pequeños destellos de calor similares a un leve latigazo.
+3. **Aplicación:** Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**.
 4. **Finalización:** Limpieza del gel, aplicación de cremas descongestivas y pantalla solar.
 
 ### 5. Consideraciones Clave
@@ -63,10 +82,17 @@ Sirve para unificar el tono de la piel, devolverle la luminosidad perdida y aten
 `,
 
   "luz-pulsada-manos": `### 1. ¿Qué es la Luz Pulsada (IPL) para Manos?
-Es una tecnología lumínica de amplio espectro enfocada específicamente en la piel del dorso de las manos. Esta zona revela nuestra edad y daño solar tanto o más que el rostro, y el IPL es el tratamiento de elección para renovarla.
+
+La **IPL en dorso de manos** utiliza **luz de amplio espectro** sobre una zona **crónicamente fotoexpuesta** y de **epidermis fina**, donde predominan **léntigos** y **alteraciones pigmentarias** (y, si corresponde, **microvasos superficiales**).
+
+La IPL consiste en **pulsos de luz de amplio espectro** (no equivale a un láser monocromático); los **filtros** permiten dirigir la energía según el tipo de lesión. El equipo es **Alma Harmony** (Alma Lasers) con tecnología **AFT (Advanced Fluorescence Technology)**, para una entrega de energía **controlada** sobre tejido delgado.
+
+La absorción preferente por **melanina** y **hemoglobina** permite actuar sobre **pigmento** y, cuando corresponde, sobre **microvasos superficiales**. El mecanismo es la **fototermólisis selectiva**; la **respuesta clínica** suele valorarse en **semanas**, según la eliminación natural del pigmento tratado.
+
+En **manos** se **individualizan potencia y filtros** (habitualmente más conservadores que en zonas corporales gruesas), **siempre según evaluación médica**, sin extrapolar parámetros utilizados en rostro u otras regiones.
 
 ### 2. ¿Para qué sirve?
-Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las manos, unificando su color y mejorando la calidad y densidad de la piel al promover la regeneración del colágeno.
+Está pensada sobre todo para **manchas y pecas solares** del dorso y para **unificar el tono**. Cualquier **mejora en la calidad** de la piel suele ser **acompañante** del trabajo sobre el pigmento. Para **firmeza** o **rejuvenecimiento global** como objetivo prioritario existen **tratamientos específicos** que se definen en consulta.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 - **Léntigos seniles y solares:** Las típicas manchas marrones redondas en el dorso.
@@ -76,7 +102,7 @@ Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las ma
 ### 4. ¿Cómo es una sesión de IPL en Manos?
 1. **Limpieza:** Se higieniza el dorso de ambas manos y se colocan lentes de seguridad.
 2. **Gel frío:** Se distribuye el gel conductor para maximizar la eficacia del disparo.
-3. **El tratamiento:** Se aplican los pulsos de luz sobre cada mancha y zona afectada; la molestia es muy breve y perfectamente tolerable.
+3. **El tratamiento:** Se aplican los pulsos de luz sobre cada mancha y zona afectada. Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**; la molestia es muy breve y perfectamente tolerable.
 4. **Cierre:** Retiro del gel y aplicación de crema hidratante regeneradora y bloqueador solar.
 
 ### 5. Consideraciones Clave
@@ -86,10 +112,10 @@ Sirve para eliminar las clásicas "manchas de la edad" o pecas solares en las ma
 | **Duración** | Muy rápida, entre 10 y 15 minutos. |
 | **Recuperación** | Las manchas se vuelven más oscuras (como borra de café) y caen a los 7-10 días. |
 | **Restricción Solar** | Evitar la exposición solar y usar protector solar diario en las manos. |
-| **Resultados** | Generalmente en 2 a 3 sesiones se logra la limpieza total de las manchas. |
+| **Resultados** | Generalmente en 2 a 3 sesiones se logra reducir las manchas. |
 `,
 
-  "botox": `### 1. ¿Qué es el Botox (Toxina Botulínica)?
+  "botox": `### 1. ¿Qué es el Botox® (Toxina Botulínica)?
 Es un tratamiento médico estético, neuromodulador, que se infiltra en músculos faciales específicos. Funciona relajando temporalmente la contracción muscular responsable de las arrugas dinámicas (las que se forman al gesticular).
 
 ### 2. ¿Para qué sirve?
@@ -101,7 +127,7 @@ Sirve para suavizar y prevenir las arrugas de expresión, logrando un rostro des
 - **Sonrisa gingival:** Relaja el labio superior para que no muestre exceso de encía al sonreír.
 - **Hiperhidrosis:** Frena el exceso de sudoración en axilas, manos o pies.
 
-### 4. ¿Cómo es una sesión de Botox?
+### 4. ¿Cómo es una sesión de Botox®?
 1. **Evaluación dinámica:** Se te pedirá que gesticules (fruncir el ceño, sonreír, levantar las cejas) para marcar los puntos anatómicos precisos.
 2. **Microinyecciones:** Utilizando una aguja extremadamente fina, se aplican pequeñas dosis en los puntos marcados. 
 3. **Cierre:** La sesión es rápida y prácticamente indolora; sólo sentirás un leve pinchacito.

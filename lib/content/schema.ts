@@ -24,11 +24,37 @@ export const hubSectionSchema = z.object({
   body: z.string(),
 });
 
+/** Listado agrupado en hubs (p. ej. láser): bloques con subítems o una sola ficha. */
+const hubProcedureNestedBlockSchema = z.object({
+  style: z.literal("nested"),
+  title: z.string(),
+  items: z.array(
+    z.object({
+      label: z.string(),
+      slug_es: z.string(),
+    }),
+  ),
+});
+
+const hubProcedureSingleBlockSchema = z.object({
+  style: z.literal("single"),
+  title: z.string(),
+  slug_es: z.string(),
+});
+
+export const hubProcedureBlockSchema = z.discriminatedUnion("style", [
+  hubProcedureNestedBlockSchema,
+  hubProcedureSingleBlockSchema,
+]);
+
+export type HubProcedureBlock = z.infer<typeof hubProcedureBlockSchema>;
+
 export const hubSchema = z.object({
   id: z.string(),
   title: z.string(),
   description: z.string(),
   sections: z.array(hubSectionSchema),
+  procedureBlocks: z.array(hubProcedureBlockSchema).optional(),
 });
 
 export type HubRecord = z.infer<typeof hubSchema>;
