@@ -2,6 +2,10 @@
 
 **Médica dermatóloga**
 
+# Dra. Agustina Gandolfo
+
+**Médica dermatóloga**
+
 Soy médica egresada de la Universidad de Buenos Aires, especialista en dermatología (SAD) y actualmente realizando la [maestría en Psiconeuroinmunología Clínica](https://pniespana.es/que-es-la-psiconeuroinmunologia-pni-clinica/) dictada por la Universidad de Córdoba (España).
 
 ## La dermatología que merece tu piel.

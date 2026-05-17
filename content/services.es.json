@@ -230,26 +230,12 @@
     "titulo": "Láser Erbium Glass",
     "slug_es": "laser-erbium-glass",
     "categorias": "laser|rejuvenecimiento",
-    "aliases": "laser fraccionado|mejorar textura y cicatrices laser",
+    "aliases": "tensión , firmeza de la piel, textura y cicatrices . láser",
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 10,
     "published": false,
     "duracion_minutos": 45
-  },
-  {
-    "id": "svc:erbium-melasma",
-    "tipo": "tratamiento",
-    "lista": "tratamientos",
-    "titulo": "Láser Erbium Melasma",
-    "slug_es": "laser-erbium-melasma",
-    "categorias": "laser",
-    "aliases": "tratamiento laser de melasma|manejo de pigmentacion",
-    "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
-    "related_service_ids": "",
-    "hub_pin_rank": 10,
-    "published": false,
-    "duracion_minutos": 40
   },
   {
     "id": "svc:erbium-capilar",

@@ -10,6 +10,7 @@
     "validate:content": "node scripts/validate-content.mjs",
     "validate:sanity": "node scripts/validate-sanity-hub-refs.mjs",
     "migrate:content": "node scripts/migrate-content-to-sanity.mjs",
+    "sync:content": "node scripts/export-content-from-sanity.mjs",
     "export:catalog": "node scripts/export-catalog-csv.mjs",
     "apply:servicios": "node scripts/apply-servicios-csv.mjs"
   },

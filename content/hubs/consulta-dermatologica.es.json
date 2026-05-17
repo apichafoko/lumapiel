@@ -2,16 +2,17 @@
   "id": "consulta-dermatologica",
   "title": "Consulta Dermatológica",
   "description": "Todo buen tratamiento comienza con un diagnóstico médico preciso. En Luma Piel evaluamos la salud de tu piel, pelo y uñas desde una perspectiva médica, funcional e integral.",
+  "procedureBlocks": [],
   "sections": [
     {
       "anchor": "primera-consulta-vs-seguimiento",
       "title": "Primera consulta y seguimiento",
-      "body": "En Luma Piel no trabajamos a ciegas: el diagnóstico y el plan nacen de escucharte, conocerte y evaluarte en detalle.\n\n### Primera consulta \nEs el **primer acercamiento**: nos conocemos, me contás tus antecedentes personales y familiares, qué te pasa con la piel y en qué contexto vivís el problema. Te examino, armamos juntos una **rutina de skincare** adecuada, definimos un **plan de tratamiento** y, si hace falta, **indicación de estudios complementarios**.\nDura más porque es la primera vez que nos vemos: hace falta tiempo para recoger tu historia, entender el cuadro y dejarte con un camino claro y ordenado.\n\n### Consultas de seguimiento\nSon **más breves** porque el objetivo es otro: ver **cómo te fue** con lo que acordamos, evaluar la respuesta y decidir **ajustes** o sumar lo que haga falta. Sirven para afinar el tratamiento en el tiempo, sin perder de vista el objetivo."
+      "body": "En Luma Piel no trabajamos a ciegas: el diagnóstico y el plan nacen de escucharte, conocerte y evaluarte en detalle.\n\n### Primera consulta\n\nEs el **primer acercamiento**: nos conocemos, me contás tus antecedentes personales y familiares, qué te pasa con la piel y en qué contexto vivís el problema. Te examino, armamos juntos una **rutina de skincare** adecuada, definimos un **plan de tratamiento** y, si hace falta, **indicación de estudios complementarios**.  \nDura más porque es la primera vez que nos vemos: hace falta tiempo para recoger tu historia, entender el cuadro y dejarte con un camino claro y ordenado.\n\n### Consultas de seguimiento\n\nSon **más breves** porque el objetivo es otro: ver **cómo te fue** con lo que acordamos, evaluar la respuesta y decidir **ajustes** o sumar lo que haga falta. Sirven para afinar el tratamiento en el tiempo, sin perder de vista el objetivo."
     },
     {
       "anchor": "consulta-online",
       "title": "Teledermatología (Online)",
-      "body": "La **teleconsulta** es una opción para quienes **viven lejos** o, por distintas razones, **no pueden concurrir** al consultorio. Se utiliza tanto para **primera consulta** como para **seguimiento** de tratamientos ya iniciados, siempre que el abordaje a distancia sea apropiado para lo que necesitás en ese momento.\n\n*Nota: el control presencial y con apoyo instrumental sigue siendo necesario en situaciones en las que hace falta un examen detallado in situ; por ejemplo, el **chequeo de lunares** requiere evaluación y visualización adecuada en persona, no reemplazable por la pantalla.*"
+      "body": "La **teleconsulta** es una opción para quienes **viven lejos** o, por distintas razones, **no pueden concurrir** al consultorio. Se utiliza tanto para **primera consulta** como para **seguimiento** de tratamientos ya iniciados, siempre que el abordaje a distancia sea apropiado para lo que necesitás en ese momento.\n\n_Nota: el control presencial y con apoyo instrumental sigue siendo necesario en situaciones en las que hace falta un examen detallado in situ; por ejemplo, el **chequeo de lunares** requiere evaluación y visualización adecuada en persona, no reemplazable por la pantalla._"
     }
   ]
 }

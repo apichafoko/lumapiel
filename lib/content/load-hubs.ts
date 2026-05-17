@@ -4,6 +4,7 @@ import {
   HUB_SLUGS_QUERY,
 } from "@/lib/sanity/queries";
 import { fetchFromSanity, isSanityConfigured } from "@/lib/sanity/fetch";
+import { resolveContentPerspective } from "@/lib/sanity/perspective";
 import {
   fileGetAllHubs,
   fileGetHubBySlug,
@@ -18,6 +19,7 @@ export async function getAllHubs(): Promise<SanityHubDoc[]> {
   const hubs = await fetchFromSanity<SanityHubDoc[]>({
     query: ALL_HUBS_QUERY,
     tags: ["hub"],
+    perspective: await resolveContentPerspective(),
   });
   return hubs ?? [];
 }
@@ -30,6 +32,7 @@ export async function getHubBySlug(
     query: HUB_BY_SLUG_QUERY,
     params: { slug },
     tags: ["hub", `hub:${slug}`],
+    perspective: await resolveContentPerspective(),
   });
   return hub ?? undefined;
 }

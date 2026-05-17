@@ -7,6 +7,7 @@ import {
 } from "@/lib/sanity/queries";
 import { extractQueEsFromPortableText } from "@/lib/content/extract-que-es-pt";
 import { fetchFromSanity, isSanityConfigured } from "@/lib/sanity/fetch";
+import { resolveContentPerspective } from "@/lib/sanity/perspective";
 import {
   fileGetAllServices,
   fileGetServiceBySlug,
@@ -26,8 +27,19 @@ export async function getAllServices(): Promise<ServiceRecord[]> {
   const docs = await fetchFromSanity<SanityServiceDoc[]>({
     query: ALL_SERVICES_QUERY,
     tags: ["service"],
+    perspective: await resolveContentPerspective(),
   });
-  return (docs ?? []).map(mapServiceFromSanity);
+  const mapped = (docs ?? []).map(mapServiceFromSanity);
+  if (mapped.length === 0) {
+    const local = fileGetAllServices();
+    if (local.length > 0) {
+      console.warn(
+        "[sanity] La consulta de servicios devolvió 0 resultados; usando content/services.es.json",
+      );
+      return local;
+    }
+  }
+  return mapped;
 }
 
 export async function getServiceBySlug(
@@ -50,6 +62,7 @@ export async function getServiceBySlug(
     query: SERVICE_BY_SLUG_QUERY,
     params: { slug },
     tags: ["service", `service:${slug}`],
+    perspective: await resolveContentPerspective(),
   });
   if (!doc) return undefined;
   const body = doc.body ?? null;
@@ -115,6 +128,7 @@ export async function getServiceQueEsMap(): Promise<Map<string, string | null>> 
   >({
     query: SERVICE_BODIES_QUERY,
     tags: ["service"],
+    perspective: await resolveContentPerspective(),
   });
   return new Map(
     (rows ?? []).map((r) => [

@@ -2,6 +2,10 @@
 
 **Cosmetóloga**
 
+# Yanina Benavidez
+
+**Cosmetóloga**
+
 En Luma Piel acompaño el cuidado de la piel desde un enfoque personalizado y constante.
 
 Mi trabajo se centra en mejorar la calidad de la piel a través de tratamientos cosmiátricos que complementan y potencian los procedimientos médicos realizados por la Dra. Agustina Gandolfo.

@@ -1,6 +1,14 @@
 import type { ServiceRecord } from "@/lib/content/schema";
 import type { SanityServiceDoc } from "@/lib/sanity/types";
 
+function normalizeCategorias(raw: string | undefined): string {
+  return (raw ?? "")
+    .split("|")
+    .map((c) => c.trim().toLowerCase())
+    .filter(Boolean)
+    .join("|");
+}
+
 export function mapServiceFromSanity(doc: SanityServiceDoc): ServiceRecord {
   return {
     id: doc.legacyId,
@@ -8,7 +16,7 @@ export function mapServiceFromSanity(doc: SanityServiceDoc): ServiceRecord {
     lista: doc.lista,
     titulo: doc.titulo,
     slug_es: doc.slug_es,
-    categorias: doc.categorias ?? "",
+    categorias: normalizeCategorias(doc.categorias),
     aliases: doc.aliases ?? "",
     hub_refs: doc.hubRefs ?? "",
     related_service_ids: doc.relatedServiceIds ?? "",

@@ -1,141 +1,141 @@
 {
+  "faq": [
+    {
+      "answer": "Por el momento solo atendemos de manera particular. Igualmente, ante cualquier inquietud, nuestro WhatsApp está disponible para evacuar tus dudas.\n\nPodés consultarnos por WhatsApp o al reservar turno los convenios vigentes y el tipo de consulta que necesitás.",
+      "question": "¿Atienden obras sociales o prepagas?"
+    },
+    {
+      "answer": "Es recomendable tener una primera consulta dermatológica previa para orientarte en el plan de tratamiento que mejor se adapte a tu caso.",
+      "question": "¿Necesito visita previa para láser?"
+    },
+    {
+      "answer": "Sí, para aquellos pacientes que no puedan acecarse de manera presencial. Ofrecemos la opción de teleconsulta.",
+      "question": "¿Ofrecen consulta online?"
+    }
+  ],
+  "faqTitle": "Dudas frecuentes",
+  "frequentConsults": {
+    "cards": [
+      {
+        "body": "El acné es una dermatosis inflamatoria, y debe abordarse como tal. No son solo “granitos”: puede presentar comedones, pápulas, pústulas, dejar marcas y cicatrices. En consulta evaluamos la severidad de tu acné, qué lo mantiene activo (hábitos, productos, hormonas u otros factores) y definimos un tratamiento acorde a tu edad y objetivos.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "acne",
+        "linkLabel": "Consultar por acné",
+        "title": "Acné"
+      },
+      {
+        "body": "La rosácea suele manifestarse con rubor fijo o en brotes, sensación de ardor y, en algunas personas, granitos inflamatorios o vasitos visibles. El enfoque es calmar la piel, identificar desencadenantes y tratar cada componente con medicación o procedimientos según la fase del cuadro.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "rosacea",
+        "linkLabel": "Consultar por rosácea",
+        "title": "Rosácea"
+      },
+      {
+        "body": "Las manchas pueden deberse al daño solar, las hormonas, o a inflamación previa con cambios pigmentarios. No todas se tratan de la misma forma, por eso el primer paso es diagnosticar el tipo de mancha para luego tratarla.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "manchas",
+        "linkLabel": "Consultar por manchas",
+        "title": "Manchas en la piel"
+      },
+      {
+        "body": "Con los años perdemos el pool de colágeno y elastina que genera nuestra piel, es un proceso natural. La flacidez se relaciona con la pérdida de soporte y se ve afectada por la gravedad, el fotoenvejecimiento y los cambios de peso. En consulta te orientamos sobre opciones médicas y de acompañamiento para mejorar la firmeza y la calidad de la piel.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "flacidez",
+        "linkLabel": "Consultar por flacidez",
+        "title": "Piel flácida"
+      },
+      {
+        "body": "La caída puede ser temporal o persistente, localizada o difusa, y tiene causas muy distintas (estrés, deficiencias, hormonas, genética, enfermedades del cuero cabelludo, etc). El primer paso es un diagnóstico ordenado: historia clínica, examen del pelo y del cuero cabelludo, y estudios complementarios. Contamos con planes terapéuticos individualizados para cada paciente: tratamiento láser Erbium capilar, mesoterapia capilar, plasma rico en plaquetas capilar y medicación vía oral de ser necesaria. ",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "caida-pelo",
+        "linkLabel": "Consultar por caída de pelo",
+        "title": "Caída de pelo"
+      },
+      {
+        "body": "El control de lunares y lesiones pigmentadas sirve para conocer tu “mapa” cutáneo, se realiza un exámen dermatoscópico con el fin de registrar lesiones y detectar a tiempo cambios de forma, tamaño o color. En la consulta explicamos qué vigilar, con qué frecuencia, cuándo intervenir y cómo combinar observación con tecnología o biopsia si el caso lo requiere.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "lunares",
+        "linkLabel": "Consultar por lunares",
+        "title": "Control de lunares"
+      },
+      {
+        "body": "Las arrugas pueden ser finas o marcadas, dinámicas (con el gesto) o en reposo, y suelen convivir con pérdida de volumen o calidad de la piel. Armamos un plan según lo que predominen en tu rostro: desde skincare y bioestimulación hasta toxina botulínica u otros procedimientos, siempre con expectativas claras.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "arrugas",
+        "linkLabel": "Consultar por arrugas",
+        "title": "Arrugas"
+      },
+      {
+        "body": "Contamos con tecnología Alma Lasers ® de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias textura de la piel, trabajar sobre cicatrices, tratar y prevenir el fotoenvejecimiento cutáneo. El tratamiento indicado para vos y la preparación previa requerida se abordan en la consulta dermatológica.",
+        "href": "/especialidades/tratamientos-laser",
+        "id": "laser",
+        "linkLabel": "Conocer tratamientos láser",
+        "title": "Tecnología láser"
+      }
+    ],
+    "intro": "Motivos de consulta que vemos todos los días. En cada caso priorizamos escucharte, ordenar el diagnóstico y armar un plan individualizado — con criterio médico y acompañamiento.",
+    "title": "Consultas frecuentes"
+  },
   "hero": {
     "headline": "Dermatología integral, tecnología láser y estética en armonía",
-    "subhead": "Un equipo que piensa tu piel con criterio médico, acompañamiento y resultados sostenibles. Palermo, CABA.",
     "primaryCta": "Reservá turno",
-    "secondaryCta": "Ver tratamientos"
+    "secondaryCta": "Ver tratamientos",
+    "subhead": "Un equipo que piensa tu piel con criterio médico, acompañamiento y resultados sostenibles. Palermo, CABA."
+  },
+  "howWeWork": {
+    "almaLaserHref": "https://es.almalasers.com/",
+    "sectionTitle": "¿Cómo trabajamos?",
+    "steps": [
+      {
+        "body": "Arrancamos por escucharte: qué te molesta, qué buscás y en qué contexto vive tu piel. Revisamos tu historia, antecedentes médicos, hábitos y expectativas. Con ese panorama armamos tu perfil y, juntos, definimos un camino claro para mejorar la salud y el aspecto de tu piel, con criterio médico y acompañamiento.",
+        "id": "primera-consulta",
+        "stepLabel": "1",
+        "title": "Primera consulta"
+      },
+      {
+        "body": "Cuando ya entendemos qué necesita tu piel, armamos un plan a medida: rutina de skincare individualizada, hábitos y suplementación alineados a tus necesidades y, si corresponde, tecnología médica para acompañar el objetivo. Eso puede incluir láser, plasma rico en plaquetas, electrocoagulación, mesoterapia, dermapen o toxina botulínica, siempre elegido para vos y para el momento que está transitando tu piel.",
+        "id": "plan-tratamiento",
+        "stepLabel": "2",
+        "title": "Plan de tratamiento"
+      },
+      {
+        "body": "Contamos con tecnología Alma Lasers de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias, textura, cicatrices o rejuvenecimiento cutáneo, según el equipo y el parámetro elegidos.\n\nEl tratamiento indicado para vos y la preparación se definen en la consulta.",
+        "id": "laser",
+        "linkAlmaInBody": true,
+        "stepLabel": "3",
+        "title": "¿Por qué la tecnología láser?"
+      },
+      {
+        "body": "Trabajamos en equipo con dermatocosmiatria para mantener y llevar a tu piel a una cotidianeidad saludable. Cuando suma al plan, combinamos tratamiento médico con limpiezas de cutis, peelings o mascarillas para potenciar el efecto, siempre con criterio y respetando lo que tu piel tolera.",
+        "id": "equipo-mantenimiento",
+        "stepLabel": "4",
+        "title": "Dermatocosmiatría y tu día a día"
+      }
+    ]
   },
   "pillars": [
     {
-      "title": "Dermatología clínica y funcional",
       "body": "Diagnóstico y plan adaptado a tu historia, fototipo y objetivos reales.",
       "href": "/especialidades/consulta-dermatologica",
-      "linkLabel": "¿Cómo es la consulta?"
+      "linkLabel": "¿Cómo es la consulta?",
+      "title": "Dermatología clínica y funcional"
     },
     {
-      "title": "Tratamientos láser",
       "body": "Tecnología láser para manchas, textura, lesiones vasculares y rejuvenecimiento.",
-      "supportLine": {
-        "prefix": "Impulsado por ",
-        "linkText": "Alma Lasers ® ",
-        "href": "https://es.almalasers.com/"
-      },
       "href": "/especialidades/tratamientos-laser",
-      "linkLabel": "Conocer tratamientos"
+      "linkLabel": "Conocer tratamientos",
+      "supportLine": {
+        "href": "https://es.almalasers.com/",
+        "linkText": "Alma Lasers ® ",
+        "prefix": "Impulsado por "
+      },
+      "title": "Tratamientos láser"
     },
     {
-      "title": "Estética en armonía",
       "body": "Tratamientos de estética para resaltar tu belleza natural.",
       "href": "/especialidades/estetica-medica",
-      "linkLabel": "Ver tratamientos"
-    }
-  ],
-  "howWeWork": {
-    "sectionTitle": "¿Cómo trabajamos?",
-    "almaLaserHref": "https://es.almalasers.com/",
-    "steps": [
-      {
-        "id": "primera-consulta",
-        "stepLabel": "1",
-        "title": "Primera consulta",
-        "body": "Arrancamos por escucharte: qué te molesta, qué buscás y en qué contexto vive tu piel. Revisamos tu historia, antecedentes médicos, hábitos y expectativas. Con ese panorama armamos tu perfil y, juntos, definimos un camino claro para mejorar la salud y el aspecto de tu piel, con criterio médico y acompañamiento."
-      },
-      {
-        "id": "plan-tratamiento",
-        "stepLabel": "2",
-        "title": "Plan de tratamiento",
-        "body": "Cuando ya entendemos qué necesita tu piel, armamos un plan a medida: rutina de skincare individualizada, hábitos y suplementación alineados a tus necesidades y, si corresponde, tecnología médica para acompañar el objetivo. Eso puede incluir láser, plasma rico en plaquetas, electrocoagulación, mesoterapia, dermapen o toxina botulínica, siempre elegido para vos y para el momento que está transitando tu piel."
-      },
-      {
-        "id": "laser",
-        "stepLabel": "3",
-        "title": "¿Por qué la tecnología láser?",
-        "body": "Contamos con tecnología Alma Lasers de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias, textura, cicatrices o rejuvenecimiento cutáneo, según el equipo y el parámetro elegidos.\n\nEl tratamiento indicado para vos y la preparación se definen en la consulta.",
-        "linkAlmaInBody": true
-      },
-      {
-        "id": "equipo-mantenimiento",
-        "stepLabel": "4",
-        "title": "Dermatocosmiatría y tu día a día",
-        "body": "Trabajamos en equipo con dermatocosmiatria para mantener y llevar a tu piel a una cotidianeidad saludable. Cuando suma al plan, combinamos tratamiento médico con limpiezas de cutis, peelings o mascarillas para potenciar el efecto, siempre con criterio y respetando lo que tu piel tolera."
-      }
-    ]
-  },
-  "frequentConsults": {
-    "title": "Consultas frecuentes",
-    "intro": "Motivos de consulta que vemos todos los días. En cada caso priorizamos escucharte, ordenar el diagnóstico y armar un plan individualizado — con criterio médico y acompañamiento.",
-    "cards": [
-      {
-        "id": "acne",
-        "title": "Acné",
-        "body": "El acné es una dermatosis inflamatoria, y debe abordarse como tal. No son solo “granitos”: puede presentar comedones, pápulas, pústulas, dejar marcas y cicatrices. En consulta evaluamos la severidad de tu acné, qué lo mantiene activo (hábitos, productos, hormonas u otros factores) y definimos un tratamiento acorde a tu edad y objetivos.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por acné"
-      },
-      {
-        "id": "rosacea",
-        "title": "Rosácea",
-        "body": "La rosácea suele manifestarse con rubor fijo o en brotes, sensación de ardor y, en algunas personas, granitos inflamatorios o vasitos visibles. El enfoque es calmar la piel, identificar desencadenantes y tratar cada componente con medicación o procedimientos según la fase del cuadro.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por rosácea"
-      },
-      {
-        "id": "manchas",
-        "title": "Manchas en la piel",
-        "body": "Las manchas pueden deberse al daño solar, las hormonas, o a inflamación previa con cambios pigmentarios. No todas se tratan de la misma forma, por eso el primer paso es diagnosticar el tipo de mancha para luego tratarla.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por manchas"
-      },
-      {
-        "id": "flacidez",
-        "title": "Piel flácida",
-        "body": "Con los años perdemos el pool de colágeno y elastina que genera nuestra piel, es un proceso natural. La flacidez se relaciona con la pérdida de soporte y se ve afectada por la gravedad, el fotoenvejecimiento y los cambios de peso. En consulta te orientamos sobre opciones médicas y de acompañamiento para mejorar la firmeza y la calidad de la piel.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por flacidez"
-      },
-      {
-        "id": "caida-pelo",
-        "title": "Caída de pelo",
-        "body": "La caída puede ser temporal o persistente, localizada o difusa, y tiene causas muy distintas (estrés, deficiencias, hormonas, genética, enfermedades del cuero cabelludo, etc). El primer paso es un diagnóstico ordenado: historia clínica, examen del pelo y del cuero cabelludo, y estudios complementarios. Contamos con planes terapéuticos individualizados para cada paciente: tratamiento láser Erbium capilar, mesoterapia capilar, plasma rico en plaquetas capilar y medicación vía oral de ser necesaria. ",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por caída de pelo"
-      },
-      {
-        "id": "lunares",
-        "title": "Control de lunares",
-        "body": "El control de lunares y lesiones pigmentadas sirve para conocer tu “mapa” cutáneo, se realiza un exámen dermatoscópico con el fin de registrar lesiones y detectar a tiempo cambios de forma, tamaño o color. En la consulta explicamos qué vigilar, con qué frecuencia, cuándo intervenir y cómo combinar observación con tecnología o biopsia si el caso lo requiere.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por lunares"
-      },
-      {
-        "id": "arrugas",
-        "title": "Arrugas",
-        "body": "Las arrugas pueden ser finas o marcadas, dinámicas (con el gesto) o en reposo, y suelen convivir con pérdida de volumen o calidad de la piel. Armamos un plan según lo que predominen en tu rostro: desde skincare y bioestimulación hasta toxina botulínica u otros procedimientos, siempre con expectativas claras.",
-        "href": "/consultas/consulta-dermatologia-1-vez",
-        "linkLabel": "Consultar por arrugas"
-      },
-      {
-        "id": "laser",
-        "title": "Tecnología láser",
-        "body": "Contamos con tecnología Alma Lasers ® de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias textura de la piel, trabajar sobre cicatrices, tratar y prevenir el fotoenvejecimiento cutáneo. El tratamiento indicado para vos y la preparación previa requerida se abordan en la consulta dermatológica.",
-        "href": "/especialidades/tratamientos-laser",
-        "linkLabel": "Conocer tratamientos láser"
-      }
-    ]
-  },
-  "faqTitle": "Dudas frecuentes",
-  "faq": [
-    {
-      "question": "¿Atienden obras sociales o prepagas?",
-      "answer": "Por el momento solo atendemos de manera particular. Igualmente, ante cualquier inquietud, nuestro WhatsApp está disponible para evacuar tus dudas.\n\nPodés consultarnos por WhatsApp o al reservar turno los convenios vigentes y el tipo de consulta que necesitás."
-    },
-    {
-      "question": "¿Necesito visita previa para láser?",
-      "answer": "Es recomendable tener una primera consulta dermatológica previa para orientarte en el plan de tratamiento que mejor se adapte a tu caso."
-    },
-    {
-      "question": "¿Ofrecen consulta online?",
-      "answer": "Sí, para aquellos pacientes que no puedan acecarse de manera presencial. Ofrecemos la opción de teleconsulta."
+      "linkLabel": "Ver tratamientos",
+      "title": "Estética en armonía"
     }
   ]
 }

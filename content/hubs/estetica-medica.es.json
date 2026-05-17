@@ -1,7 +1,8 @@
 {
   "id": "estetica-medica",
   "title": "Estética médica",
-  "description": "Trabajamos la estética desde la **dermatología** con procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento de cosmiatría** (limpiezas, peelings, hidratación, mascarillas) tiene su **[página propia de Cosmiatría](/especialidades/cosmiatria)**.",
+  "description": "Trabajamos la estética desde la **dermatología** con procedimientos que respetan tu expresión natural, con planes claros y criterio profesional. El **acompañamiento de cosmiatría** (limpiezas, peelings, hidratación, mascarillas) tiene su [**página propia de Cosmiatría**.](/especialidades/cosmiatria)",
+  "procedureBlocks": [],
   "sections": [
     {
       "anchor": "rejuvenecimiento-facial",
@@ -16,7 +17,7 @@
     {
       "anchor": "protocolos-en-detalle",
       "title": "Resumiendo",
-      "body": "Esta página resume el **marco** de estética médica en Luma Piel. Para fichas por procedimiento, entrá a **[Tratamientos](/tratamientos)**. Para cosmiatría clínica (limpiezas, peelings, mascarillas), **[Cosmiatría](/especialidades/cosmiatria)**. Si necesitás ordenar por dónde empezar, **[Consultas](/consultas)**."
+      "body": "Esta página resume el **marco** de estética médica en Luma Piel. Para fichas por procedimiento, entrá a [**Tratamientos**. Para cosmiatría clínica (limpiezas, peelings, mascarillas), \\[**Cosmiatría**\\](/especialidades/cosmiatria)](/tratamientos)[. Si necesitás ordenar por dónde empezar, \\[**Consultas**\\](/consultas)](/especialidades/cosmiatria)[.](/consultas)"
     }
   ]
 }
