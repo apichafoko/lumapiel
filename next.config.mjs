@@ -6,6 +6,12 @@ const nm = (...segments) => path.join(projectRoot, "node_modules", ...segments)
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: [
+    "sanity",
+    "next-sanity",
+    "@sanity/vision",
+    "@sanity/preview-url-secret",
+  ],
   /**
    * Turbopack: raíz absoluta del app + alias de paquetes CSS.
    * Sin esto, `@import 'tailwindcss'` puede resolverse desde la carpeta padre

@@ -13,14 +13,14 @@ function parseHubRef(ref: string): { hubId: string; anchor: string } | null {
 }
 
 /** Servicios cuyo `hub_refs` apunta a una sección concreta (`hub:hubId:anchor`). */
-export function getLinkedServicesForHubSection(
+export async function getLinkedServicesForHubSection(
   hubId: string,
   sectionAnchor: string,
-): {
+): Promise<{
   tratamientos: ServiceRecord[];
   consultas: ServiceRecord[];
-} {
-  const all = getAllServices();
+}> {
+  const all = await getAllServices();
   const inSection = all.filter((s) =>
     s.hub_refs
       .split("|")
@@ -43,11 +43,11 @@ export function getLinkedServicesForHubSection(
 }
 
 /** Servicios del catálogo que enlazan a esta especialidad vía `hub_refs`. */
-export function getLinkedServicesForHub(hubId: string): {
+export async function getLinkedServicesForHub(hubId: string): Promise<{
   tratamientos: ServiceRecord[];
   consultas: ServiceRecord[];
-} {
-  const all = getAllServices();
+}> {
+  const all = await getAllServices();
   const inHub = all.filter((s) =>
     s.hub_refs
       .split("|")
@@ -58,7 +58,6 @@ export function getLinkedServicesForHub(hubId: string): {
   const byTitle = (a: ServiceRecord, b: ServiceRecord) =>
     a.titulo.localeCompare(b.titulo, "es");
 
-  /** Incluye borradores: el catálogo público también los muestra con etiqueta. */
   let tratamientos = inHub
     .filter((s) => s.lista === "tratamientos")
     .sort(byTitle);

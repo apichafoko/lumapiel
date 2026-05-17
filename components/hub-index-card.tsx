@@ -29,7 +29,7 @@ export type HubIndexCardProps = {
   detailLinkLabel?: string;
 };
 
-export function HubIndexCard({
+export async function HubIndexCard({
   marketingTitle,
   marketingDescription,
   detailHref,
@@ -38,8 +38,8 @@ export function HubIndexCard({
   detailLinkLabel,
 }: HubIndexCardProps) {
   const { tratamientos, consultas } = sectionAnchor
-    ? getLinkedServicesForHubSection(hubId, sectionAnchor)
-    : getLinkedServicesForHub(hubId);
+    ? await getLinkedServicesForHubSection(hubId, sectionAnchor)
+    : await getLinkedServicesForHub(hubId);
 
   const footerLabel =
     detailLinkLabel ??

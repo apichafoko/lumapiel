@@ -1,37 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { readdirSync } from "node:fs";
-import { join } from "node:path";
-import { MarkdownBody } from "@/components/markdown-body";
-import { readMarkdownFileUnder } from "@/lib/read-markdown";
+import { PortableTextBody } from "@/components/portable-text-body";
+import { getLegalBySlug, getLegalSlugs } from "@/lib/content/load-legal";
+import { portableTextToPlainDescription } from "@/lib/sanity/portable-text-plain";
 
 type Props = { params: Promise<{ slug: string }> };
 
-function listLegalSlugs(): string[] {
-  try {
-    const dir = join(process.cwd(), "content/legal/es");
-    return readdirSync(dir)
-      .filter((f) => f.endsWith(".md"))
-      .map((f) => f.replace(/\.md$/, ""));
-  } catch {
-    return [];
-  }
-}
-
 export async function generateStaticParams() {
-  return listLegalSlugs().map((slug) => ({ slug }));
+  const slugs = await getLegalSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const raw = readMarkdownFileUnder(["content", "legal", "es"], `${slug}.md`);
-  if (!raw) return {};
-  const titleLine = raw.split("\n").find((l) => l.startsWith("# "));
-  const title = titleLine?.replace(/^#\s+/, "").trim() ?? slug;
+  const doc = await getLegalBySlug(slug);
+  if (!doc) return {};
+  const description =
+    portableTextToPlainDescription(doc.body) ||
+    `Información legal — ${doc.title}.`;
   return {
-    title,
-    description: `Información legal — ${title}.`,
+    title: doc.title,
+    description,
     alternates: { canonical: `/legal/${slug}` },
     robots: { index: false, follow: true },
   };
@@ -39,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function LegalPage({ params }: Props) {
   const { slug } = await params;
-  const raw = readMarkdownFileUnder(["content", "legal", "es"], `${slug}.md`);
-  if (!raw) notFound();
+  const doc = await getLegalBySlug(slug);
+  if (!doc) notFound();
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
@@ -51,7 +41,10 @@ export default async function LegalPage({ params }: Props) {
         <span className="mx-2">/</span>
         <span className="text-foreground">Legal</span>
       </nav>
-      <MarkdownBody content={raw} className="mt-10" />
+      <h1 className="font-heading mt-10 text-3xl font-semibold text-primary">
+        {doc.title}
+      </h1>
+      <PortableTextBody value={doc.body} className="mt-10" />
     </article>
   );
 }

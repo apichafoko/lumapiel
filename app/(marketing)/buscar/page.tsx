@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/buscar" },
 };
 
-export default function BuscarPage() {
-  const tratamientos = listTratamientos();
-  const consultas = listConsultas();
+export default async function BuscarPage() {
+  const tratamientos = await listTratamientos();
+  const consultas = await listConsultas();
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">

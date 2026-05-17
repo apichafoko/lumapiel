@@ -1,17 +1,7 @@
-import fs from "fs";
-import path from "path";
-
-export async function getServiceContent(slug: string): Promise<string | null> {
-  try {
-    const filePath = path.join(
-      process.cwd(),
-      "content",
-      "services",
-      `${slug}.md`,
-    );
-    const content = await fs.promises.readFile(filePath, "utf-8");
-    return content;
-  } catch (err) {
-    return null;
-  }
+/**
+ * @deprecated El cuerpo de las fichas vive en Sanity (`service.body`).
+ * Usar getServiceBySlug() desde load-services.ts.
+ */
+export async function getServiceContent(_slug: string): Promise<string | null> {
+  return null;
 }

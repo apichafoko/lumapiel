@@ -1,40 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { getHubBySlug } from "@/lib/content/load-hubs";
+import { getHubBySlug, getHubSlugs } from "@/lib/content/load-hubs";
 import { HubLinkedServices } from "@/components/hub-linked-services";
 import { HubProcedureBlocks } from "@/components/hub-procedure-blocks";
+import { PortableTextBody } from "@/components/portable-text-body";
 import { Button } from "@/components/ui/button";
 import { getBookingUrl } from "@/lib/site-config";
-import { markdownToMetaDescription } from "@/lib/markdown-to-meta-description";
+import { portableTextToPlainDescription } from "@/lib/sanity/portable-text-plain";
 
 type Props = { params: Promise<{ hubSlug: string }> };
 
 export async function generateStaticParams() {
-  return [
-    { hubSlug: "estetica-medica" },
-    { hubSlug: "cosmiatria" },
-    { hubSlug: "tratamientos-laser" },
-    { hubSlug: "consulta-dermatologica" },
-  ];
+  const slugs = await getHubSlugs();
+  return slugs.map((hubSlug) => ({ hubSlug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { hubSlug } = await params;
-  const hub = getHubBySlug(hubSlug);
+  const hub = await getHubBySlug(hubSlug);
   if (!hub) return { title: "Especialidad" };
+  const description = portableTextToPlainDescription(hub.description);
   return {
     title: hub.title,
-    description: markdownToMetaDescription(hub.description),
+    description,
     alternates: { canonical: `/especialidades/${hubSlug}` },
   };
 }
 
 export default async function HubPage({ params }: Props) {
   const { hubSlug } = await params;
-  const hub = getHubBySlug(hubSlug);
+  const hub = await getHubBySlug(hubSlug);
   if (!hub) notFound();
 
   const bookingUrl = getBookingUrl();
@@ -53,9 +49,7 @@ export default async function HubPage({ params }: Props) {
           {hub.title}
         </h1>
         <div className="prose prose-stone dark:prose-invert mt-4 max-w-none text-lg text-muted-foreground prose-p:mb-0 prose-p:leading-relaxed prose-a:text-primary prose-a:underline-offset-4 hover:prose-a:underline">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {hub.description}
-          </ReactMarkdown>
+          <PortableTextBody value={hub.description} />
         </div>
       </header>
 
@@ -76,9 +70,7 @@ export default async function HubPage({ params }: Props) {
               {section.title}
             </h2>
             <div className="mt-4 prose prose-stone dark:prose-invert max-w-none prose-headings:font-heading prose-headings:text-primary prose-a:text-primary hover:prose-a:underline">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {section.body}
-              </ReactMarkdown>
+              <PortableTextBody value={section.body} />
             </div>
           </section>
         ))}

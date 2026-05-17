@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/especialidades" },
 };
 
-export default function EspecialidadesIndexPage() {
-  const hubs = getAllHubs();
+export default async function EspecialidadesIndexPage() {
+  const hubs = await getAllHubs();
   const site = getSiteConfig();
   const hubsById = new Map(hubs.map((hub) => [hub.id, hub] as const));
   const orderedHubs = site.hubs

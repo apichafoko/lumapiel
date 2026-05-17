@@ -5,8 +5,8 @@ type Props = {
   hubId: string;
 };
 
-export function HubLinkedServices({ hubId }: Props) {
-  const { tratamientos, consultas } = getLinkedServicesForHub(hubId);
+export async function HubLinkedServices({ hubId }: Props) {
+  const { tratamientos, consultas } = await getLinkedServicesForHub(hubId);
 
   if (tratamientos.length === 0 && consultas.length === 0) {
     return null;

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import homeContent from "@/content/pages/home.es.json";
+import { getHomePage } from "@/lib/content/load-home";
+import type { HomePageContent } from "@/lib/sanity/types";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -23,7 +24,7 @@ import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { CatalogVerMasLink } from "@/components/catalog-ver-mas-link";
 import { HomeHowWeWork } from "@/components/home-how-we-work";
 
-type HomePillar = (typeof homeContent.pillars)[number] & {
+type HomePillar = HomePageContent["pillars"][number] & {
   supportLine?: {
     prefix: string;
     linkText: string;
@@ -38,7 +39,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const homeContent = await getHomePage();
   const site = getSiteConfig();
   const bookingUrl = getBookingUrl();
   const wa = whatsappHrefForLocale("es");

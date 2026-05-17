@@ -24,7 +24,7 @@ export async function generateMetadata({
 
 export default async function ConsultasPage({ searchParams }: Props) {
   const sp = await searchParams;
-  const items = listConsultas();
+  const items = await listConsultas();
   const categories = extractCategories(items);
 
   const cat = typeof sp.cat === "string" ? sp.cat : "";

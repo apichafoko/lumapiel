@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllServices, getServiceBySlug } from "@/lib/content/load-services";
-import { getServiceContent } from "@/lib/content/load-service-content";
+import {
+  getServiceBySlug,
+  getServiceSlugs,
+} from "@/lib/content/load-services";
 import { ServiceDetail } from "@/components/service-detail";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return getAllServices()
+  const slugs = await getServiceSlugs();
+  return slugs
     .filter((s) => s.lista === "consultas")
-    .map((s) => ({ slug: s.slug_es }));
+    .map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const s = getServiceBySlug(slug);
+  const s = await getServiceBySlug(slug);
   if (!s || s.lista !== "consultas") return {};
   const description =
     s.aliases.split("|")[0]?.trim() ||
@@ -29,17 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ConsultaFichaPage({ params }: Props) {
   const { slug } = await params;
-  const s = getServiceBySlug(slug);
+  const s = await getServiceBySlug(slug);
   if (!s || s.lista !== "consultas") notFound();
-
-  const content = await getServiceContent(slug);
 
   return (
     <ServiceDetail
       service={s}
       listPath="/consultas"
       listLabel="Consultas"
-      content={content}
+      body={s.body}
     />
   );
 }

@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { getAllHubs } from "@/lib/content/load-hubs";
 import { getAllServices } from "@/lib/content/load-services";
+import { getPersonSlugs } from "@/lib/content/load-person";
+
 const base = SITE_URL;
 
 function u(
@@ -18,14 +20,16 @@ function u(
   };
 }
 
-export function buildSitemapEntries(): MetadataRoute.Sitemap {
-  const services = getAllServices();
+export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
+  const services = await getAllServices();
   const publishedTreat = services.filter(
     (s) => s.lista === "tratamientos" && s.published,
   );
   const publishedCons = services.filter(
     (s) => s.lista === "consultas" && s.published,
   );
+  const hubs = await getAllHubs();
+  const people = await getPersonSlugs();
 
   const routes: MetadataRoute.Sitemap = [
     u("/", undefined, "weekly", 1),
@@ -34,7 +38,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     u("/buscar", undefined, "monthly", 0.7),
     u("/contacto", undefined, "monthly", 0.85),
     u("/especialidades", undefined, "weekly", 0.85),
-    ...getAllHubs().map((hub) =>
+    ...hubs.map((hub) =>
       u(`/especialidades/${hub.id}`, undefined, "monthly", 0.85),
     ),
     ...publishedTreat.map((s) =>
@@ -43,8 +47,9 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     ...publishedCons.map((s) =>
       u(`/consultas/${s.slug_es}`, undefined, "monthly", 0.75),
     ),
-    u("/doctora/agustina-gandolfo", undefined, "monthly", 0.65),
-    u("/cosmetologa/yanina-benavidez", undefined, "monthly", 0.65),
+    ...people.map((p) =>
+      u(`/${p.role}/${p.slug}`, undefined, "monthly", 0.65),
+    ),
   ];
 
   return routes;

@@ -40,7 +40,7 @@ function parseArea(
 
 export default async function TratamientosPage({ searchParams }: Props) {
   const sp = await searchParams;
-  const items = listTratamientos();
+  const items = await listTratamientos();
 
   const area = parseArea(sp);
   const cat = typeof sp.cat === "string" ? sp.cat : "";

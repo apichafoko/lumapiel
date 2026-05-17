@@ -1,42 +1,39 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MarkdownBody } from "@/components/markdown-body";
+import { PortableTextBody } from "@/components/portable-text-body";
 import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { PersonJsonLd } from "@/lib/service-jsonld";
-import { readMarkdownFileUnder } from "@/lib/read-markdown";
+import { getPersonBySlug, getPersonSlugs } from "@/lib/content/load-person";
 import { instagramProfileUrl } from "@/lib/instagram-url";
 import { getTeamMemberByHref } from "@/lib/site-config";
 import { headshotSrcForTeamHref } from "@/lib/team-photos";
 import { TeamInstagramLink } from "@/components/team-instagram-link";
 
-const ALLOWED = new Set(["agustina-gandolfo"]);
-
-const PAGE_DESCRIPTION =
-  "Dra. Agustina Gandolfo, dermatóloga en Luma Piel (Palermo, CABA): medicina de precisión, psiconeuroinmunología clínica y tecnología Alma Lasers con criterio médico.";
-
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return [{ slug: "agustina-gandolfo" }];
+  const people = await getPersonSlugs();
+  return people
+    .filter((p) => p.role === "doctora")
+    .map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  if (!ALLOWED.has(slug)) return {};
+  const person = await getPersonBySlug(slug, "doctora");
+  if (!person) return {};
   return {
-    title: "Dra. Agustina Gandolfo",
-    description: PAGE_DESCRIPTION,
+    title: person.displayName ?? "Dra. Agustina Gandolfo",
+    description: person.seoDescription ?? "",
     alternates: { canonical: `/doctora/${slug}` },
   };
 }
 
 export default async function DoctoraPage({ params }: Props) {
   const { slug } = await params;
-  if (!ALLOWED.has(slug)) notFound();
-
-  const raw = readMarkdownFileUnder(["content", "people"], `${slug}.md`);
-  if (!raw) notFound();
+  const person = await getPersonBySlug(slug, "doctora");
+  if (!person) notFound();
 
   const path = `/doctora/${slug}`;
   const headshot = headshotSrcForTeamHref(path);
@@ -44,14 +41,15 @@ export default async function DoctoraPage({ params }: Props) {
   const instaUrl = member?.instagramUrl?.trim()
     ? instagramProfileUrl(member.instagramUrl)
     : undefined;
+  const displayName = person.displayName ?? "Agustina Gandolfo";
 
   return (
     <>
       <PersonJsonLd
-        name="Agustina Gandolfo"
-        jobTitle="Médica dermatóloga"
+        name={displayName}
+        jobTitle={person.jobTitle ?? "Médica dermatóloga"}
         urlPath={path}
-        description={PAGE_DESCRIPTION}
+        description={person.seoDescription ?? ""}
         imageUrl={headshot}
         sameAs={instaUrl ? [instaUrl] : undefined}
       />
@@ -67,7 +65,7 @@ export default async function DoctoraPage({ params }: Props) {
           <div className="mt-10 flex justify-center">
             <TeamMemberPhoto
               src={headshot}
-              alt="Retrato profesional — Dra. Agustina Gandolfo"
+              alt={`Retrato profesional — ${displayName}`}
               priority
               sizeClassName="size-28 sm:size-32"
               imageSizes="(max-width: 640px) 112px, 128px"
@@ -80,7 +78,7 @@ export default async function DoctoraPage({ params }: Props) {
             <TeamInstagramLink raw={member.instagramUrl} />
           </div>
         ) : null}
-        <MarkdownBody content={raw} className="mt-10" />
+        <PortableTextBody value={person.body} className="mt-10" />
       </article>
     </>
   );

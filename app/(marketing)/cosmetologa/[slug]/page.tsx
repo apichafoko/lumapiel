@@ -1,42 +1,39 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MarkdownBody } from "@/components/markdown-body";
+import { PortableTextBody } from "@/components/portable-text-body";
 import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { PersonJsonLd } from "@/lib/service-jsonld";
-import { readMarkdownFileUnder } from "@/lib/read-markdown";
+import { getPersonBySlug, getPersonSlugs } from "@/lib/content/load-person";
 import { instagramProfileUrl } from "@/lib/instagram-url";
 import { getTeamMemberByHref } from "@/lib/site-config";
 import { headshotSrcForTeamHref } from "@/lib/team-photos";
 import { TeamInstagramLink } from "@/components/team-instagram-link";
 
-const ALLOWED = new Set(["yanina-benavidez"]);
-
-const PAGE_DESCRIPTION =
-  "Cosmetóloga en Luma Piel (Palermo, CABA): tratamientos cosmiátricos personalizados junto a la Dra. Gandolfo, seguimiento cercano y educación en el cuidado diario.";
-
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return [{ slug: "yanina-benavidez" }];
+  const people = await getPersonSlugs();
+  return people
+    .filter((p) => p.role === "cosmetologa")
+    .map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  if (!ALLOWED.has(slug)) return {};
+  const person = await getPersonBySlug(slug, "cosmetologa");
+  if (!person) return {};
   return {
-    title: "Yanina Benavidez",
-    description: PAGE_DESCRIPTION,
+    title: person.displayName ?? "Yanina Benavidez",
+    description: person.seoDescription ?? "",
     alternates: { canonical: `/cosmetologa/${slug}` },
   };
 }
 
 export default async function CosmetologaPage({ params }: Props) {
   const { slug } = await params;
-  if (!ALLOWED.has(slug)) notFound();
-
-  const raw = readMarkdownFileUnder(["content", "people"], `${slug}.md`);
-  if (!raw) notFound();
+  const person = await getPersonBySlug(slug, "cosmetologa");
+  if (!person) notFound();
 
   const path = `/cosmetologa/${slug}`;
   const headshot = headshotSrcForTeamHref(path);
@@ -44,14 +41,15 @@ export default async function CosmetologaPage({ params }: Props) {
   const instaUrl = member?.instagramUrl?.trim()
     ? instagramProfileUrl(member.instagramUrl)
     : undefined;
+  const displayName = person.displayName ?? "Yanina Benavidez";
 
   return (
     <>
       <PersonJsonLd
-        name="Yanina Benavidez"
-        jobTitle="Cosmetóloga"
+        name={displayName}
+        jobTitle={person.jobTitle ?? "Cosmetóloga"}
         urlPath={path}
-        description={PAGE_DESCRIPTION}
+        description={person.seoDescription ?? ""}
         schemaType="Person"
         imageUrl={headshot}
         sameAs={instaUrl ? [instaUrl] : undefined}
@@ -68,7 +66,7 @@ export default async function CosmetologaPage({ params }: Props) {
           <div className="mt-10 flex justify-center">
             <TeamMemberPhoto
               src={headshot}
-              alt="Retrato profesional — Yanina Benavidez"
+              alt={`Retrato profesional — ${displayName}`}
               priority
               sizeClassName="size-28 sm:size-32"
               imageSizes="(max-width: 640px) 112px, 128px"
@@ -81,7 +79,7 @@ export default async function CosmetologaPage({ params }: Props) {
             <TeamInstagramLink raw={member.instagramUrl} />
           </div>
         ) : null}
-        <MarkdownBody content={raw} className="mt-10" />
+        <PortableTextBody value={person.body} className="mt-10" />
       </article>
     </>
   );

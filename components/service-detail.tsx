@@ -1,25 +1,25 @@
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
+import { PortableTextBody } from "@/components/portable-text-body";
 import type { ServiceRecord } from "@/lib/content/schema";
 import { getBookingUrl } from "@/lib/site-config";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/lib/service-jsonld";
 import { hubRefToHref } from "@/lib/hub-links";
+import type { PortableTextBlock } from "@portabletext/types";
 
 type Props = {
   service: ServiceRecord;
   /** /tratamientos o /consultas */
   listPath: "/tratamientos" | "/consultas";
   listLabel: string;
-  content?: string | null;
+  body?: PortableTextBlock[] | null;
 };
 
 export function ServiceDetail({
   service,
   listPath,
   listLabel,
-  content,
+  body,
 }: Props) {
   const bookingUrl = getBookingUrl();
   const description =
@@ -78,9 +78,9 @@ export function ServiceDetail({
           ) : null}
         </header>
 
-        {content ? (
+        {body?.length ? (
           <div className="mt-12 prose prose-stone dark:prose-invert max-w-none prose-headings:font-heading prose-headings:text-primary prose-a:text-primary hover:prose-a:underline">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+            <PortableTextBody value={body} />
           </div>
         ) : null}
 
