@@ -1,3 +1,4 @@
+import { table } from "@sanity/table";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
@@ -16,6 +17,7 @@ export default defineConfig({
   dataset,
   apiVersion,
   plugins: [
+    table({ rowType: "tableRow" }),
     structureTool({ structure }),
     presentationTool({
       resolve: { locations, mainDocuments },

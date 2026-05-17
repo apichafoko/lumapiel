@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import { QueEsCatalogPreview } from "../components/QueEsCatalogPreview";
 
 export const service = defineType({
   name: "service",
@@ -92,17 +93,20 @@ export const service = defineType({
       type: "number",
     }),
     defineField({
-      name: "queEsExcerpt",
-      title: "Resumen «¿Qué es?»",
-      type: "text",
-      rows: 3,
-      readOnly: true,
-      description: "Generado automáticamente en migración; editable si hace falta.",
-    }),
-    defineField({
       name: "body",
       title: "Ficha completa",
       type: "blockContent",
+      description:
+        "Contenido de la página del tratamiento. La sección «1. ¿Qué es…» alimenta automáticamente las tarjetas del catálogo.",
+    }),
+    defineField({
+      name: "queEsCatalogPreview",
+      title: "Vista previa en catálogo («¿Qué es?»)",
+      type: "string",
+      components: {
+        input: QueEsCatalogPreview,
+      },
+      readOnly: true,
     }),
   ],
   preview: {

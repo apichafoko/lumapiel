@@ -1,4 +1,4 @@
-import { blockContent, table } from "./blockContent";
+import { blockContent } from "./blockContent";
 import { homePage } from "./homePage";
 import { hub } from "./hub";
 import { legalPage } from "./legalPage";
@@ -7,7 +7,6 @@ import { service } from "./service";
 
 export const schemaTypes = [
   blockContent,
-  table,
   service,
   hub,
   homePage,

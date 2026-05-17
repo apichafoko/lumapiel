@@ -40,36 +40,10 @@ export const blockContent = defineType({
         ],
       },
     }),
+    /** Tipo `table` registrado por el plugin @sanity/table en sanity.config.ts */
     defineArrayMember({
       type: "table",
       title: "Tabla",
     }),
-  ],
-});
-
-export const table = defineType({
-  name: "table",
-  title: "Tabla",
-  type: "object",
-  fields: [
-    {
-      name: "rows",
-      type: "array",
-      title: "Filas",
-      of: [
-        {
-          type: "object",
-          name: "tableRow",
-          fields: [
-            {
-              name: "cells",
-              type: "array",
-              of: [{ type: "string" }],
-              title: "Celdas",
-            },
-          ],
-        },
-      ],
-    },
   ],
 });

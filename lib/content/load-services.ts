@@ -1,10 +1,11 @@
 import { mapServiceFromSanity } from "@/lib/sanity/map-service";
 import {
   ALL_SERVICES_QUERY,
+  SERVICE_BODIES_QUERY,
   SERVICE_BY_SLUG_QUERY,
-  SERVICE_QUE_ES_QUERY,
   SERVICE_SLUGS_QUERY,
 } from "@/lib/sanity/queries";
+import { extractQueEsFromPortableText } from "@/lib/content/extract-que-es-pt";
 import { fetchFromSanity, isSanityConfigured } from "@/lib/sanity/fetch";
 import {
   fileGetAllServices,
@@ -40,7 +41,9 @@ export async function getServiceBySlug(
     return {
       ...s,
       body,
-      queEsPreview: md ? await fileGetServiceQueEs(slug) : null,
+      queEsPreview:
+        extractQueEsFromPortableText(body) ??
+        (md ? await fileGetServiceQueEs(slug) : null),
     };
   }
   const doc = await fetchFromSanity<SanityServiceDoc | null>({
@@ -49,10 +52,11 @@ export async function getServiceBySlug(
     tags: ["service", `service:${slug}`],
   });
   if (!doc) return undefined;
+  const body = doc.body ?? null;
   return {
     ...mapServiceFromSanity(doc),
-    body: doc.body ?? null,
-    queEsPreview: doc.queEsExcerpt ?? null,
+    body,
+    queEsPreview: extractQueEsFromPortableText(body),
   };
 }
 
@@ -107,12 +111,15 @@ export async function getServiceQueEsMap(): Promise<Map<string, string | null>> 
     return new Map(entries);
   }
   const rows = await fetchFromSanity<
-    Array<{ slug_es: string; queEsExcerpt?: string | null }> | null
+    Array<{ slug_es: string; body: SanityServiceDoc["body"] }> | null
   >({
-    query: SERVICE_QUE_ES_QUERY,
+    query: SERVICE_BODIES_QUERY,
     tags: ["service"],
   });
   return new Map(
-    (rows ?? []).map((r) => [r.slug_es, r.queEsExcerpt ?? null]),
+    (rows ?? []).map((r) => [
+      r.slug_es,
+      extractQueEsFromPortableText(r.body),
+    ]),
   );
 }

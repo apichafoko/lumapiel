@@ -9,7 +9,6 @@ import { fileURLToPath } from "node:url";
 import { createClient } from "@sanity/client";
 import { config } from "dotenv";
 import { mdToPortableText } from "./lib/md-to-portable-text.mjs";
-import { extractQueEsPlainText } from "./lib/extract-que-es.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -103,8 +102,6 @@ async function migrateServices() {
   for (const svc of services) {
     const md = readMd("content", "services", `${svc.slug_es}.md`);
     const body = md ? await mdToPortableText(md) : [];
-    const queEsExcerpt = md ? extractQueEsPlainText(md) : null;
-
     const ref = svc.hub_refs?.trim();
     if (ref) {
       const m = ref.match(/^hub:([^:]+):(.+)$/);
@@ -133,7 +130,6 @@ async function migrateServices() {
       hubPinRank: svc.hub_pin_rank ?? 0,
       published: Boolean(svc.published),
       duracionMinutos: svc.duracion_minutos,
-      queEsExcerpt,
       body,
     });
     n++;

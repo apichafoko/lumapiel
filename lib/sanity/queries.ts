@@ -14,7 +14,6 @@ const serviceFields = groq`
   hubPinRank,
   published,
   duracionMinutos,
-  queEsExcerpt,
   body
 `;
 
@@ -37,10 +36,10 @@ export const SERVICE_SLUGS_QUERY = groq`
   }
 `;
 
-export const SERVICE_QUE_ES_QUERY = groq`
+export const SERVICE_BODIES_QUERY = groq`
   *[_type == "service"] {
     "slug_es": slug.current,
-    queEsExcerpt
+    body
   }
 `;
 

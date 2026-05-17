@@ -15,7 +15,6 @@ export type SanityServiceDoc = {
   hubPinRank: number;
   published: boolean;
   duracionMinutos?: number;
-  queEsExcerpt?: string | null;
   body?: PortableTextBlock[] | null;
 };
 

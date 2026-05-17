@@ -44,13 +44,17 @@ function parseMarkdownTable(raw) {
     .map((l) => l.trim())
     .filter(Boolean);
   const dataLines = lines.filter((l) => !/^\|[-:\s|]+\|$/.test(l));
-  const rows = dataLines.map((line) => {
+  const rows = dataLines.map((line, index) => {
     const cells = line
       .replace(/^\|/, "")
       .replace(/\|$/, "")
       .split("|")
       .map((c) => c.trim().replace(/\*\*([^*]+)\*\*/g, "$1"));
-    return { _type: "tableRow", cells };
+    return {
+      _type: "tableRow",
+      _key: `row-${index}`,
+      cells,
+    };
   });
   return {
     _type: "table",

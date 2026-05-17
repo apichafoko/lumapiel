@@ -17,6 +17,12 @@
 3. Para ver la página real mientras editás: pestaña **Presentation** (vista previa en vivo).
 4. Cuando estés conforme: **Publish** (publicar). Los cambios tardan unos segundos en verse en el sitio.
 
+## Texto «¿Qué es?» en tratamientos/consultas
+
+Solo se edita en **Ficha completa**, en la sección que empieza con **«1. ¿Qué es…»** (encabezado numerado).
+
+El bloque **Vista previa en catálogo** debajo es automático: muestra lo que verán las tarjetas en `/tratamientos` y `/consultas`. No hace falta copiarlo a mano.
+
 ## Qué no conviene tocar sin avisar
 
 - **Slug (URL)** y **ID interno** (`legacyId`): rompen enlaces y el catálogo.
