@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { AddressLink } from "@/components/address-link"
 import type { SiteConfig } from "@/lib/site-config"
 import { telHref, mailHref, whatsappHrefForLocale } from "@/lib/contact-links"
 
@@ -16,7 +17,9 @@ export function SiteFooter({ site }: Props) {
         <div className="space-y-3">
           <p className="font-heading text-lg font-semibold text-primary">{site.brandName}</p>
           <p className="text-sm text-muted-foreground">{site.tagline}</p>
-          <p className="text-xs text-muted-foreground">{site.address}</p>
+          <p className="text-xs text-muted-foreground">
+            <AddressLink address={site.address} mapsUrl={site.mapsUrl} />
+          </p>
         </div>
 
         <div className="space-y-3">

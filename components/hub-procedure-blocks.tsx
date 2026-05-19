@@ -5,6 +5,14 @@ type Props = {
   blocks: HubProcedureBlock[];
 };
 
+/** El catálogo en Studio suele estar en mayúsculas; se muestra en formato legible. */
+function formatProcedureLabel(raw: string): string {
+  const t = raw.trim();
+  if (!t) return t;
+  const lower = t.toLocaleLowerCase("es");
+  return lower.replace(/(?:^|\s|[(/])\S/g, (m) => m.toUpperCase());
+}
+
 export function HubProcedureBlocks({ blocks }: Props) {
   return (
     <section
@@ -23,10 +31,7 @@ export function HubProcedureBlocks({ blocks }: Props) {
           block.style === "nested" ? (
             <li key={`${block.title}-${i}`} className="space-y-2">
               <p className="font-semibold text-primary">
-                <span aria-hidden className="mr-1 text-muted-foreground">
-                  –
-                </span>
-                {block.title}
+                {formatProcedureLabel(block.title)}
               </p>
               <ul className="ml-4 space-y-1.5 border-l border-border/80 pl-4">
                 {block.items.map((item) => (
@@ -38,7 +43,7 @@ export function HubProcedureBlocks({ blocks }: Props) {
                       href={`/tratamientos/${item.slug_es}`}
                       className="underline-offset-4 hover:text-primary hover:underline"
                     >
-                      {item.label}
+                      {formatProcedureLabel(item.label)}
                     </Link>
                   </li>
                 ))}
@@ -46,14 +51,11 @@ export function HubProcedureBlocks({ blocks }: Props) {
             </li>
           ) : (
             <li key={`${block.slug_es}-${i}`}>
-              <span aria-hidden className="mr-1 font-semibold text-muted-foreground">
-                –
-              </span>
               <Link
                 href={`/tratamientos/${block.slug_es}`}
                 className="font-semibold text-primary underline-offset-4 hover:underline"
               >
-                {block.title}
+                {formatProcedureLabel(block.title)}
               </Link>
             </li>
           ),

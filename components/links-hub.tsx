@@ -158,7 +158,19 @@ export async function LinksHub() {
         ) : null}
 
         <p className="font-subtext mt-12 max-w-sm text-center text-xs leading-relaxed text-muted-foreground">
-          © {new Date().getFullYear()} - {cfg.brandName} - {cfg.footerAddress}
+          © {new Date().getFullYear()} - {cfg.brandName} -{" "}
+          {cfg.mapsUrl ? (
+            <a
+              href={cfg.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-4 hover:text-primary hover:underline"
+            >
+              {cfg.footerAddress}
+            </a>
+          ) : (
+            cfg.footerAddress
+          )}
         </p>
       </div>
     </div>

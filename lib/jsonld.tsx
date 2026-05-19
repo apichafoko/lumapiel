@@ -1,9 +1,11 @@
-import { SITE_URL } from "@/lib/constants"
+import { MAPS_URL, SITE_URL } from "@/lib/constants"
+import { getSiteConfig } from "@/lib/site-config"
 
 const SITE_ID = `${SITE_URL}/#website`
 const ORG_ID = `${SITE_URL}/#organization`
 
 export function WebsiteJsonLd() {
+  const site = getSiteConfig()
   const data = {
     "@context": "https://schema.org",
     "@graph": [
@@ -15,6 +17,15 @@ export function WebsiteJsonLd() {
         logo: `${SITE_URL}/icon.svg`,
         telephone: "+5491125276361",
         email: "contacto@lumapiel.com.ar",
+        hasMap: MAPS_URL,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: 'Arenales 3819 2° "A"',
+          addressLocality: "Ciudad Autónoma de Buenos Aires",
+          postalCode: "C1425",
+          addressCountry: "AR",
+        },
+        description: site.address,
       },
       {
         "@type": "WebSite",

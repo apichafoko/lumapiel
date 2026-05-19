@@ -4,7 +4,13 @@ import type { SanityServiceDoc } from "@/lib/sanity/types";
 function normalizeCategorias(raw: string | undefined): string {
   return (raw ?? "")
     .split("|")
-    .map((c) => c.trim().toLowerCase())
+    .map((c) =>
+      c
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/\p{M}/gu, ""),
+    )
     .filter(Boolean)
     .join("|");
 }

@@ -12,8 +12,8 @@ import {
   TREATMENT_AREA_DESCRIPTIONS,
   TREATMENT_AREA_LABELS,
   type TreatmentAreaId,
-  getTreatmentAreaId,
   groupTratamientosByArea,
+  serviceMatchesTreatmentArea,
 } from "@/lib/treatment-areas";
 
 const PAGE_SIZE = 12;
@@ -45,7 +45,7 @@ export async function TratamientoServiceIndex({
 
   let filtered = items;
   if (area) {
-    filtered = filtered.filter((s) => getTreatmentAreaId(s) === area);
+    filtered = filtered.filter((s) => serviceMatchesTreatmentArea(s, area));
   }
   if (cat) {
     filtered = filtered.filter((s) =>

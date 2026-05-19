@@ -55,7 +55,8 @@ export const service = defineType({
       name: "categorias",
       title: "Categorías",
       type: "string",
-      description: "Separadas por | (ej. estetica|rejuvenecimiento)",
+      description:
+        "Separadas por | sin tildes (ej. cosmiatria, laser|capilar). laser|capilar lista en Láser y Capilar.",
     }),
     defineField({
       name: "aliases",

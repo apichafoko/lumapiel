@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AddressLink } from "@/components/address-link";
 import { Button } from "@/components/ui/button";
 import { getBookingUrl, getSiteConfig } from "@/lib/site-config";
 import { telHref, mailHref, whatsappHrefForLocale } from "@/lib/contact-links";
@@ -7,7 +8,7 @@ import { telHref, mailHref, whatsappHrefForLocale } from "@/lib/contact-links";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Teléfono, WhatsApp, correo y reserva web de Luma Piel. Arenales 3819, Palermo, CABA.",
+    "Teléfono, WhatsApp, correo y reserva web de Luma Piel. Arenales 3819, CABA.",
   alternates: { canonical: "/contacto" },
 };
 
@@ -29,7 +30,11 @@ export default function ContactoPage() {
       <ul className="mt-10 space-y-6 text-base">
         <li>
           <span className="font-medium text-foreground">Dirección:</span>{" "}
-          <span className="text-muted-foreground">{site.address}</span>
+          <AddressLink
+            address={site.address}
+            mapsUrl={site.mapsUrl}
+            className="text-muted-foreground"
+          />
         </li>
         <li>
           <span className="font-medium text-foreground">Teléfono:</span>{" "}

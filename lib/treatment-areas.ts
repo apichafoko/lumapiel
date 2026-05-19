@@ -29,28 +29,56 @@ export const TREATMENT_AREA_DESCRIPTIONS: Record<TreatmentAreaId, string> = {
     "Medicina estética inyectable, bioestimulación y procedimientos clínicos.",
 };
 
+/** Etiquetas de catálogo que mapean a un área de /tratamientos (sin tildes, minúsculas). */
+const PRIMARY_AREA_CATEGORIES: TreatmentAreaId[] = [
+  "laser",
+  "cosmiatria",
+  "peelings",
+  "capilar",
+];
+
+function normalizeCategory(raw: string): string {
+  return raw
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "");
+}
+
 function categorySet(s: ServiceRecord): Set<string> {
   return new Set(
     s.categorias
       .split("|")
-      .map((c) => c.trim())
+      .map(normalizeCategory)
       .filter(Boolean),
   );
 }
 
 /**
- * Asigna cada tratamiento a un solo bloque para listados agrupados (sin duplicar fichas).
- * Prioridad: láser → cosmiatría → peelings → capilar → dermatológicos.
+ * Áreas donde debe listarse el tratamiento (puede repetirse en más de una).
+ * Etiquetas laser, cosmiatria, peelings y capilar suman áreas.
+ * estetica|rejuvenecimiento → dermatológicos solo si no hay área primaria.
  */
-export function getTreatmentAreaId(s: ServiceRecord): TreatmentAreaId {
+export function getTreatmentAreaIds(s: ServiceRecord): TreatmentAreaId[] {
   const cats = categorySet(s);
-  if (cats.has("laser")) return "laser";
-  if (cats.has("cosmiatria")) return "cosmiatria";
-  if (cats.has("peelings")) return "peelings";
-  if (cats.has("capilar")) return "capilar";
-  if (cats.has("estetica") || cats.has("rejuvenecimiento"))
-    return "dermatologicos";
-  return "dermatologicos";
+  const primary = PRIMARY_AREA_CATEGORIES.filter((id) => cats.has(id));
+  if (primary.length > 0) return primary;
+  if (cats.has("estetica") || cats.has("rejuvenecimiento")) {
+    return ["dermatologicos"];
+  }
+  return ["dermatologicos"];
+}
+
+/** Primera área (compatibilidad). Preferí getTreatmentAreaIds o serviceMatchesTreatmentArea. */
+export function getTreatmentAreaId(s: ServiceRecord): TreatmentAreaId {
+  return getTreatmentAreaIds(s)[0];
+}
+
+export function serviceMatchesTreatmentArea(
+  s: ServiceRecord,
+  area: TreatmentAreaId,
+): boolean {
+  return getTreatmentAreaIds(s).includes(area);
 }
 
 export function groupTratamientosByArea(
@@ -65,7 +93,9 @@ export function groupTratamientosByArea(
   });
   const out = empty();
   for (const s of items) {
-    out[getTreatmentAreaId(s)].push(s);
+    for (const areaId of getTreatmentAreaIds(s)) {
+      out[areaId].push(s);
+    }
   }
   return out;
 }

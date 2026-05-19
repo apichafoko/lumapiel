@@ -1,9 +1,9 @@
-import Link from "next/link";
 import {
   PortableText,
   type PortableTextComponents,
 } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/types";
+import { PortableTextLink } from "@/components/portable-text-link";
 
 const components: PortableTextComponents = {
   block: {
@@ -46,26 +46,7 @@ const components: PortableTextComponents = {
     link: ({ value, children }) => {
       const href = value?.href as string | undefined;
       if (!href) return <>{children}</>;
-      if (href.startsWith("/")) {
-        return (
-          <Link
-            href={href}
-            className="text-primary underline-offset-4 hover:underline"
-          >
-            {children}
-          </Link>
-        );
-      }
-      return (
-        <a
-          href={href}
-          className="text-primary underline-offset-4 hover:underline"
-          target={href.startsWith("http") ? "_blank" : undefined}
-          rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-        >
-          {children}
-        </a>
-      );
+      return <PortableTextLink href={href}>{children}</PortableTextLink>;
     },
   },
   types: {

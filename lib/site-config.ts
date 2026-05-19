@@ -1,5 +1,5 @@
 import siteEs from "@/content/site.es.json";
-import { LINKS_BOOKING_URL } from "@/lib/constants";
+import { LINKS_BOOKING_URL, MAPS_URL } from "@/lib/constants";
 
 export type SiteNavItem = {
   label: string;
@@ -27,6 +27,7 @@ export type SiteConfig = {
   /** Enlace “Sitio potenciado por Luma Software” en el pie. */
   lumaSoftwareUrl: string;
   address: string;
+  mapsUrl: string;
   nav: SiteNavItem[];
   hubs: { label: string; href: string; description: string }[];
   team: SiteTeamLink[];
@@ -38,6 +39,7 @@ const raw = siteEs as SiteConfig;
 export function getSiteConfig(): SiteConfig {
   return {
     ...raw,
+    mapsUrl: MAPS_URL,
     webBookingUrl: process.env.NEXT_PUBLIC_WEB_BOOKING_URL ?? raw.webBookingUrl,
     lumaSoftwareUrl:
       process.env.NEXT_PUBLIC_LUMA_SOFTWARE_URL ?? raw.lumaSoftwareUrl,

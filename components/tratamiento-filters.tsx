@@ -5,7 +5,7 @@ import {
   TREATMENT_AREA_LABELS,
   type TreatmentAreaId,
   extractCategoriesInItems,
-  getTreatmentAreaId,
+  serviceMatchesTreatmentArea,
 } from "@/lib/treatment-areas";
 import type { ServiceRecord } from "@/lib/content/schema";
 
@@ -44,7 +44,7 @@ export function TratamientoFilters({
   const itemsForSubchips =
     activeArea === ""
       ? items
-      : items.filter((s) => getTreatmentAreaId(s) === activeArea);
+      : items.filter((s) => serviceMatchesTreatmentArea(s, activeArea));
 
   const subCategories = extractCategoriesInItems(itemsForSubchips);
 

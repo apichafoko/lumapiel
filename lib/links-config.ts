@@ -22,8 +22,10 @@
  */
 
 import { headers } from "next/headers";
+import { MAPS_URL } from "@/lib/constants";
 
-const DEFAULT_LINKS_FOOTER_ADDRESS = 'Arenales 3819 2° "A", Palermo, CABA.';
+const DEFAULT_LINKS_FOOTER_ADDRESS =
+  'Arenales 3819 2° "A", C1425 Cdad. Autónoma de Buenos Aires';
 
 export type LinksConfig = {
   brandName: string;
@@ -57,7 +59,7 @@ export function getLinksConfig(): LinksConfig {
     whatsappNumber: readEnv("NEXT_PUBLIC_LINKS_WHATSAPP_NUMBER"),
     whatsappPresetMessage: readEnv("NEXT_PUBLIC_LINKS_WHATSAPP_MESSAGE"),
     webBookingUrl: readEnv("NEXT_PUBLIC_LINKS_WEB_BOOKING_URL"),
-    mapsUrl: readEnv("NEXT_PUBLIC_LINKS_MAPS_URL"),
+    mapsUrl: readEnv("NEXT_PUBLIC_LINKS_MAPS_URL") ?? MAPS_URL,
     instagramUrl: readEnv("NEXT_PUBLIC_LINKS_INSTAGRAM_URL"),
     shareUrl: readEnv("NEXT_PUBLIC_LINKS_SHARE_URL"),
     moreUrl: readEnv("NEXT_PUBLIC_LINKS_MORE_URL"),
