@@ -1,6 +1,6 @@
-### 1. ¿Qué es la Luz Pulsada (IPL) Corporal?
+### 1. ¿Qué es la Luz Pulsada (IPL) Completa?
 
-La **luz pulsada intensa (IPL)** es un **tratamiento no invasivo** basado en **pulsos de luz de alta energía**. Su **indicación más frecuente** es la **pigmentación** (manchas, léntigos, fotodaño) y las **alteraciones vasculares superficiales** (rubor, telangiectasias); también **homogeneiza el tono** asociado al **fotoenvejecimiento** por sol.
+La luz pulsada intensa (IPL) es un tratamiento no invasivo basado en pulsos de luz de alta energía. Su indicación más frecuente es la pigmentación (manchas, lentigos, fotodaño) y las alteraciones vasculares superficiales (rubor, telangiectasias); también homogeneiza el tono asociado al fotoenvejecimiento solar.
 
 A diferencia del **láser** (luz monocromática y coherente, típicamente una sola longitud de onda), la IPL utiliza **luz policromática de amplio espectro**; el equipo permite **filtrar longitudes de onda** según el objetivo clínico. En Luma Piel el tratamiento se realiza con la plataforma **Alma Harmony** (Alma Lasers), que incorpora tecnología **AFT (Advanced Fluorescence Technology)** para un reparto de energía **más homogéneo y controlado** sobre el tejido.
 
@@ -19,11 +19,10 @@ Su **prioridad** son las **manchas y la pigmentación**, y el **componente vascu
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
-El IPL corporal es sumamente versátil. Es eficaz para:
+La IPL corporal es sumamente versátil. Es eficaz para:
 
 - **Léntigos solares:** Manchas causadas por el sol (comunes en escote, manos y hombros).
-- **Rosácea y cuperosis:** Reduce el enrojecimiento y las pequeñas venitas.
-- **Poiquilodermia de Civatte:** Esa coloración rojiza-marrón que suele aparecer en los laterales del cuello.
+- **Rosácea:** Reduce el enrojecimiento y las pequeñas venitas.
 - **Textura irregular:** Mejora los poros abiertos y aporta luminosidad global.
 
 ### 4. ¿Cómo es una sesión de IPL?
@@ -37,9 +36,9 @@ Para que sepas exactamente qué esperar, aquí el paso a paso:
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| IPL Completa | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
-| Recuperación | Inmediata. Las manchas pueden oscurecerse unos días antes de descamarse. |
-| Restricción Solar | Vital: Sin exposición solar directa 3-4 semanas antes ni después. |
+| Recuperación | Inmediata. Es normal un leve enrojecimiento pasajero. Las manchas pueden oscurecerse, en algunos casos generar costra y unos días antes de descamarse. |
+| Restricción Solar | Evitar exposición directa al sol y uso de protector solar (FPS 50) |
 | Resultados | Cambios visibles desde la primera sesión; se recomiendan 3 a 5 sesiones. |

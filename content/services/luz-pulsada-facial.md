@@ -10,27 +10,27 @@ La sesión **facial** abarca **rostro y zonas contiguas** definidas en consulta 
 
 ### 2. ¿Para qué sirve?
 
-Su **indicación principal** es **atenuar manchas y pigmentación** y **modificar rojeces y vasitos superficiales** en la cara. Mejora la **apariencia** del fotoenvejecimiento **pigmentario y vascular**. Para **rejuvenecimiento** centrado en **firmeza**, **relieve** o **colágeno** como eje del plan, se evalúan en consulta **otras opciones**, solas o combinadas.
+Su prioridad es atenuar las manchas, la pigmentación y el componente vascular superficial cuando corresponde. El objetivo es un tono más uniforme y menos “manchado” o enrojecido en las zonas tratadas.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
 - **Manchas solares y léntigos:** Elimina la pigmentación superficial acumulada.
 - **Rosácea y telangiectasias:** Sella los vasitos dilatados que causan rojeces constantes en mejillas y nariz.
 - **Fotoenvejecimiento:** Revitaliza la piel apagada y engrosada.
-- **Poros dilatados y marcas de acné:** Suaviza la textura irregular del cutis.
+- **Mejora textura: **poros dilatados
 
 ### 4. ¿Cómo es una sesión de IPL Facial?
 
 1. **Preparación:** Limpieza profunda del rostro y colocación de gafas protectoras.
 2. **Protección térmica:** Aplicación de un gel frío para el confort y la transmisión de la luz.
 3. **Aplicación:** Podés ver un haz de luz y sentir una sensación de **pinchacitos** y **calor**.
-4. **Finalización:** Limpieza del gel, aplicación de cremas descongestivas y pantalla solar.
+4. **Finalización:** Limpieza del gel, aplicación de cremas descongestivas y protector solar.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| IPL facial | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
-| Recuperación | Sin tiempo de inactividad. Es normal un leve enrojecimiento pasajero. |
-| Restricción Solar | Cuidarse estrictamente del sol 3 a 4 semanas antes y después. |
-| Resultados | Tez más clara y uniforme, con protocolos de 3 a 5 sesiones anuales. |
+| Recuperación | Sin tiempo de inactividad. Es normal un leve enrojecimiento pasajero.Las manchas pueden oscurecerse, en algunos casos generar costra y unos días después, descamarse. |
+| Restricción Solar | evitar exposición directa al sol y uso de protector solar (FPS 50) de preferencia dos semanas luego del tratamiento. |
+| Resultados | Atenúa manchas, piel más uniforme, con protocolos de 3 a 5 sesiones anuales. |

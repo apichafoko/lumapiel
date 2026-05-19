@@ -8,20 +8,20 @@ Sirve para aclarar manchas solares, afinar textura y devolver luminosidad a mano
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
-- **Léntigos solares en dorso de manos.**
+- **Lentigos solares en dorso de manos.**
 - **Tono desparejo y opacidad cutánea.**
 - **Textura rugosa superficial por daño actínico.**
 
 ### 4. ¿Cómo es una sesión de Peeling TCA en Manos?
 
 1. **Diagnóstico de fotodaño:** Se valora profundidad pigmentaria.
-2. **Preparación:** Limpieza y desengrase controlado.
+2. **Preparación:** Limpieza
 3. **Aplicación TCA:** Distribución uniforme en dorso de ambas manos.
-4. **Cierre:** Reparación barrera y pautas de protección.
+4. **Cierre:** humectación y pautas de protección.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Peeling TCA Manos | Detalle Importante |
 | --- | --- |
 | Duración | 40 minutos. |
 | Recuperación | Puede aparecer descamación visible de 3 a 7 días según intensidad. |

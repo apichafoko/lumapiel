@@ -9,8 +9,6 @@ Sirve para suavizar y prevenir las arrugas de expresión, logrando un rostro des
 ### 3. ¿Qué patologías o afecciones mejora?
 
 - **Arrugas del tercio superior:** Patas de gallo, líneas de la frente y el entrecejo.
-- **Bruxismo (Hipertrofia maseterina):** Alivia la tensión mandibular y afina el rostro.
-- **Sonrisa gingival:** Relaja el labio superior para que no muestre exceso de encía al sonreír.
 - **Hiperhidrosis:** Frena el exceso de sudoración en axilas, manos o pies.
 
 ### 4. ¿Cómo es una sesión de Botox®?
@@ -22,7 +20,7 @@ Sirve para suavizar y prevenir las arrugas de expresión, logrando un rostro des
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Botox | Detalle Importante |
 | --- | --- |
 | Duración | 45 minutos. |
 | Recuperación | Inmediata. No acostarse ni hacer ejercicio intenso en las siguientes 4 horas. |

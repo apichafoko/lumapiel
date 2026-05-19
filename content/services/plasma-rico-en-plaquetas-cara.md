@@ -8,23 +8,23 @@ Sirve para “despertar” a los fibroblastos de la piel. Los factores de crecim
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
+- **Deshidratación profunda de la piel**
 - **Envejecimiento cronológico:** Combate la flacidez y el afinamiento de la piel.
-- **Falta de vitalidad:** Restaura el brillo, la tersura y el color saludable de la tez.
+- **Falta de vitalidad:** Restaura el brillo, la tersura  saludable de la piel.
 - **Cicatrices y secuelas:** Favorece la reparación de tejidos dañados por acné o traumatismos.
-- **Ojeras oscuras:** Mejora la vascularización y el grosor de la piel del contorno de ojos.
 
 ### 4. ¿Cómo es una sesión de PRP Facial?
 
 1. **Extracción:** Como en un análisis de laboratorio, se extrae una pequeña cantidad de tu sangre.
-2. **Centrifugado:** La sangre se coloca en una centrifugadora especial durante unos 10 minutos para separar el plasma rico en plaquetas de los glóbulos rojos.
-3. **Aplicación:** Tras limpiar el rostro y usar anestesia tópica, el médico infiltra el plasma mediante microinyecciones por toda la cara.
+2. **Centrifugado:** La sangre se coloca en una centrifugadora especial durante unos minutos para separar el plasma rico en plaquetas de los glóbulos rojos.
+3. **Aplicación:** Tras limpiar el rostro el médico infiltra el plasma. 
 4. **Cierre:** Al ser tu propio material biológico, no hay riesgo de alergia ni rechazo.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| PRP facial | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos (incluye extracción de sangre, preparación y aplicación). |
-| Recuperación | Posibilidad de pequeños hematomas (moretones) o leve hinchazón que bajan en 24-48 hs. |
+| Recuperación | Posibilidad de pequeños hematomas (moretones) o leve hinchazón o eritema que bajan en 24-48 hs. |
 | Cuidados post | No lavar la cara por unas horas, no hacer ejercicio intenso el mismo día. |
-| Resultados | La piel se vuelve más densa y luminosa progresivamente a partir de los 20-30 días. |
+| Resultados | La piel se vuelve más densa y luminosa progresivamente |

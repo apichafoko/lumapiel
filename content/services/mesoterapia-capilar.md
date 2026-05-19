@@ -14,16 +14,14 @@ Sirve para frenar caída difusa, fortalecer el cabello fino y potenciar tratamie
 
 ### 4. ¿Cómo es una sesión de Mesoterapia Capilar?
 
-1. **Diagnóstico:** Se define tipo de caída y objetivos mensurables.
-2. **Asepsia del cuero cabelludo** y marcación de áreas.
-3. **Microinyecciones seriadas** con agujas finas en zonas de menor densidad.
-4. **Control evolutivo:** Seguimiento fotográfico y ajustes de protocolo.
+1. **Microinyecciones seriadas** con agujas finas en zonas de menor densidad capilar.
+2. **Control evolutivo:** Seguimiento fotográfico y ajustes de protocolo.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Mesoterapia | Detalle Importante |
 | --- | --- |
 | Duración | 30 minutos. |
-| Recuperación | Inmediata; pueden quedar puntos leves de sensibilidad por algunas horas. |
-| Frecuencia | Suele indicarse semanal o quincenal al inicio, luego mantenimiento. |
+| Recuperación | Inmediata; pueden quedar puntos leves de sensibilidad por algunas horas, ardor. |
+| Frecuencia | Suele indicarse cada 3 semanas |
 | Resultados | Mejoría gradual del calibre y caída en ciclos de 2 a 3 meses. |

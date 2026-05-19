@@ -14,14 +14,14 @@ Sirve para mejorar densidad y calidad del cabello en pacientes seleccionados con
 
 ### 4. ¿Cómo es una sesión de PRP Capilar?
 
-1. **Extracción sanguínea:** Se toma una muestra venosa en consultorio.
+1. **Extracción sanguínea:** Se toma una muestra de sangre en consultorio.
 2. **Procesado:** Centrifugación para aislar plasma con alta concentración plaquetaria.
 3. **Infiltración:** Microinyecciones en zonas de menor densidad capilar.
 4. **Seguimiento:** Controles seriados para medir respuesta y ajustar frecuencia.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| PRP Capilar | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Recuperación | Inmediata; puede haber leve dolor local o sensibilidad por 24 hs. |

@@ -4,7 +4,7 @@ Es un peeling químico de profundidad media que utiliza Ácido Tricloroacético 
 
 ### 2. ¿Para qué sirve?
 
-Sirve para realizar una renovación cutánea significativa. Es un tratamiento “médico” más potente que los peelings cosméticos, diseñado para forzar a la piel a desprenderse de su capa envejecida y fabricar colágeno nuevo.
+Sirve para realizar una renovación cutánea significativa. Diseñado para desprender de la piel su capa envejecida y así mejorar textura y tono de la piel.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
@@ -15,16 +15,16 @@ Sirve para realizar una renovación cutánea significativa. Es un tratamiento �
 
 ### 4. ¿Cómo es una sesión de Peeling TCA Facial?
 
-1. **Preparación:** Desengrasado profundo de la piel.
+1. **Preparación:** limpieza de la piel.
 2. **Pincelado:** Se aplica el ácido con un hisopo o pincel. Sentirás ardor, calor y picor intenso.
-3. **“Frosting”:** La piel se pone blanca (escarchada) en ciertas zonas; es el signo clínico de que el ácido actuó.
+3. **“Frosting”:** La piel se pone blanca en ciertas zonas; es el signo clínico de que el ácido actuó.
 4. **Calma:** Se aplica frío o mascarillas descongestivas para calmar el ardor, que desaparece en pocos minutos.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Limpieza + Peeling TCA Facial | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Recuperación | Implica "downtime" (tiempo de baja). La piel se pondrá marrón/tensa y se pelará notablemente entre el día 3 y el día 7. |
-| Cuidados post | Prohibido tirar de la piel que se descama (puede dejar cicatriz). Mucha hidratación y protección solar estricta. |
-| Resultados | Piel "nueva", tensa y sin manchas a los 10 días. |
+| Cuidados post | No tirar de la piel que se descama. Mucha hidratación y protección solar estricta. |
+| Resultados | Mejor textura, atenúa manchas, mejora poros. |

@@ -1,6 +1,6 @@
 ### 1. ¿Qué es el Peeling TCA de Glúteos?
 
-Es un peeling químico médico con ácido tricloroacético (TCA) aplicado en la zona glútea para renovar la piel y mejorar su textura, color y calidad global.
+Es un peeling químico con ácido tricloroacético (TCA) aplicado en la zona glútea para renovar la piel y mejorar su textura, color y calidad global.
 
 ### 2. ¿Para qué sirve?
 
@@ -16,13 +16,13 @@ Sirve para tratar manchas, marcas de foliculitis, piel engrosada y aspecto irreg
 ### 4. ¿Cómo es una sesión de Peeling TCA en Glúteos?
 
 1. **Evaluación clínica:** Se decide concentración y extensión a tratar.
-2. **Preparación:** Limpieza, desengrase y protección de áreas sensibles.
-3. **Aplicación del TCA:** Pasadas controladas por tiempos médicos.
+2. **Preparación:** Limpieza de zona a tratar
+3. **Aplicación del TCA**
 4. **Post:** Productos reparadores y plan estricto de cuidados.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Peeling TCA Glúteos | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Recuperación | Enrojecimiento y descamación variable durante varios días. |

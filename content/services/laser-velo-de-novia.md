@@ -1,30 +1,31 @@
-### 1. ¿Qué es el Láser Velo de Novia (Hollywood Peel)?
+### 1. ¿Qué es el Láser Velo de Novia?
 
-También conocido como “Carbon Peel”, es un tratamiento láser innovador e indoloro que combina una loción de carbón activo con la energía del láser Q-Switch. Es el secreto de las alfombras rojas para una piel radiante al instante.
+Es un láser ablativo, es decir que pule la capa más superficial de la piel, llamada capa córnea, mejorando el aspecto de poros y textura. Devuelve brillo y vitalidad a la piel. A su vez pule manchas seborreicas sobreelevadas mejorando su aspecto.
 
 ### 2. ¿Para qué sirve?
 
-Sirve como un “shock” de belleza inmediato. El láser interactúa con el carbón pulverizando sus partículas, lo que arrastra células muertas, sebo e impurezas de los poros. Simultáneamente, el efecto térmico da un suave estímulo de colágeno.
+
+
+Mejora textura, poros, engrosamiento de la piel y manchas con relieve dejando una piel mas suave al tacto y luminosa.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
-- **Piel opaca y sin vida:** Otorga una luminosidad y brillo (“glow”) inmediato.
+- **Piel opaca y apagada:** Otorga una luminosidad y brillo (“glow”) inmediato.
 - **Poros dilatados y obstruidos:** Limpia y minimiza el tamaño del poro visiblemente.
-- **Exceso de sebo:** Reduce la oleosidad y ayuda en el control del acné leve.
-- **Tono irregular:** Suaviza manchas superficiales y empareja el color.
+- Pule manchas con textura y relieve.
 
 ### 4. ¿Cómo es una sesión de Velo de Novia?
 
-1. **Mascarilla de carbón:** Se aplica una capa fina de carbón activo líquido y se deja secar unos minutos para que penetre en los poros.
-2. **El láser:** Se pasa el láser sobre el rostro. Escucharás pequeños “chasquidos” (es el láser vaporizando el carbón).
-3. **Sensación:** Solo sentirás un ligero y agradable hormigueo o calorcito, pero es totalmente indoloro.
-4. **Finalización:** Limpieza de cualquier resto y aplicación de pantalla solar. Estás lista para seguir con tu día.
+1. **Anestesia: **se suele colocar anestesia en crema 45 minutos antes de la sesión para mayor confort del paciente durante el tratamiento.
+2. **El láser:** Se pasa por la superficie de la piel dejando puntitos (como el velo de una novia) que luego se transforman en costritas que se desprenden solas con el correr de los 5 a 7 días posteriores al procedimiento.
+3. **Sensación:** Ardor al finalizar el tratamiento
+4. **Finalización:** crema con anestesia, humectante y protector solar.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Láser Velo de Novia | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
-| Recuperación | Cero downtime. Podés maquillarte e ir a un evento inmediatamente después. |
-| Frecuencia | Ideal para hacer días previos a una fiesta, o como mantenimiento mensual de la piel. |
-| Resultados | Piel ultra suave, luminosa y con "efecto porcelana" instantáneo. |
+| Recuperación | dependiendo la intensidad del tratamiento pueden ser de 5 días de recuperación por lo que tardan en caer las costritas. |
+| Frecuencia | 1 vez por año |
+| Resultados | piel más luminosa y suave al tacto |

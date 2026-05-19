@@ -17,13 +17,13 @@ Sirve para aclarar ojeras oscuras de componente melánico y mejorar la transici�
 1. **Evaluación etiológica:** Se define el tipo de ojera y la expectativa real.
 2. **Protección ocular específica** para trabajar una zona sensible.
 3. **Aplicación láser focalizada** en párpado inferior y borde infraorbitario.
-4. **Post inmediato:** Frío local, crema calmante y pautas de cuidado.
+4. **Post inmediato:**  crema calmante y pautas de cuidado.
 
 ### 5. Consideraciones Clave
 
 | Aspecto | Detalle Importante |
 | --- | --- |
 | Duración | 30 minutos. |
-| Recuperación | Leve inflamación o enrojecimiento por horas; rara vez costras puntuales. |
-| Cuidados post | No frotar la zona, usar hidratación ocular segura y fotoprotección diaria. |
-| Resultados | Mejoría progresiva del componente oscuro en sesiones seriadas. |
+| Recuperación | Leve inflamación o enrojecimiento por horas; rara vez costras puntuales o petequias |
+| Cuidados post | No frotar la zona, usar hidratación periocular segura y fotoprotección diaria. |
+| Resultados | Mejoría progresiva del componente pigmentario en sesiones seriadas. |

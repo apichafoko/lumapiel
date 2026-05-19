@@ -22,9 +22,9 @@ Sirve para “resetear” la piel del cuerpo cuando se ve congestionada, opaca o
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Limpieza corporal | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
-| Recuperación | Inmediata o con enrojecimiento leve transitorio según la zona tratada. |
-| Frecuencia ideal | Cada 3 a 6 semanas, de acuerdo con evolución y hábitos. |
+| Recuperación | Inmediata |
+| Frecuencia ideal | Según sugerencia profesional |
 | Resultados | Piel más limpia, uniforme y receptiva a tratamientos complementarios. |

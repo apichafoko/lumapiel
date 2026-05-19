@@ -1,10 +1,10 @@
 ### 1. ¿Qué es el Láser Q-Switch para Melasma?
 
-Es una modalidad láser de baja fluencia (“laser toning”) que fragmenta pigmento de manera controlada para acompañar el tratamiento del melasma crónico.
+Es una modalidad láser de baja fluencia que fragmenta pigmento de manera controlada para acompañar el tratamiento del melasma crónico.
 
 ### 2. ¿Para qué sirve?
 
-Sirve para disminuir la intensidad de las manchas y homogeneizar el tono en pacientes con melasma resistente, siempre dentro de un plan integral con fotoprotección y medicación tópica.
+Sirve para disminuir la intensidad de las manchas y homogeneizar el tono en pacientes con melasma , siempre dentro de un plan integral con fotoprotección y medicación tópica.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
@@ -14,14 +14,13 @@ Sirve para disminuir la intensidad de las manchas y homogeneizar el tono en paci
 
 ### 4. ¿Cómo es una sesión de Q-Switch para Melasma?
 
-1. **Consulta de seguridad pigmentaria:** Se ajusta protocolo al fototipo y antecedentes.
-2. **Preparación:** Limpieza, fotos de control y protección ocular.
-3. **Aplicación:** Pasadas de baja energía en toda el área afectada.
-4. **Post-tratamiento:** Rutina barrera y fotoprotección reforzada.
+1. **Preparación:** Limpieza, fotos de control y protección ocular.
+2. **Aplicación:** Pasadas de baja energía en toda el área afectada.
+3. **Post-tratamiento:** Humectación y fotoprotección con color.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Q switch Melasma | Detalle Importante |
 | --- | --- |
 | Duración | 40 minutos. |
 | Recuperación | Habitualmente inmediata o con eritema leve transitorio. |

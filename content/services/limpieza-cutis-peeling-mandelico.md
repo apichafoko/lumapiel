@@ -1,14 +1,16 @@
 ### 1. ¿Qué es la Limpieza de Cutis + Peeling Mandélico?
 
-Es una combinación de higiene facial profesional y peeling químico superficial con ácido mandélico (AHA). El mandélico tiene acción renovadora y despigmentante suave, por lo que permite trabajar luminosidad y textura con buena tolerancia.
+Combina una limpieza de cutis profunda con un peeling químico superficial con ácido mandélico (AHA). El mandélico tiene acción renovadora y despigmentante suave, por lo que permite trabajar luminosidad y textura con buena tolerancia.
 
 ### 2. ¿Para qué sirve?
 
-Sirve para limpiar en profundidad, mejorar la opacidad del rostro y tratar manchas o marcas leves sin generar una recuperación prolongada. Es una excelente opción para pieles mixtas, con poro visible o tendencia acneica leve.
+Sirve para limpiar en profundidad, mejorar la opacidad del rostro y tratar manchas o marcas leves sin generar una recuperación prolongada. Es una excelente opción para pieles mixtas, con poro visible o tendencia acneica leve. 
+
+Ideal para realizar días antes de un evento por el efecto “glow” que da.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
-- **Piel opaca y tono desparejo.**
+- **Piel opaca.**
 - **Poros dilatados y comedones superficiales.**
 - **Manchas post-inflamatorias leves.**
 - **Acné comedónico de baja inflamación.**
@@ -22,9 +24,9 @@ Sirve para limpiar en profundidad, mejorar la opacidad del rostro y tratar manch
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Limpieza de cutis + Peeling mandélico | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
-| Recuperación | Leve enrojecimiento inicial; la mayoría retoma su rutina el mismo día. |
+| Recuperación | Inmediata |
 | Cuidados post | Protector solar diario, hidratación y evitar exfoliantes fuertes 48-72 hs. |
 | Resultados | Rostro más luminoso y uniforme desde las primeras sesiones seriadas. |

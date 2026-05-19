@@ -1,6 +1,6 @@
 ### 1. ¿Qué es la Luma Hydrojelly Mask?
 
-Es una mascarilla hidroplástica premium, de textura gelatinosa o “jelly”, formulada con alginatos refinados y electrolitos puros. Al aplicarse sobre la piel en forma líquida, se solidifica creando un sellado al vacío que empuja la hidratación hacia las capas profundas.
+Es una mascarilla hydrojelly premium, de textura gelatinosa o “jelly”, formulada con alginatos refinados y electrolitos puros. Al aplicarse sobre la piel en forma líquida, se solidifica creando un sellado al vacío que empuja la hidratación hacia las capas profundas.
 
 ### 2. ¿Para qué sirve?
 
@@ -10,7 +10,7 @@ Sirve como un “shock” de hidratación y calma. Su función de sellado al vac
 
 - **Pieles deshidratadas y tirantes:** Repone el equilibrio hídrico (electrolitos) en minutos.
 - **Enrojecimiento y congestión:** Su efecto frío baja la temperatura de la piel, ideal para rosácea o luego de tratamientos médicos (láser, peelings).
-- **Fatiga cutánea:** Aporta luminosidad extrema y efecto “buena cara” antes de un evento.
+- **Fatiga cutánea:** Aporta luminosidad extrema antes de un evento.
 
 ### 4. ¿Cómo es una sesión de Hydrojelly Mask?
 
@@ -21,9 +21,9 @@ Sirve como un “shock” de hidratación y calma. Su función de sellado al vac
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Luma Hydrojelly Mask | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Sensación | Extremadamente relajante, fresca y descongestiva. |
 | Recuperación | Ninguna. La piel queda perfecta, lista para lucir en un evento. |
-| Frecuencia | Se puede realizar semanal o quincenalmente, o como complemento de otros procedimientos. |
+| Frecuencia | 1 vez al mes |

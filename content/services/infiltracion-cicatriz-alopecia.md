@@ -7,26 +7,25 @@ Es un procedimiento médico en el que se inyectan sustancias activas (como corti
 Su función depende del objetivo:
 
 - **En cicatrices (queloides o hipertróficas):** Sirve para reducir la inflamación crónica, aplanar la cicatriz, detener el picor y frenar su crecimiento.
-- **En alopecia (ej. Areata o androgénica):** Sirve para frenar la caída localizada, desinflamar el folículo o inyectar nutrientes directamente en la raíz del pelo para forzar su crecimiento.
+- **En alopecia (ej. Areata):** Sirve para frenar la caída localizada, desinflamar el folículo y detener la progresión de la alopecia.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
 - **Cicatrices Queloides:** Las reblandece, aplana y reduce la picazón o dolor.
 - **Alopecia Areata:** Detiene la inflamación autoinmune que hace caer el pelo en “parches”.
-- **Acné quístico severo:** Puede infiltrarse un quiste puntual muy inflamado para que baje en 24 hs.
 
 ### 4. ¿Cómo es una sesión de Infiltración?
 
 1. **Evaluación:** El médico revisa la cicatriz o el parche de alopecia para calcular la dosis exacta.
 2. **Asepsia:** Limpieza y desinfección de la zona.
-3. **Infiltración:** Con una jeringa de insulina (aguja muy cortita y fina) se introduce el medicamento directamente en la lesión.
-4. **Sensación:** Se siente un leve pinchazo y a veces una sensación de presión. Es rápido y bien tolerado.
+3. **Infiltración:** Con una jeringa y una aguja fina se introduce el medicamento directamente en la lesión.
+4. **Sensación:** Se siente un leve pinchazo y a veces una sensación de presión y ardor. Es rápido y bien tolerado.
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Infiltración | Detalle Importante |
 | --- | --- |
 | Duración | 30 minutos. |
-| Recuperación | Inmediata. En cicatrices puede notarse que se hunden un poco con el paso de los días. |
+| Recuperación | Inmediata. |
 | Efecto | Los corticoides infiltrados tardan unos días en hacer su máximo efecto desinflamatorio. |
-| Frecuencia | Suelen indicarse sesiones cada 3 a 4 semanas hasta lograr el aplanamiento o el rebrote. |
+| Frecuencia | Según indicación médica |

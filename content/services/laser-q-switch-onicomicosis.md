@@ -1,10 +1,10 @@
 ### 1. ¿Qué es el Láser Q-Switch para Onicomicosis?
 
-Es un procedimiento sobre la uña infectada por hongos que utiliza energía lumínica para crear un ambiente menos favorable para el hongo y mejorar la respuesta del tratamiento médico.
+Es un procedimiento sobre la uña infectada por hongos que utiliza energía láser para crear un ambiente menos favorable para el hongo y mejorar la respuesta del tratamiento médico.
 
 ### 2. ¿Para qué sirve?
 
-Sirve como terapia complementaria en onicomicosis seleccionada, sobre todo cuando la uña está engrosada o la evolución es lenta. No reemplaza el diagnóstico micológico ni, cuando corresponde, los antifúngicos tópicos u orales.
+Sirve como terapia complementaria en onicomicosis seleccionada, sobre todo cuando la uña está engrosada o la evolución es lenta. Se suele combinar con tratamiento tópico o vía oral según el caso.
 
 ### 3. ¿Qué patologías o afecciones mejora?
 
@@ -25,5 +25,5 @@ Sirve como terapia complementaria en onicomicosis seleccionada, sobre todo cuand
 | --- | --- |
 | Duración | 30 minutos. |
 | Recuperación | Inmediata; puede sentirse calor transitorio durante el procedimiento. |
-| Frecuencia | Se indica en sesiones seriadas según severidad y velocidad de crecimiento de la uña. |
+| Frecuencia | 1 al mes, aprox. 6 sesiones. |
 | Resultados | La mejoría se ve con el recambio ungueal, que puede tardar varios meses. |

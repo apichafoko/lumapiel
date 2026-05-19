@@ -21,7 +21,7 @@ Sirve para mejorar calidad de piel, luminosidad y recuperación tisular en zonas
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| PRP Completo | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Recuperación | Puede haber edema leve o pequeños hematomas transitorios. |

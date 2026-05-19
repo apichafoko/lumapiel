@@ -10,8 +10,7 @@ Sirve para tratar una espalda con poros obstruidos, brotes corporales, marcas re
 
 - **Acné de espalda leve a moderado:** Reduce comedones y brotes inflamatorios superficiales.
 - **Marcas post-acné:** Atenúa manchas y mejora irregularidades de color.
-- **Textura áspera o poros visibles:** Afina la superficie cutánea.
-- **Fotoenvejecimiento corporal:** Mejora luminosidad y aspecto general de la piel.
+- Mejora luminosidad y aspecto general de la piel.
 
 ### 4. ¿Cómo es una sesión de Limpieza + TCA en Espalda?
 
@@ -22,7 +21,7 @@ Sirve para tratar una espalda con poros obstruidos, brotes corporales, marcas re
 
 ### 5. Consideraciones Clave
 
-| Aspecto | Detalle Importante |
+| Limpieza + Peeling TCA Espalda | Detalle Importante |
 | --- | --- |
 | Duración | 60 minutos. |
 | Recuperación | Puede haber enrojecimiento y descamación visible durante varios días. |
