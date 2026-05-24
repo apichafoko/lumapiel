@@ -110,7 +110,7 @@ export async function LinksHub() {
       : ""
 
   return (
-    <div className="flex min-h-screen flex-col items-center bg-background px-4 pb-16 pt-10 text-foreground">
+    <div className="flex min-h-screen flex-col items-center bg-brand-blue px-4 pb-16 pt-10 text-brand-white">
       <div className="flex w-full max-w-md flex-col items-center">
         {shareUrl ? (
           <LinksHubToolbar
@@ -128,11 +128,12 @@ export async function LinksHub() {
           <LogoPreview
             src={cfg.logoUrl ?? undefined}
             alt={`${cfg.brandName} — logo`}
+            tone="dark"
           />
         </div>
 
         {cfg.tagline ? (
-          <p className="font-subtext max-w-sm text-center text-sm leading-relaxed text-muted-foreground">
+          <p className="font-subtext max-w-sm text-center text-sm leading-relaxed text-brand-piel">
             {cfg.tagline}
           </p>
         ) : null}
@@ -150,21 +151,21 @@ export async function LinksHub() {
             href={cfg.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card text-card-foreground shadow-sm transition hover:bg-secondary/80"
+            className="mt-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-brand-white/20 bg-brand-white/10 text-brand-white shadow-sm transition hover:bg-brand-white/20"
             aria-label="Instagram"
           >
             <Instagram className="h-6 w-6" />
           </a>
         ) : null}
 
-        <p className="font-subtext mt-12 max-w-sm text-center text-xs leading-relaxed text-muted-foreground">
+        <p className="font-subtext mt-12 max-w-sm text-center text-xs leading-relaxed text-brand-piel/90">
           © {new Date().getFullYear()} - {cfg.brandName} -{" "}
           {cfg.mapsUrl ? (
             <a
               href={cfg.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-4 hover:text-primary hover:underline"
+              className="underline-offset-4 hover:text-brand-white hover:underline"
             >
               {cfg.footerAddress}
             </a>

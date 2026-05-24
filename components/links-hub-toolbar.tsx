@@ -27,7 +27,7 @@ export function LinksHubToolbar({
         {moreUrl ? (
           <a
             href={moreUrl}
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-card text-card-foreground shadow-sm transition hover:bg-secondary/80"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-white/20 bg-brand-white/10 text-brand-white shadow-sm transition hover:bg-brand-white/20"
             aria-label="Más información"
           >
             <Sparkles className="h-5 w-5" />
@@ -38,7 +38,7 @@ export function LinksHubToolbar({
         <button
           type="button"
           onClick={() => setShareOpen(true)}
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-card text-card-foreground shadow-sm transition hover:bg-secondary/80"
+          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-white/20 bg-brand-white/10 text-brand-white shadow-sm transition hover:bg-brand-white/20"
           aria-label="Compartir enlace"
         >
           <Share2 className="h-5 w-5" />
