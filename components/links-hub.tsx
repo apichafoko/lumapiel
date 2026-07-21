@@ -8,7 +8,7 @@ import {
 } from "@/lib/links-config"
 import { LogoPreview } from "@/components/logo-preview"
 import { LinksHubToolbar } from "@/components/links-hub-toolbar"
-import { CalendarDays, Instagram, MapPin, MessageCircle } from "lucide-react"
+import { CalendarDays, Gift, Instagram, MapPin, MessageCircle } from "lucide-react"
 
 type PillLinkProps = {
   href: string
@@ -81,6 +81,19 @@ function buildRows(cfg: LinksConfig) {
         ),
       })
     }
+  }
+
+  if (cfg.giftCardUrl) {
+    rows.push({
+      key: "gift-card",
+      node: (
+        <PillLink
+          href={cfg.giftCardUrl}
+          label={cfg.labelGiftCard ?? "Regala una Gift Card"}
+          icon={<Gift className="h-5 w-5" strokeWidth={2} />}
+        />
+      ),
+    })
   }
 
   if (cfg.mapsUrl) {

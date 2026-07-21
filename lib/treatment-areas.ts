@@ -81,10 +81,10 @@ export function serviceMatchesTreatmentArea(
   return getTreatmentAreaIds(s).includes(area);
 }
 
-export function groupTratamientosByArea(
-  items: ServiceRecord[],
-): Record<TreatmentAreaId, ServiceRecord[]> {
-  const empty = (): Record<TreatmentAreaId, ServiceRecord[]> => ({
+export function groupTratamientosByArea<T extends ServiceRecord>(
+  items: T[],
+): Record<TreatmentAreaId, T[]> {
+  const empty = (): Record<TreatmentAreaId, T[]> => ({
     laser: [],
     cosmiatria: [],
     peelings: [],

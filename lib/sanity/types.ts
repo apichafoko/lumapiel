@@ -18,7 +18,7 @@ export type SanityServiceDoc = {
   body?: PortableTextBlock[] | null;
 };
 
-export type SanityHubDoc = HubRecord & {
+export type SanityHubDoc = Omit<HubRecord, "description" | "sections"> & {
   description: PortableTextBlock[] | null;
   sections: Array<{
     anchor: string;

@@ -22,7 +22,7 @@
  */
 
 import { headers } from "next/headers";
-import { MAPS_URL } from "@/lib/constants";
+import { GIFT_CARD_URL, MAPS_URL } from "@/lib/constants";
 
 const DEFAULT_LINKS_FOOTER_ADDRESS =
   'Arenales 3819 2° "A", C1425 Cdad. Autónoma de Buenos Aires';
@@ -34,12 +34,14 @@ export type LinksConfig = {
   whatsappNumber: string | null;
   whatsappPresetMessage: string | null;
   webBookingUrl: string | null;
+  giftCardUrl: string | null;
   mapsUrl: string | null;
   instagramUrl: string | null;
   shareUrl: string | null;
   moreUrl: string | null;
   labelWhatsapp: string | null;
   labelWeb: string | null;
+  labelGiftCard: string | null;
   labelMaps: string | null;
   sharePreviewHandle: string | null;
   footerAddress: string;
@@ -59,12 +61,14 @@ export function getLinksConfig(): LinksConfig {
     whatsappNumber: readEnv("NEXT_PUBLIC_LINKS_WHATSAPP_NUMBER"),
     whatsappPresetMessage: readEnv("NEXT_PUBLIC_LINKS_WHATSAPP_MESSAGE"),
     webBookingUrl: readEnv("NEXT_PUBLIC_LINKS_WEB_BOOKING_URL"),
+    giftCardUrl: readEnv("NEXT_PUBLIC_LINKS_GIFT_CARD_URL") ?? GIFT_CARD_URL,
     mapsUrl: readEnv("NEXT_PUBLIC_LINKS_MAPS_URL") ?? MAPS_URL,
     instagramUrl: readEnv("NEXT_PUBLIC_LINKS_INSTAGRAM_URL"),
     shareUrl: readEnv("NEXT_PUBLIC_LINKS_SHARE_URL"),
     moreUrl: readEnv("NEXT_PUBLIC_LINKS_MORE_URL"),
     labelWhatsapp: readEnv("NEXT_PUBLIC_LINKS_LABEL_WHATSAPP"),
     labelWeb: readEnv("NEXT_PUBLIC_LINKS_LABEL_WEB"),
+    labelGiftCard: readEnv("NEXT_PUBLIC_LINKS_LABEL_GIFT_CARD"),
     labelMaps: readEnv("NEXT_PUBLIC_LINKS_LABEL_MAPS"),
     sharePreviewHandle: readEnv("NEXT_PUBLIC_LINKS_SHARE_PREVIEW_HANDLE"),
     footerAddress:

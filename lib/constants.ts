@@ -10,3 +10,8 @@ export const MAPS_URL =
   process.env.NEXT_PUBLIC_MAPS_URL?.trim() ||
   process.env.NEXT_PUBLIC_LINKS_MAPS_URL?.trim() ||
   "https://share.google/SuVUNPVKpSwgUEnie";
+
+/** Compra de Gift Card. */
+export const GIFT_CARD_URL =
+  process.env.NEXT_PUBLIC_LINKS_GIFT_CARD_URL?.trim() ||
+  "https://www.lumasoftware.app/gift-cards/d432cf5e-7922-4772-b0a0-ed2e760cdd42/comprar";

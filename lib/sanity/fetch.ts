@@ -9,12 +9,12 @@ export function isSanityConfigured(): boolean {
   return Boolean(projectId);
 }
 
-export async function fetchFromSanity<const Q extends string>(args: FetchArgs) {
+export async function fetchFromSanity<T>(args: FetchArgs): Promise<T> {
   if (!projectId) {
     throw new Error(
       "Sanity no configurado: definí NEXT_PUBLIC_SANITY_PROJECT_ID en .env.local",
     );
   }
   const { data } = await sanityFetch(args);
-  return data;
+  return data as T;
 }
