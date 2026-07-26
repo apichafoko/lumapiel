@@ -43,7 +43,15 @@
       "label": "Dra. Agustina Gandolfo",
       "href": "/doctora/agustina-gandolfo",
       "role": "Médica dermatóloga",
-      "instagramUrl": "https://www.instagram.com/dra.agustinagandolfo/"
+      "instagramUrl": "https://www.instagram.com/dra.agustinagandolfo/",
+      "linkedinUrl": "https://www.linkedin.com/in/agustina-gandolfo-7445a4405/"
+    },
+    {
+      "label": "Dr. Francisco Colazo",
+      "href": "/cirujano-plastico/francisco-colazo",
+      "role": "Cirujano plástico",
+      "instagramUrl": "https://www.instagram.com/franciscocolazo/",
+      "linkedinUrl": "https://www.linkedin.com/in/francisco-colazo-01551a3b7/"
     },
     {
       "label": "Yanina Benavidez",

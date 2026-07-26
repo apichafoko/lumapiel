@@ -4,11 +4,11 @@ import {
   fileGetPersonBySlug,
   fileGetPersonSlugs,
 } from "@/lib/content/file/load-person";
-import type { SanityPersonDoc } from "@/lib/sanity/types";
+import type { SanityPersonDoc, TeamRole } from "@/lib/sanity/types";
 
 export async function getPersonBySlug(
   slug: string,
-  role: "doctora" | "cosmetologa",
+  role: TeamRole,
 ): Promise<SanityPersonDoc | undefined> {
   if (!isSanityConfigured()) return fileGetPersonBySlug(slug, role);
   const doc = await fetchFromSanity<SanityPersonDoc | null>({

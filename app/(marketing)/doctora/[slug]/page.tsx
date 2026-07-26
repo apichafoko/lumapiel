@@ -8,7 +8,7 @@ import { getPersonBySlug, getPersonSlugs } from "@/lib/content/load-person";
 import { instagramProfileUrl } from "@/lib/instagram-url";
 import { getTeamMemberByHref } from "@/lib/site-config";
 import { headshotSrcForTeamHref } from "@/lib/team-photos";
-import { TeamInstagramLink } from "@/components/team-instagram-link";
+import { TeamSocialLinks } from "@/components/team-social-links";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -41,7 +41,9 @@ export default async function DoctoraPage({ params }: Props) {
   const instaUrl = member?.instagramUrl?.trim()
     ? instagramProfileUrl(member.instagramUrl)
     : undefined;
+  const linkedinUrl = member?.linkedinUrl?.trim() || undefined;
   const displayName = person.displayName ?? "Agustina Gandolfo";
+  const sameAs = [instaUrl, linkedinUrl].filter(Boolean) as string[];
 
   return (
     <>
@@ -51,7 +53,7 @@ export default async function DoctoraPage({ params }: Props) {
         urlPath={path}
         description={person.seoDescription ?? ""}
         imageUrl={headshot}
-        sameAs={instaUrl ? [instaUrl] : undefined}
+        sameAs={sameAs.length ? sameAs : undefined}
       />
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
         <nav className="text-sm text-muted-foreground">
@@ -73,11 +75,11 @@ export default async function DoctoraPage({ params }: Props) {
             />
           </div>
         ) : null}
-        {member?.instagramUrl?.trim() ? (
-          <div className="mt-6 flex justify-center">
-            <TeamInstagramLink raw={member.instagramUrl} />
-          </div>
-        ) : null}
+        <TeamSocialLinks
+          instagramUrl={member?.instagramUrl}
+          linkedinUrl={linkedinUrl}
+          className="mt-6 gap-x-6 gap-y-2"
+        />
         <PortableTextBody value={person.body} className="mt-10" />
       </article>
     </>

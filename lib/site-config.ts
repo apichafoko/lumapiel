@@ -13,6 +13,8 @@ export type SiteTeamLink = {
   role: string;
   /** Perfil público (URL completa, o `@usuario` / `usuario`). Vacío u omitido: no se muestra. */
   instagramUrl?: string;
+  /** Perfil de LinkedIn (URL completa). Vacío u omitido: no se muestra. */
+  linkedinUrl?: string;
 };
 
 export type SiteConfig = {

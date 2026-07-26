@@ -15,44 +15,43 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateStaticParams() {
   const people = await getPersonSlugs();
   return people
-    .filter((p) => p.role === "cosmetologa")
+    .filter((p) => p.role === "cirujano-plastico")
     .map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const person = await getPersonBySlug(slug, "cosmetologa");
+  const person = await getPersonBySlug(slug, "cirujano-plastico");
   if (!person) return {};
   return {
-    title: person.displayName ?? "Yanina Benavidez",
+    title: person.displayName ?? "Cirujano plástico",
     description: person.seoDescription ?? "",
-    alternates: { canonical: `/cosmetologa/${slug}` },
+    alternates: { canonical: `/cirujano-plastico/${slug}` },
   };
 }
 
-export default async function CosmetologaPage({ params }: Props) {
+export default async function CirujanoPlasticoPage({ params }: Props) {
   const { slug } = await params;
-  const person = await getPersonBySlug(slug, "cosmetologa");
+  const person = await getPersonBySlug(slug, "cirujano-plastico");
   if (!person) notFound();
 
-  const path = `/cosmetologa/${slug}`;
+  const path = `/cirujano-plastico/${slug}`;
   const headshot = headshotSrcForTeamHref(path);
   const member = getTeamMemberByHref(path);
   const instaUrl = member?.instagramUrl?.trim()
     ? instagramProfileUrl(member.instagramUrl)
     : undefined;
   const linkedinUrl = member?.linkedinUrl?.trim() || undefined;
-  const displayName = person.displayName ?? "Yanina Benavidez";
+  const displayName = person.displayName ?? "Dr. Francisco Colazo";
   const sameAs = [instaUrl, linkedinUrl].filter(Boolean) as string[];
 
   return (
     <>
       <PersonJsonLd
         name={displayName}
-        jobTitle={person.jobTitle ?? "Cosmetóloga"}
+        jobTitle={person.jobTitle ?? "Cirujano plástico"}
         urlPath={path}
         description={person.seoDescription ?? ""}
-        schemaType="Person"
         imageUrl={headshot}
         sameAs={sameAs.length ? sameAs : undefined}
       />

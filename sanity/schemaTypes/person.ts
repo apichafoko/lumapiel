@@ -18,6 +18,7 @@ export const person = defineType({
       options: {
         list: [
           { title: "Doctora", value: "doctora" },
+          { title: "Cirujano plástico", value: "cirujano-plastico" },
           { title: "Cosmetóloga", value: "cosmetologa" },
         ],
         layout: "radio",

@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import type { SanityPersonDoc } from "@/lib/sanity/types";
+import type { SanityPersonDoc, TeamRole } from "@/lib/sanity/types";
 import { mdToPortableTextBlocks } from "@/lib/content/file/md-to-blocks";
 
 const PEOPLE: SanityPersonDoc[] = [
@@ -11,6 +11,15 @@ const PEOPLE: SanityPersonDoc[] = [
     jobTitle: "Médica dermatóloga",
     seoDescription:
       "Dra. Agustina Gandolfo, dermatóloga en Luma Piel (Palermo, CABA): medicina de precisión, psiconeuroinmunología clínica y tecnología Alma Lasers con criterio médico.",
+    body: null,
+  },
+  {
+    slug: "francisco-colazo",
+    role: "cirujano-plastico",
+    displayName: "Dr. Francisco Colazo",
+    jobTitle: "Cirujano plástico",
+    seoDescription:
+      "Dr. Francisco Colazo, cirujano plástico en Luma Piel (Palermo, CABA): cirugía estética facial con resultados naturales, evaluación personalizada y criterio quirúrgico.",
     body: null,
   },
   {
@@ -33,7 +42,7 @@ async function loadBody(slug: string): Promise<SanityPersonDoc["body"]> {
 
 export async function fileGetPersonBySlug(
   slug: string,
-  role: "doctora" | "cosmetologa",
+  role: TeamRole,
 ): Promise<SanityPersonDoc | undefined> {
   const base = PEOPLE.find((p) => p.slug === slug && p.role === role);
   if (!base) return undefined;

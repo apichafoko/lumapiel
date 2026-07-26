@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { LogoPreview } from "@/components/logo-preview";
-import { TeamInstagramLink } from "@/components/team-instagram-link";
+import { TeamSocialLinks } from "@/components/team-social-links";
 import { TratamientosNavMenu } from "@/components/tratamientos-nav-menu";
 import type { SiteConfig, SiteNavItem } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
@@ -66,9 +66,10 @@ export function SiteHeader({ site, bookingUrl }: Props) {
               <span className="font-medium">{p.label}</span>
               <span className="text-xs text-muted-foreground">{p.role}</span>
             </Link>
-            <TeamInstagramLink
-              raw={p.instagramUrl}
-              className="justify-center text-xs"
+            <TeamSocialLinks
+              instagramUrl={p.instagramUrl}
+              linkedinUrl={p.linkedinUrl}
+              linkClassName="text-xs"
             />
           </DropdownMenuItem>
         ))}
@@ -100,9 +101,10 @@ export function SiteHeader({ site, bookingUrl }: Props) {
               <span className="font-medium">{p.label}</span>
               <span className="text-xs text-muted-foreground">{p.role}</span>
             </Link>
-            <TeamInstagramLink
-              raw={p.instagramUrl}
-              className="justify-center text-xs"
+            <TeamSocialLinks
+              instagramUrl={p.instagramUrl}
+              linkedinUrl={p.linkedinUrl}
+              linkClassName="text-xs"
             />
           </DropdownMenuItem>
         ))}

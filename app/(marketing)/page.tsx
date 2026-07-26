@@ -19,7 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { getBookingUrl, getSiteConfig } from "@/lib/site-config";
 import { whatsappHrefForLocale } from "@/lib/contact-links";
 import { headshotSrcForTeamHref } from "@/lib/team-photos";
-import { TeamInstagramLink } from "@/components/team-instagram-link";
+import { TeamSocialLinks } from "@/components/team-social-links";
 import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { CatalogVerMasLink } from "@/components/catalog-ver-mas-link";
 import { HomeHowWeWork } from "@/components/home-how-we-work";
@@ -177,7 +177,7 @@ export default async function HomePage() {
         <h2 className="font-heading text-center text-3xl font-semibold text-primary">
           Equipo
         </h2>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {site.team.map((member, index) => {
             const photo = headshotSrcForTeamHref(member.href);
             return (
@@ -202,9 +202,10 @@ export default async function HomePage() {
                     {member.label}
                   </CardTitle>
                   <CardDescription>{member.role}</CardDescription>
-                  <TeamInstagramLink
-                    raw={member.instagramUrl}
-                    className="mt-3 justify-center"
+                  <TeamSocialLinks
+                    instagramUrl={member.instagramUrl}
+                    linkedinUrl={member.linkedinUrl}
+                    className="mt-3"
                   />
                   <Button
                     asChild

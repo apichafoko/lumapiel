@@ -72,9 +72,12 @@ export type HomePageContent = {
   faq: Array<{ question: string; answer: string }>;
 };
 
+/** Cada rol tiene su carpeta de ruta en app/(marketing)/<rol>/[slug]. */
+export type TeamRole = "doctora" | "cosmetologa" | "cirujano-plastico";
+
 export type SanityPersonDoc = {
   slug: string;
-  role: "doctora" | "cosmetologa";
+  role: TeamRole;
   displayName?: string;
   jobTitle?: string;
   seoDescription?: string;
