@@ -8,6 +8,7 @@ import { resolveContentPerspective } from "@/lib/sanity/perspective";
 import {
   fileGetAllHubs,
   fileGetHubBySlug,
+  fileGetHubIds,
 } from "@/lib/content/file/load-hubs";
 import type { SanityHubDoc } from "@/lib/sanity/types";
 import type { HubRecord } from "@/lib/content/schema";
@@ -39,7 +40,7 @@ export async function getHubBySlug(
 
 export async function getHubSlugs(): Promise<string[]> {
   if (!isSanityConfigured()) {
-    return fileGetAllHubs().map((h) => h.id);
+    return fileGetHubIds();
   }
   const rows = await fetchFromSanity<Array<{ slug: string }> | null>({
     query: HUB_SLUGS_QUERY,

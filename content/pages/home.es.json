@@ -66,6 +66,13 @@
         "title": "Arrugas"
       },
       {
+        "body": "La Hiperhidrosis es un aumento de sudoración por encima de lo normal que suele aparecer en distintas partes del cuerpo siendo molesto para la persona que lo sufre debido a que el exceso de transpiración puede condicionarlo socialmente. Para la zona de axilas o palmas de las manos contamos con un excelente tratamiento con toxina botulínica obteniendo muy buenos resultados. La duración del tratamiento es de aproximadamente 4 a 6 meses.",
+        "href": "/consultas/consulta-dermatologia-1-vez",
+        "id": "hiperhidrosis",
+        "linkLabel": "Consultar por hiperhidrosis",
+        "title": "Sudoración excesiva (hiperhidrosis)"
+      },
+      {
         "body": "Contamos con tecnología Alma Lasers ® de última generación. El láser permite actuar con precisión sobre manchas, rojeces, telangiectasias textura de la piel, trabajar sobre cicatrices, tratar y prevenir el fotoenvejecimiento cutáneo. El tratamiento indicado para vos y la preparación previa requerida se abordan en la consulta dermatológica.",
         "href": "/especialidades/tratamientos-laser",
         "id": "laser",
@@ -93,7 +100,7 @@
         "title": "Primera consulta"
       },
       {
-        "body": "Cuando ya entendemos qué necesita tu piel, armamos un plan a medida: rutina de skincare individualizada, hábitos y suplementación alineados a tus necesidades y, si corresponde, tecnología médica para acompañar el objetivo. Eso puede incluir láser, plasma rico en plaquetas, electrocoagulación, mesoterapia, dermapen o toxina botulínica, siempre elegido para vos y para el momento que está transitando tu piel.",
+        "body": "Cuando ya entendemos qué necesita tu piel, armamos un plan a medida: rutina de skincare individualizada, hábitos y suplementación alineados a tus necesidades y, si corresponde, tecnología médica para acompañar el objetivo. Eso puede incluir láser, plasma rico en plaquetas, bioestimuladores, electrocoagulación, mesoterapia, dermapen o toxina botulínica, siempre elegido para vos y para el momento que está transitando tu piel.",
         "id": "plan-tratamiento",
         "stepLabel": "2",
         "title": "Plan de tratamiento"

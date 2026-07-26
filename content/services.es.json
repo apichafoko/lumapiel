@@ -10,7 +10,161 @@
     "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:botox-full-face",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Botox® full face",
+    "slug_es": "botox-full-face",
+    "categorias": "estetica|rejuvenecimiento",
+    "aliases": "botox full face|toxina botulinica en todo el rostro|armonizacion facial con botox|botox cara completa",
+    "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
+    "related_service_ids": "svc:botox|svc:toxina-botulinica-cuello",
+    "hub_pin_rank": 90,
+    "published": true,
+    "duracion_minutos": 60
+  },
+  {
+    "id": "svc:botox-sonrisa-gingival",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Botox® para sonrisa gingival",
+    "slug_es": "botox-sonrisa-gingival",
+    "categorias": "estetica|rejuvenecimiento",
+    "aliases": "botox para sonrisa gingival|encia expuesta al sonreir|tratamiento de la sonrisa gingival|toxina botulinica en labio superior",
+    "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
+    "related_service_ids": "svc:botox",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 30
+  },
+  {
+    "id": "svc:toxina-botulinica-cuello",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Toxina botulínica para cuello (bandas platismales)",
+    "slug_es": "toxina-botulinica-cuello",
+    "categorias": "estetica|rejuvenecimiento",
+    "aliases": "botox en el cuello|bandas platismales y tecnica nefertiti|lifting nefertiti|cuerdas del cuello|definicion del ovalo facial",
+    "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
+    "related_service_ids": "svc:botox|svc:botox-full-face",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:toxina-botulinica-hiperhidrosis",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Toxina botulínica para hiperhidrosis",
+    "slug_es": "toxina-botulinica-hiperhidrosis",
+    "categorias": "estetica|terapeutico",
+    "aliases": "botox para hiperhidrosis|tratamiento para la sudoracion excesiva|botox en axilas|sudoracion excesiva de manos y pies",
+    "hub_refs": "hub:estetica-medica:toxina-botulinica-medica",
+    "related_service_ids": "svc:botox",
+    "hub_pin_rank": 90,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:toxina-botulinica-bruxismo",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Toxina botulínica para bruxismo",
+    "slug_es": "toxina-botulinica-bruxismo",
+    "categorias": "estetica|terapeutico",
+    "aliases": "botox para bruxismo|toxina botulinica en maseteros|apretamiento dentario|dolor mandibular y desgaste dental",
+    "hub_refs": "hub:estetica-medica:toxina-botulinica-medica",
+    "related_service_ids": "svc:botox",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:toxina-botulinica-migrana",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Toxina botulínica para migraña",
+    "slug_es": "toxina-botulinica-migrana",
+    "categorias": "estetica|terapeutico",
+    "aliases": "botox para migrana|tratamiento preventivo de la migrana cronica|toxina botulinica para dolor de cabeza|protocolo preempt",
+    "hub_refs": "hub:estetica-medica:toxina-botulinica-medica",
+    "related_service_ids": "svc:botox",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:bioestimuladores",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Bioestimuladores",
+    "slug_es": "bioestimuladores",
+    "categorias": "estetica|bioestimulacion",
+    "aliases": "bioestimuladores de colageno|estimular colageno y elastina|mejorar la calidad de la piel|firmeza y densidad cutanea",
+    "hub_refs": "hub:estetica-medica:bioestimulacion",
+    "related_service_ids": "svc:skinbooster|svc:profhilo|svc:sculptra",
+    "hub_pin_rank": 90,
+    "published": true,
+    "duracion_minutos": 60
+  },
+  {
+    "id": "svc:skinbooster",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Skinbooster",
+    "slug_es": "skinbooster",
+    "categorias": "estetica|bioestimulacion",
+    "aliases": "skinbooster|hidratacion profunda con acido hialuronico|luminosidad y textura de la piel|microinyecciones de acido hialuronico",
+    "hub_refs": "hub:estetica-medica:bioestimulacion",
+    "related_service_ids": "svc:bioestimuladores|svc:profhilo",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 60
+  },
+  {
+    "id": "svc:profhilo",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Profhilo®",
+    "slug_es": "profhilo",
+    "categorias": "estetica|bioestimulacion",
+    "aliases": "profhilo|bioestimulacion con acido hialuronico hibrido|firmeza y calidad de piel|tecnica bap de cinco puntos",
+    "hub_refs": "hub:estetica-medica:bioestimulacion",
+    "related_service_ids": "svc:bioestimuladores|svc:skinbooster",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 45
+  },
+  {
+    "id": "svc:sculptra",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Sculptra®",
+    "slug_es": "sculptra",
+    "categorias": "estetica|bioestimulacion",
+    "aliases": "sculptra|acido poli-l-lactico|bioestimulador de colageno de larga duracion|recuperar densidad y soporte de la piel",
+    "hub_refs": "hub:estetica-medica:bioestimulacion",
+    "related_service_ids": "svc:bioestimuladores|svc:profhilo",
+    "hub_pin_rank": 10,
+    "published": true,
+    "duracion_minutos": 60
+  },
+  {
+    "id": "svc:extirpacion-lesiones-benignas",
+    "tipo": "tratamiento",
+    "lista": "tratamientos",
+    "titulo": "Extirpación de lesiones benignas",
+    "slug_es": "extirpacion-lesiones-benignas",
+    "categorias": "estetica|cirugia menor",
+    "aliases": "extirpacion de lesiones benignas|sacar lunares quistes y lipomas|cirugia dermatologica menor|exeresis con anatomia patologica",
+    "hub_refs": "hub:consulta-dermatologica:lesiones-benignas",
+    "related_service_ids": "svc:electrocoagulacion",
+    "hub_pin_rank": 90,
+    "published": true,
     "duracion_minutos": 45
   },
   {
@@ -24,7 +178,7 @@
     "hub_refs": "hub:consulta-dermatologica:primera-consulta-vs-seguimiento",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -38,7 +192,7 @@
     "hub_refs": "hub:consulta-dermatologica:consulta-online",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 40
   },
   {
@@ -52,7 +206,7 @@
     "hub_refs": "hub:consulta-dermatologica:primera-consulta-vs-seguimiento",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -66,7 +220,7 @@
     "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -80,7 +234,7 @@
     "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -94,7 +248,7 @@
     "hub_refs": "hub:estetica-medica:tratamientos-capilares-no-quirurgicos",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -108,7 +262,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -122,7 +276,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -136,7 +290,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -150,7 +304,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -164,7 +318,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -178,7 +332,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -192,7 +346,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -206,7 +360,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -220,7 +374,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -234,7 +388,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 45
   },
   {
@@ -248,7 +402,7 @@
     "hub_refs": "hub:tratamientos-laser:capilar-laser",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -262,7 +416,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
     "duracion_minutos": 80
   },
   {
@@ -276,7 +430,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -290,7 +444,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 45
   },
   {
@@ -304,7 +458,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -318,7 +472,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 40
   },
   {
@@ -332,7 +486,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -346,7 +500,7 @@
     "hub_refs": "hub:tratamientos-laser:onicomicosis-y-unas",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -360,7 +514,7 @@
     "hub_refs": "hub:tratamientos-laser:manchas-y-melasma",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -374,7 +528,7 @@
     "hub_refs": "hub:tratamientos-laser:rojeces-y-vascular",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -388,7 +542,7 @@
     "hub_refs": "hub:tratamientos-laser:rejuvenecimiento-y-textura",
     "related_service_ids": "",
     "hub_pin_rank": 90,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -402,7 +556,7 @@
     "hub_refs": "hub:estetica-medica:tratamientos-capilares-no-quirurgicos",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 30
   },
   {
@@ -416,7 +570,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 45
   },
   {
@@ -430,7 +584,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -444,7 +598,7 @@
     "hub_refs": "hub:cosmiatria:marco",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 40
   },
   {
@@ -458,7 +612,7 @@
     "hub_refs": "hub:estetica-medica:tratamientos-capilares-no-quirurgicos",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -472,7 +626,7 @@
     "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   },
   {
@@ -486,7 +640,7 @@
     "hub_refs": "hub:estetica-medica:rejuvenecimiento-facial",
     "related_service_ids": "",
     "hub_pin_rank": 10,
-    "published": false,
+    "published": true,
     "duracion_minutos": 60
   }
 ]
