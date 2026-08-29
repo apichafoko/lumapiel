@@ -23,6 +23,7 @@ import { TeamSocialLinks } from "@/components/team-social-links";
 import { TeamMemberPhoto } from "@/components/team-member-photo";
 import { CatalogVerMasLink } from "@/components/catalog-ver-mas-link";
 import { HomeHowWeWork } from "@/components/home-how-we-work";
+import { FAQJsonLd } from "@/lib/service-jsonld";
 
 type HomePillar = HomePageContent["pillars"][number] & {
   supportLine?: {
@@ -50,6 +51,7 @@ export default async function HomePage() {
 
   return (
     <>
+      {homeContent.faq?.length ? <FAQJsonLd items={homeContent.faq} /> : null}
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
@@ -223,9 +225,16 @@ export default async function HomePage() {
 
       <section className="border-t border-border bg-muted/30 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <h2 className="font-heading text-center text-3xl font-semibold text-primary">
-            {homeContent.faqTitle}
-          </h2>
+          <div className="flex flex-col items-center gap-2">
+            <h2 className="font-heading text-center text-3xl font-semibold text-primary">
+              {homeContent.faqTitle}
+            </h2>
+            {process.env.NODE_ENV !== "production" ? (
+              <span className="inline-flex items-center rounded-md bg-amber-100 dark:bg-amber-950/50 px-2 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300 ring-1 ring-inset ring-amber-600/20">
+                ✨ Nuevo: FAQPage Schema (Rich Snippets en Google)
+              </span>
+            ) : null}
+          </div>
           <Accordion type="single" collapsible className="mt-10 w-full">
             {homeContent.faq.map((item, i) => (
               <AccordionItem key={item.question} value={`faq-${i}`}>

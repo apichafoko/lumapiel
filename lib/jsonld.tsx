@@ -26,6 +26,30 @@ export function WebsiteJsonLd() {
           addressCountry: "AR",
         },
         description: site.address,
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: -34.5882,
+          longitude: -58.4115,
+        },
+        areaServed: [
+          { "@type": "AdministrativeArea", name: "Palermo" },
+          { "@type": "AdministrativeArea", name: "Recoleta" },
+          { "@type": "AdministrativeArea", name: "Barrio Norte" },
+          { "@type": "AdministrativeArea", name: "Belgrano" },
+          { "@type": "City", name: "Ciudad Autónoma de Buenos Aires" },
+        ],
+        medicalSpecialty: [
+          "https://schema.org/Dermatology",
+          "https://schema.org/PlasticSurgery",
+        ],
+        priceRange: "$$",
+        currenciesAccepted: "ARS, USD",
+        paymentAccepted: "Cash, Credit Card, Debit Card, Bank Transfer",
+        sameAs: [
+          "https://www.instagram.com/dra.agustinagandolfo/",
+          "https://www.instagram.com/franciscocolazo/",
+          "https://www.instagram.com/cosmiatriaconyani/",
+        ],
       },
       {
         "@type": "WebSite",

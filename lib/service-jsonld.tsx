@@ -28,6 +28,69 @@ export function ServiceJsonLd({
   )
 }
 
+export function MedicalProcedureJsonLd({
+  name,
+  description,
+  urlPath,
+  procedureType = "NoninvasiveProcedure",
+  bodyLocation,
+}: {
+  name: string
+  description: string
+  urlPath: string
+  procedureType?: string
+  bodyLocation?: string
+}) {
+  const url = `${SITE_URL}${urlPath.startsWith("/") ? urlPath : `/${urlPath}`}`
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name,
+    description,
+    url,
+    procedureType,
+    ...(bodyLocation ? { bodyLocation } : {}),
+    relevantSpecialty: {
+      "@type": "MedicalSpecialty",
+      name: "Dermatology",
+    },
+    howPerformed: "Procedimiento médico dermatológico y estético clínico.",
+    provider: { "@id": `${SITE_URL}/#organization` },
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
+export function FAQJsonLd({
+  items,
+}: {
+  items: Array<{ question: string; answer: string }>
+}) {
+  if (!items || items.length === 0) return null
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
 export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
   const data = {
     "@context": "https://schema.org",
@@ -55,6 +118,9 @@ export function PersonJsonLd({
   schemaType = "Physician",
   imageUrl,
   sameAs,
+  medicalSpecialty,
+  alumniOf,
+  memberOf,
 }: {
   name: string
   jobTitle: string
@@ -66,6 +132,9 @@ export function PersonJsonLd({
   imageUrl?: string
   /** Perfiles externos (p. ej. Instagram). */
   sameAs?: string[]
+  medicalSpecialty?: string[]
+  alumniOf?: string
+  memberOf?: string[]
 }) {
   const url = `${SITE_URL}${urlPath.startsWith("/") ? urlPath : `/${urlPath}`}`
   const image =
@@ -81,6 +150,23 @@ export function PersonJsonLd({
     url,
     ...(image ? { image } : {}),
     ...(sameAs?.length ? { sameAs } : {}),
+    ...(medicalSpecialty?.length ? { medicalSpecialty } : {}),
+    ...(alumniOf
+      ? {
+          alumniOf: {
+            "@type": "EducationalOrganization",
+            name: alumniOf,
+          },
+        }
+      : {}),
+    ...(memberOf?.length
+      ? {
+          memberOf: memberOf.map((org) => ({
+            "@type": "MedicalOrganization",
+            name: org,
+          })),
+        }
+      : {}),
     worksFor: { "@id": `${SITE_URL}/#organization` },
   }
   return (

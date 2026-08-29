@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Buscar",
   description: "Buscá tratamientos o consultas en Luma Piel.",
   alternates: { canonical: "/buscar" },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function BuscarPage() {

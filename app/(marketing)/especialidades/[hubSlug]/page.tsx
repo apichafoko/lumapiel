@@ -8,6 +8,7 @@ import { PortableTextBody } from "@/components/portable-text-body";
 import { Button } from "@/components/ui/button";
 import { getBookingUrl } from "@/lib/site-config";
 import { portableTextToPlainDescription } from "@/lib/sanity/portable-text-plain";
+import { BreadcrumbJsonLd } from "@/lib/service-jsonld";
 
 type Props = { params: Promise<{ hubSlug: string }> };
 
@@ -34,9 +35,16 @@ export default async function HubPage({ params }: Props) {
   if (!hub) notFound();
 
   const bookingUrl = getBookingUrl();
+  const crumbs = [
+    { name: "Inicio", path: "/" },
+    { name: "Especialidades", path: "/especialidades" },
+    { name: hub.title, path: `/especialidades/${hubSlug}` },
+  ];
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+    <>
+      <BreadcrumbJsonLd items={crumbs} />
+      <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
       <header>
         <p className="text-sm font-medium text-muted-foreground">
           <Link href="/especialidades" className="hover:text-primary">
@@ -106,5 +114,6 @@ export default async function HubPage({ params }: Props) {
         </p>
       </section>
     </article>
+    </>
   );
 }

@@ -6,7 +6,7 @@ export function extractQueEsPlainText(markdown: string): string | null {
   let bodyStart = -1;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (/^###\s*1\.\s*¿Qué es\b/i.test(line)) {
+    if (/^###\s*1\.\s*¿?Qué\s+(?:es|son)\b/i.test(line)) {
       bodyStart = i + 1;
       break;
     }

@@ -34,12 +34,26 @@ export const metadata: Metadata = {
   },
   description:
     "Dermatología integral y estética clínica en Palermo, CABA. Consultas, tratamientos y tecnología láser con enfoque profesional.",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: SITE_URL,
+    siteName: "Luma Piel",
+    title: "Luma Piel — Dermatología y láser en Palermo",
+    description:
+      "Dermatología integral, estética médica y tratamientos láser en Palermo, CABA. Consultas personalizadas y tecnología médica.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luma Piel — Dermatología y láser en Palermo",
+    description:
+      "Dermatología integral, estética médica y tratamientos láser en Palermo, CABA. Consultas personalizadas y tecnología médica.",
+  },
   icons: {
     icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
-    shortcut: ["/favicon.ico"],
+    shortcut: ["/icon.svg"],
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
 };

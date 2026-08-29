@@ -49,11 +49,14 @@ export default async function DoctoraPage({ params }: Props) {
     <>
       <PersonJsonLd
         name={displayName}
-        jobTitle={person.jobTitle ?? "Médica dermatóloga"}
+        jobTitle={person.jobTitle ?? "Médica dermatóloga (MN 176541)"}
         urlPath={path}
         description={person.seoDescription ?? ""}
         imageUrl={headshot}
         sameAs={sameAs.length ? sameAs : undefined}
+        medicalSpecialty={["https://schema.org/Dermatology"]}
+        alumniOf="Universidad de Buenos Aires (UBA)"
+        memberOf={["Sociedad Argentina de Dermatología (SAD)"]}
       />
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
         <nav className="text-sm text-muted-foreground">

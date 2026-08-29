@@ -10,19 +10,22 @@ export async function getPersonBySlug(
   slug: string,
   role: TeamRole,
 ): Promise<SanityPersonDoc | undefined> {
-  if (!isSanityConfigured()) return fileGetPersonBySlug(slug, role);
-  const doc = await fetchFromSanity<SanityPersonDoc | null>({
-    query: PERSON_BY_SLUG_QUERY,
-    params: { slug, role },
-    tags: ["person", `person:${role}:${slug}`],
-  });
-  return doc ?? undefined;
+  if (isSanityConfigured()) {
+    const doc = await fetchFromSanity<SanityPersonDoc | null>({
+      query: PERSON_BY_SLUG_QUERY,
+      params: { slug, role },
+      tags: ["person", `person:${role}:${slug}`],
+    });
+    if (doc) return doc;
+  }
+  return fileGetPersonBySlug(slug, role);
 }
 
 export async function getPersonSlugs(): Promise<
   Array<{ slug: string; role: string }>
 > {
-  if (!isSanityConfigured()) return fileGetPersonSlugs();
+  const local = fileGetPersonSlugs();
+  if (!isSanityConfigured()) return local;
   const rows = await fetchFromSanity<
     Array<{ slug: string; role: string }> | null
   >({
@@ -31,5 +34,8 @@ export async function getPersonSlugs(): Promise<
     perspective: "published",
     stega: false,
   });
-  return rows ?? [];
+  if (!rows || rows.length === 0) return local;
+  const remoteSlugs = new Set(rows.map((r) => `${r.role}:${r.slug}`));
+  const missing = local.filter((l) => !remoteSlugs.has(`${l.role}:${l.slug}`));
+  return [...rows, ...missing];
 }

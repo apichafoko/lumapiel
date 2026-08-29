@@ -3,8 +3,13 @@ import { Button } from "@/components/ui/button";
 import { PortableTextBody } from "@/components/portable-text-body";
 import type { ServiceRecord } from "@/lib/content/schema";
 import { getBookingUrl } from "@/lib/site-config";
-import { BreadcrumbJsonLd, ServiceJsonLd } from "@/lib/service-jsonld";
+import {
+  BreadcrumbJsonLd,
+  MedicalProcedureJsonLd,
+  ServiceJsonLd,
+} from "@/lib/service-jsonld";
 import { hubRefToHref } from "@/lib/hub-links";
+import { getTreatmentAreaIds } from "@/lib/treatment-areas";
 import type { PortableTextBlock } from "@portabletext/types";
 
 type Props = {
@@ -42,13 +47,27 @@ export function ServiceDetail({
     }))
     .filter((x): x is { ref: string; href: string } => Boolean(x.href));
 
+  const areaIds = getTreatmentAreaIds(service);
+  const isCosmiatriaOnly =
+    areaIds.includes("cosmiatria") &&
+    !areaIds.includes("laser") &&
+    !areaIds.includes("dermatologicos");
+
   return (
     <>
-      <ServiceJsonLd
-        name={service.titulo}
-        description={description}
-        urlPath={`${listPath}/${service.slug_es}`}
-      />
+      {listPath === "/tratamientos" && !isCosmiatriaOnly ? (
+        <MedicalProcedureJsonLd
+          name={service.titulo}
+          description={description}
+          urlPath={`${listPath}/${service.slug_es}`}
+        />
+      ) : (
+        <ServiceJsonLd
+          name={service.titulo}
+          description={description}
+          urlPath={`${listPath}/${service.slug_es}`}
+        />
+      )}
       <BreadcrumbJsonLd items={crumbs} />
 
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
@@ -76,6 +95,36 @@ export function ServiceDetail({
               {service.duracion_minutos} minutos.
             </p>
           ) : null}
+
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            {isCosmiatriaOnly ? (
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-50/50 dark:bg-amber-950/20 px-3.5 py-1.5 text-xs text-foreground">
+                <span className="inline-block size-2 rounded-full bg-amber-500" />
+                <span>
+                  Atención en cabina:{" "}
+                  <Link
+                    href="/cosmetologa/yanina-benavidez"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    Yanina Benavidez (Cosmetóloga)
+                  </Link>
+                </span>
+              </div>
+            ) : (
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-50/50 dark:bg-emerald-950/20 px-3.5 py-1.5 text-xs text-foreground">
+                <span className="inline-block size-2 rounded-full bg-emerald-500" />
+                <span>
+                  Supervisión médica:{" "}
+                  <Link
+                    href="/doctora/agustina-gandolfo"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    Dra. Agustina Gandolfo (MN 176541)
+                  </Link>
+                </span>
+              </div>
+            )}
+          </div>
         </header>
 
         {body?.length ? (

@@ -49,11 +49,13 @@ export default async function CirujanoPlasticoPage({ params }: Props) {
     <>
       <PersonJsonLd
         name={displayName}
-        jobTitle={person.jobTitle ?? "Cirujano plástico"}
+        jobTitle={person.jobTitle ?? "Cirujano plástico (MN 172954)"}
         urlPath={path}
         description={person.seoDescription ?? ""}
         imageUrl={headshot}
         sameAs={sameAs.length ? sameAs : undefined}
+        medicalSpecialty={["https://schema.org/PlasticSurgery"]}
+        alumniOf="Universidad de Buenos Aires (UBA)"
       />
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
         <nav className="text-sm text-muted-foreground">

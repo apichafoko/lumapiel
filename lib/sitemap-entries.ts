@@ -35,7 +35,6 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     u("/", undefined, "weekly", 1),
     u("/tratamientos", undefined, "weekly", 0.95),
     u("/consultas", undefined, "weekly", 0.95),
-    u("/buscar", undefined, "monthly", 0.7),
     u("/contacto", undefined, "monthly", 0.85),
     u("/especialidades", undefined, "weekly", 0.85),
     ...hubs.map((hub) =>

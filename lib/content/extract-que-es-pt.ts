@@ -8,7 +8,7 @@ function blockPlainText(block: PortableTextBlock): string {
     .join("");
 }
 
-const QUE_ES_HEADING = /^#{0,3}\s*1\.\s*¿Qué es\b/i;
+const QUE_ES_HEADING = /^#{0,3}\s*1\.\s*¿?Qué\s+(?:es|son)\b/i;
 const NUMBERED_HEADING = /^#{0,3}\s*\d+\.\s/;
 
 /**
