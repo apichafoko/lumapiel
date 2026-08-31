@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { WebsiteJsonLd } from "@/lib/jsonld";
 import { SITE_URL } from "@/lib/constants";
 import { SanityLive } from "@/lib/sanity/live";
+import { GoogleTag } from "@/components/google-tag";
+import { ConversionTracking } from "@/components/conversion-tracking";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
@@ -81,6 +83,8 @@ export default async function RootLayout({
         <SanityLive />
         {isDraft ? <VisualEditing /> : null}
         {process.env.NODE_ENV === "production" && <Analytics />}
+        <GoogleTag />
+        <ConversionTracking />
       </body>
     </html>
   );
