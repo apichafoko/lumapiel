@@ -2,8 +2,8 @@
 
 Cuenta destino: **242-411-7364 — Luma Piel** (urifrai@gmail.com)
 
-> ⚠️ **Antes de empezar: los montos están en ARS calculados a 1 USD = 1450 ARS.**
-> Si el tipo de cambio no es ese, avisá y regenero `1-campanas.csv` y `2-grupos.csv`.
+> Los montos están en ARS calculados a **1 USD = 1530 ARS** (confirmado el 30/08/2026).
+> Si el tipo de cambio se mueve mucho, avisá y regenero `1-campanas.csv` y `2-grupos.csv`.
 > Los otros cuatro archivos no dependen del tipo de cambio.
 
 ## Preparación
